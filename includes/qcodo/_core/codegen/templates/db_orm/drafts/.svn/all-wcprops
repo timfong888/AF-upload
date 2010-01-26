@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts
+END
+_qform_list_include.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qform_list_include.tpl
+END
+_qpanel_edit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qpanel_edit.tpl
+END
+_qpanel_list_template.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qpanel_list_template.tpl
+END
+_qform_edit.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qform_edit.tpl
+END
+_qpanel_list.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qpanel_list.tpl
+END
+_qform_edit_include.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qform_edit_include.tpl
+END
+_qform_list.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qform_list.tpl
+END
+_qpanel_edit_template.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/drafts/_qpanel_edit_template.tpl
+END

@@ -1,0 +1,210 @@
+@CHARSET "ISO-8859-1";
+
+legend#green {
+	color: green;
+	font-size: 1em;
+}
+
+legend#red {
+	color: #B22222;
+	font-size: 1em;
+}
+
+/* vertical alignment */
+.moveup5px {
+	margin-top: -5px;
+}
+
+.movedown5px {
+	margin-top: 5px;
+}
+
+/*form behavior */
+input.textbox:focus, input.title:focus, textarea:focus, select:focus {
+	border:1px solid #666;
+	background: #F0F8FF;
+}
+
+input:focus {
+	border:1px solid #666;
+	background: #F0F8FF;
+}
+
+div.positive-give-score-column {
+	color: green;
+	font-size: 20px;
+}
+
+div.negative-give-score-column {
+	color: red;
+	font-size: 20px;
+}
+
+/* align messages */
+td.author_info {
+	width: 120px;
+}
+
+
+div.center {
+	text-align: center;
+}
+
+div.right-align, td.right-align {
+	text-align: right;
+}
+
+div.admin_link {
+	margin-top: -15px;
+	margin-bottom: 10px;	
+}
+
+/* header navigation */
+ul.bluemenuNav {
+	list-style: none;
+	float: left;
+	margin-bottom: 20px;
+}
+ul.bluemenuNav li {float: left;}	
+
+ul.bluemenuNav a.here {
+	float: left;
+	list-style: none;
+	background-color: #FF8C00;
+	color: #000000;
+	border-color: #4169E1;
+	
+}
+ul.bluemenuNav a {
+	background-color: #4169E1;
+	color: #FFFFFF;
+	padding: 7px 2px 7px 2px;
+	text-align: center;
+	margin-right: 5px;
+	width: 7em;
+	display: block;
+}
+
+ul.bluemenuNav a:hover {
+	background-color: orange;
+	color: #FFFFFF;
+	padding: 7px 2px 7px 2px;
+	text-align: center;
+	margin-right: 5px;
+	width: 7em;
+	display: block;
+}
+
+
+/* mod to blueprintcss buttons */
+
+a.button, button {
+	line-height:230%;
+}
+
+button.request, button.request:hover {
+	background-color: #E60000;
+	color: white;	
+}
+
+button.request:hover {
+	background-color: #ff9933;
+		
+}
+
+button.give, button.give:hover {
+	background-color: ForestGreen;
+	color: white;	
+}
+
+button.give:hover {
+	background-color: #ff9933;
+		
+}
+
+
+/* modifications to screen.css */
+
+h2.span.red {color:#B22222;}
+
+p.size16 {font-size: 16px;}
+
+.orange {color:#FFB366;}
+.green {color:#006400;}
+.white {color:#FFFFFF;}
+.blue {color:#1874CD;}
+.red {color:#B22222;}
+
+.borange {background-color:#FFB366;}
+
+/* this creates a yellow background with borders, apply to a .box class */
+.byellow { 
+	background:#FFF6BF;
+	color:#514721;
+	border: 5px solid #ff9933;
+	} 
+
+button.tblack {
+	color: black;
+}
+	
+a button.blue, button.bblue, .bblue {
+	background-color: #F0F8FF
+}
+
+.center {
+	text-align: center;
+}
+
+/* styling links in account profile */
+
+a.link_has_contacts:link, a.link_has_contacts:visited {
+	color: FireBrick;
+	text-decoration: underline;
+}
+
+a.link_has_contacts:hover, a.link_wants_contacts:hover {
+	background-color: AliceBlue;
+}
+
+a.link_wants_contacts:link, a.link_wants_contacts:visited {
+	color: Darkgreen;
+	text-decoration: underline;
+}
+
+a.accept_invite  {
+	padding: 5px;
+	background-color: #FFB366;
+	color:#000000;
+}
+
+a.accept_invite:hover {
+	padding: 5px;
+	background-color: #F0F8FF;
+}
+
+/* modify blueprint.css */
+.px16 {
+	font-size: 16px;
+}
+
+/* modify tablecloth */
+table.account-contacts {
+	width: 750px;
+}
+
+table.account-allies {
+	width: 650px;
+}
+
+table.button {
+	margin: 0px;
+}
+
+/* credit card formatting */
+
+td.cc-input {
+
+}
+
+

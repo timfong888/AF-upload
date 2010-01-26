@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Add Ally Pop Up</title>
+		
+		<!--allyforce stylesheets-->
+			<link rel="stylesheet" href="../css/newstyle.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">	
+		<!-- blueprintcss -->
+			<link rel="stylesheet" href="../css/blueprint/screen.css" type="text/css" media="screen, projection">
+			<link rel="stylesheet" href="../css/blueprint/print.css" type="text/css" media="print">	
+		<!--[if lt IE 8]><link rel="stylesheet" href="../css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+			<link rel="stylesheet" href="../css/blueprint/plugins/buttons/screen.css" type="text/css" media="screen">
+			
+		<!-- facebox installation scripts -->
+			<script src="../css/facebox/jquery.js" type="text/javascript"></script>
+			<link href="../css/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+				<link href="../css/facebox/faceplant.css" media="screen" rel="stylesheet" type="text/css"/>
+			<script src="../css/facebox/facebox.js" type="text/javascript"></script>
+			
+			<script type="text/javascript">
+		    	jQuery(document).ready(function($) {
+		      	$('a[rel*=facebox]').facebox({
+		        	loading_image : '../css/facebox/loading.gif',
+		        	close_image   : '../css/facebox/closelabel.gif'
+		      		}) 
+		    	})
+		  	</script>
+	</head>
+	<body>
+		
+		<form name="input" action="addally_submit_popup.htm" method="get">
+		<div class="span-7 push-1">
+			<h3 class="red">Add Mike N. as an Ally?</h3>
+			<p class='quiet'>Mike will need to accept your invitation.</p>
+			
+			<p class='quiet'>If he does, you'll be able to share contacts and account information
+			easily and securely.  <strong>And you'll make quota faster!</strong></p>
+			
+			<div class='span-4 push-3'>
+				<a class="button bblue" href="addally_submit_popup.htm" rel="facebox">
+	  				<img src="../css/blueprint/plugins/link-icons/icons/email.png" alt=""/> Invite Ally
+				</a>
+			</div>			
+		</div>
+		</form> 
+	</body>
+</html>

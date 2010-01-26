@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control
+END
+refresh_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/refresh_methods.tpl
+END
+_main.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/_main.tpl
+END
+save_object.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/save_object.tpl
+END
+constructor.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/constructor.tpl
+END
+create_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/create_methods.tpl
+END
+control_refresh_double.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_double.tpl
+END
+control_create_string.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_string.tpl
+END
+property_comments.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/property_comments.tpl
+END
+control_create_manytomany_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_manytomany_reference.tpl
+END
+control_refresh_boolean.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_boolean.tpl
+END
+control_update_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_reference.tpl
+END
+control_create_boolean.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_boolean.tpl
+END
+control_create_type.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_type.tpl
+END
+control_refresh_identity.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/2/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_identity.tpl
+END
+control_update_calendar.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_calendar.tpl
+END
+control_refresh_integer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_integer.tpl
+END
+control_update_manytomany_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_manytomany_reference.tpl
+END
+control_refresh_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_reference.tpl
+END
+property_get_case.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/property_get_case.tpl
+END
+control_create_integer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_integer.tpl
+END
+control_create_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_reference.tpl
+END
+control_update_unique_reversereference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_unique_reversereference.tpl
+END
+control_update_type.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_type.tpl
+END
+property_get.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/property_get.tpl
+END
+control_refresh_string.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_string.tpl
+END
+delete_object.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/delete_object.tpl
+END
+control_update_checkbox.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_checkbox.tpl
+END
+control_refresh_manytomany_reference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_manytomany_reference.tpl
+END
+property_set_case.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/property_set_case.tpl
+END
+control_refresh_QDateTime.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_QDateTime.tpl
+END
+control_create_double.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_double.tpl
+END
+control_refresh_unique_reversereference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_unique_reversereference.tpl
+END
+control_update_textbox.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_update_textbox.tpl
+END
+control_refresh_type.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_refresh_type.tpl
+END
+property_set.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/property_set.tpl
+END
+control_create_QDateTime.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_QDateTime.tpl
+END
+control_create_unique_reversereference.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_unique_reversereference.tpl
+END
+update_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/update_methods.tpl
+END
+control_create_identity.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/control_create_identity.tpl
+END
+variable_declarations.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/variable_declarations.tpl
+END
+_subclass.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control/_subclass.tpl
+END

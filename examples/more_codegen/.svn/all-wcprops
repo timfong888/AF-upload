@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen
+END
+custom_load.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/custom_load.php
+END
+custom.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/custom.php
+END
+optimistic_locking.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/optimistic_locking.php
+END
+type_tables.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/type_tables.php
+END
+virtual_attributes.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/virtual_attributes.php
+END
+late_bind.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/late_bind.php
+END
+sort_limit.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/sort_limit.php
+END
+early_bind.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/2/staging/examples/more_codegen/early_bind.php
+END

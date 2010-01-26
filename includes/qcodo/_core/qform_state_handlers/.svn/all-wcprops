@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform_state_handlers
+END
+QSessionFormStateHandler.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform_state_handlers/QSessionFormStateHandler.class.php
+END
+QFileFormStateHandler.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform_state_handlers/QFileFormStateHandler.class.php
+END
+QFormStateHandler.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform_state_handlers/QFormStateHandler.class.php
+END

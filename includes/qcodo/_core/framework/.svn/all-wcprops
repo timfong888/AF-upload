@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework
+END
+QQuery.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QQuery.class.php
+END
+QStack.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QStack.class.php
+END
+QString.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QString.class.php
+END
+QUpdateUtility.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QUpdateUtility.class.php
+END
+QRegex.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QRegex.class.php
+END
+QEmailServer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QEmailServer.class.php
+END
+QDateTimeSpan.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QDateTimeSpan.class.php
+END
+QLexer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QLexer.class.php
+END
+QI18n.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QI18n.class.php
+END
+QExceptions.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QExceptions.class.php
+END
+QType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QType.class.php
+END
+QSoapService.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QSoapService.class.php
+END
+QMimeType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QMimeType.class.php
+END
+QQueryExpansion.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QQueryExpansion.class.php
+END
+QCryptography.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QCryptography.class.php
+END
+QRssFeed.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QRssFeed.class.php
+END
+QDateTime.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QDateTime.class.php
+END
+QApplicationBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QApplicationBase.class.php
+END
+QDateTime.legacy.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QDateTime.legacy.class.php
+END
+QDatabaseBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QDatabaseBase.class.php
+END
+QBaseClass.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QBaseClass.class.php
+END
+QDateTime52.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QDateTime52.class.php
+END
+QCache.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/framework/QCache.class.php
+END

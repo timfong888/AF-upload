@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/allyforce_project/!svn/ver/833/staging/includes/data_classes
+END
+MessageType.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/MessageType.class.php
+END
+Target.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/Target.class.php
+END
+GroupCode.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/GroupCode.class.php
+END
+Thread.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/allyforce_project/!svn/ver/833/staging/includes/data_classes/Thread.class.php
+END
+Contact.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/Contact.class.php
+END
+Account.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/Account.class.php
+END
+User.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/allyforce_project/!svn/ver/360/staging/includes/data_classes/User.class.php
+END
+SalesOrg.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/allyforce_project/!svn/ver/694/staging/includes/data_classes/SalesOrg.class.php
+END
+Offer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/Offer.class.php
+END
+Message.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/allyforce_project/!svn/ver/277/staging/includes/data_classes/Message.class.php
+END
+UserDetails.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/allyforce_project/!svn/ver/530/staging/includes/data_classes/UserDetails.class.php
+END

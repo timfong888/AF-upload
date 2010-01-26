@@ -1,0 +1,340 @@
+/************** header ********************/
+
+body{
+	margin:0px;
+	height:100%
+	
+}
+
+div#container{
+	margin:0 auto;
+	/*border:1px solid red;*/
+	margin-top:20px;
+	width:925px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:100%;
+	
+	
+}
+
+div#banner{
+	/*background:url(../images/header.gif) top left repeat-x; */
+	/*border:1px solid #BDBDBD;*/
+	height:70px;
+	line-height:70px;
+	
+}
+
+div#banner img
+{
+	margin-left:60px;
+}
+
+div#banner p{
+	font-size:18px;
+	font-weight:bolder;
+	
+	margin:0px;
+	padding:0;
+	margin-right:12px;
+	text-decoration:underline;
+}
+
+/**************** boxes ************************/
+
+.roundcont
+{
+	width:261px;
+	background-color:#FFFFFF;
+	/*border:1px solid #00CCFF;*/
+	float:left;
+	margin:3px auto;
+	
+}
+
+.roundtop { 
+	background: url(../images/tr.gif) no-repeat top right; 
+}
+
+.roundbottom {
+	background: url(../images/br.gif) no-repeat top right; 
+}
+img.corner {
+  
+   display: block !important;
+}
+
+div.top{
+	background: url(../images/tl.gif) no-repeat top left;
+	height:27px;
+	margin-right:31px;
+}
+
+div.top div{
+	margin-left:27px; 
+	background:url(../images/top_bg.gif) top left repeat-x
+}
+
+div.bottom{
+	background: url(../images/bl.gif) no-repeat bottom left;
+	height:31px;
+	margin-right:31px;
+}
+
+div.bottom div{
+	margin-left:31px; 
+	background:url(../images/bottom_bg.gif) bottom left repeat-x; 
+	height:31px
+}
+
+.content{
+	border-left:1px solid #00CCFF;
+	margin-left:2px;
+	background: url(../images/right.gif) repeat-y top right;
+	padding:0px 10px;
+	color:#595959;
+}
+
+.content img
+{
+	margin:20px 0px;
+}
+
+.sp{
+	font-size:16px;
+	color:#595959;
+	font-weight:bold
+	
+}
+
+.intro{
+	font-size:40px;
+	font-weight:bolder;
+	margin:0px;
+	color:#595959;
+}
+
+.content p{
+	margin:0;
+	font-size:12px;
+	color:#000000;
+	margin-top:6px;
+}
+
+
+/************** form ******************/
+#form1 table table{
+	font-size:12px;
+	font-weight:bold;
+	background: url(../images/table_bg1.gif) repeat-x top left;
+}
+
+#form1 input{
+	height:17px;
+	line-height:17px;
+	width:225px;
+	border:1px solid #848484;
+	margin:0;
+	padding:0;
+}
+
+#form1 table table td{
+	padding-left:7px;
+}
+
+input#send{
+	background:url(../images/send.gif) no-repeat top left; 
+	width:51px; 
+	height:21px; 
+	border:none;
+	margin-right:15px;
+}
+
+/********** footer *************/
+.footer{
+	margin-bottom:10px;
+	font-size:12px;
+	font-weight:bold;
+	color:#595959;
+	clear:both
+	
+}
+
+.footer a{		
+	color:#595959;
+	text-decoration:none
+}
+
+.footer span{
+	font-size:9px;
+	color:#666666
+}
+
+/************* page1 **************/
+.left{
+	width:70%;
+	float:left
+	/*border:1px solid #BDBDBD;*/
+}
+
+.right{
+	width:29%;
+	float:left;
+	line-height:105%
+	
+	/*border:1px solid #BDBDBD;*/
+}
+
+.text1{
+	font-size:45px;
+	color:#737573;
+	
+}
+
+.blue{
+	color:#009AFF;
+}
+
+#form2{
+	margin:0;
+	padding:0;
+}
+
+#form2 input{
+	margin:0px;
+	
+	/*border:1px solid #009AFF*/	
+	border:none
+}
+
+.input{
+	/*width:246px;*/
+	width:245px;
+	height:22px;
+	background:url(../images/input.gif) no-repeat top left;
+	padding:5px;
+	padding-bottom:0px;
+}
+.input1{
+	width:394px;
+	height:22px;
+	background:url(../images/input1.gif) no-repeat top left;
+	padding:5px;
+	padding-bottom:0px;
+}
+.input2{
+	width:125px;
+	height:22px;
+	background:url(../images/input2.gif) no-repeat top left;
+	padding:5px;
+	padding-bottom:0px;
+}
+
+.notify div{
+	/* background:url(../images/beta.gif) no-repeat 9px 9px; */
+	padding:10px 25px 10px 38px
+}
+
+.notify div p{
+	color:#424542; 
+	font-size:18px; 
+	padding-left:60px;
+	padding-top:8px;
+}
+
+.request{
+	background:url(../images/request.gif) no-repeat top left;
+	width:109px;
+	height:23px;
+	border:none;
+}
+
+.check{
+	border:0px solid #000000;
+}
+
+#form2 p{
+	margin:0px;
+}
+
+.thanks{
+	background:url(../images/thanks.gif) no-repeat top left;
+	width:600px;
+	height:151px;
+	margin:0 auto;
+	font-size:16px;
+	padding-top:35px;
+	line-height:100%;
+	
+}
+
+
+	
+	div.marketing_copy ul.list h3 {
+		font-size: 14px;
+		padding-left: 50px;
+	}
+	
+		div.marketing_copy ul.list {
+			float:left;
+			list-style-type:none;
+			margin:0 0 0 15px;
+			padding:0;
+			text-align:left;
+			width:471px;
+		}
+		
+	#banner_signup {
+
+		background:transparent url(../images/banner_signup.png) no-repeat scroll 0 0;
+		height:110px;
+		margin-left:20px;
+		padding-top:120px;
+		padding-left:50px;
+		clear: both;
+	}
+
+	div.marketing_copy h1 span, h2 span {
+		color:#5A5A5A;
+	}
+	
+	a img {
+		border:medium none;
+		outline-color:-moz-use-text-color;
+		outline-style:none;
+		outline-width:medium;
+	}
+	
+	ul.list {
+		list-style: none;
+	}
+	li.security {
+		background:transparent url(../images/signup/blue-lock-icon.png) no-repeat scroll 0 4px;
+	}
+	
+	li.prospects {
+		background:transparent url(../images/signup/bulletProspects.png) no-repeat scroll 0 4px;
+	}
+	li.accounts {
+		background:transparent url(../images/signup/bulletAccounts.png) no-repeat scroll 0 4px;
+	}
+	
+	li.partnership {
+		background:transparent url(../images/signup/bulletPartnership.png) no-repeat scroll 0 4px;
+	}
+	li.coverage {
+		background:transparent url(../images/signup/bulletCoverage.png) no-repeat scroll 0 4px;
+	}
+	
+	li.reseller_1 {
+		background:transparent url(../images/signup/bulletReseller1.gif) no-repeat scroll 0 4px;
+	}
+
+	li.reseller_2 {
+		background:transparent url(../images/signup/bulletReseller2.gif) no-repeat scroll 0 4px;
+	}
+	
+	li.reseller_3 {
+		background:transparent url(../images/signup/bulletReseller3.gif) no-repeat scroll 0 4px;
+	}

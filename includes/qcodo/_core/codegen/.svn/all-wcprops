@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen
+END
+QConvertNotationBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QConvertNotationBase.class.php
+END
+QIndex.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QIndex.class.php
+END
+QTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QTable.class.php
+END
+library.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/library.inc.php
+END
+QDatabaseCodeGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QDatabaseCodeGen.class.php
+END
+QTypeTable.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QTypeTable.class.php
+END
+QReverseReference.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QReverseReference.class.php
+END
+QManyToManyReference.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QManyToManyReference.class.php
+END
+QColumn.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QColumn.class.php
+END
+QReference.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QReference.class.php
+END
+QCodeGenBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QCodeGenBase.class.php
+END
+QRestServiceCodeGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/QRestServiceCodeGen.class.php
+END

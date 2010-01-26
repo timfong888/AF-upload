@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/allyforce_project/!svn/ver/2/staging/examples/composite
+END
+intro.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/2/staging/examples/composite/intro.tpl.php
+END
+intro.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/allyforce_project/!svn/ver/2/staging/examples/composite/intro.php
+END
+SampleComposite.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/allyforce_project/!svn/ver/2/staging/examples/composite/SampleComposite.class.php
+END

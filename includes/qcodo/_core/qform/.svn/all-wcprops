@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform
+END
+QTreeNav.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QTreeNav.class.php
+END
+QImageRollover.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QImageRollover.class.php
+END
+QFontFamily.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFontFamily.class.php
+END
+QCalendar.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QCalendar.class.php
+END
+QDataGridBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDataGridBase.class.php
+END
+QIntegerTextBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QIntegerTextBox.class.php
+END
+QDropZoneGrouping.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDropZoneGrouping.class.php
+END
+QControlBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QControlBase.class.php
+END
+QListItemStyle.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QListItemStyle.class.php
+END
+QImageBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QImageBase.class.php
+END
+QWaitIcon.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QWaitIcon.class.php
+END
+QImageButton.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QImageButton.class.php
+END
+QActionControl.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QActionControl.class.php
+END
+QPaginatorBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QPaginatorBase.class.php
+END
+QControlLabel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QControlLabel.class.php
+END
+QControlProxy.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QControlProxy.class.php
+END
+_actions.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/_actions.inc.php
+END
+QFloatTextBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFloatTextBox.class.php
+END
+QTreeNavItem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QTreeNavItem.class.php
+END
+QRadioButtonList.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QRadioButtonList.class.php
+END
+_events.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/_events.inc.php
+END
+QDataGridRowStyle.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDataGridRowStyle.class.php
+END
+QLinkButton.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QLinkButton.class.php
+END
+QRadioButton.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QRadioButton.class.php
+END
+QDataGridColumn.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDataGridColumn.class.php
+END
+QFormBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFormBase.class.php
+END
+QFileAssetDialog.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFileAssetDialog.class.php
+END
+QDataRepeater.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDataRepeater.class.php
+END
+QWriteBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QWriteBox.class.php
+END
+QButtonBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QButtonBase.class.php
+END
+QDialogBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDialogBox.class.php
+END
+QFileAssetBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFileAssetBase.class.php
+END
+QDateTimeTextBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDateTimeTextBox.class.php
+END
+QListControl.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QListControl.class.php
+END
+QImageLabelBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QImageLabelBase.class.php
+END
+QImageControlBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QImageControlBase.class.php
+END
+QLabel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QLabel.class.php
+END
+QListBoxBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QListBoxBase.class.php
+END
+QFileControl.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QFileControl.class.php
+END
+QCheckBoxList.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QCheckBoxList.class.php
+END
+QCheckBox.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QCheckBox.class.php
+END
+QTextBoxBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QTextBoxBase.class.php
+END
+QDateTimePicker.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QDateTimePicker.class.php
+END
+QListItem.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QListItem.class.php
+END
+QBlockControl.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QBlockControl.class.php
+END
+QControlGrouping.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QControlGrouping.class.php
+END
+_enumerations.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/_enumerations.inc.php
+END
+QCalendarPopup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QCalendarPopup.class.php
+END
+QPaginatedControl.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QPaginatedControl.class.php
+END
+QPanel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qform/QPanel.class.php
+END

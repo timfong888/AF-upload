@@ -1,0 +1,27 @@
+# local version
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+RewriteEngine on
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+
+RewriteRule account/(.*) account_profile.php?accountname=$1
+RewriteRule user/(.*) user_profile.php?username=$1
+
+RewriteRule insider/(.*) /insiderforce/insider_signup.php?username=$1
+
+php_value error_reporting 6143
+
+#PHP
+php_value include_path ".;C:\Documents and Settings\Timothy Fong\My Documents\allyforce\workspace\AllyForce from SVN 10-29-08\includes\;C:\Documents and Settings\Timothy Fong\My Documents\allyforce\workspace\AllyForce from SVN 10-29-08\Library"
+#php_value include_path ".:/home/aptana/domains/staging-allyforce.aptanacloud.com/web/htdocs/includes:/home/aptana/domains/staging-allyforce.aptanacloud.com/web/htdocs/Library"
+#php_value include_path ".:/home/aptana/domains/allyforce.aptanacloud.com/web/htdocs/includes:/home/aptana/domains/allyforce.aptanacloud.com/web/htdocs/Library"  

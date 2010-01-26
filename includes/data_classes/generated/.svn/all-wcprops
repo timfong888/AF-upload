@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/817/staging/includes/data_classes/generated
+END
+ContactGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/ContactGen.class.php
+END
+AccountGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/AccountGen.class.php
+END
+_class_paths.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/_class_paths.inc.php
+END
+UserGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/allyforce_project/!svn/ver/813/staging/includes/data_classes/generated/UserGen.class.php
+END
+_type_class_paths.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/allyforce_project/!svn/ver/693/staging/includes/data_classes/generated/_type_class_paths.inc.php
+END
+SalesOrgGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/SalesOrgGen.class.php
+END
+OfferGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/OfferGen.class.php
+END
+MessageGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/MessageGen.class.php
+END
+UserDetailsGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/UserDetailsGen.class.php
+END
+QQN.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/QQN.class.php
+END
+MessageTypeGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/allyforce_project/!svn/ver/693/staging/includes/data_classes/generated/MessageTypeGen.class.php
+END
+TargetGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/TargetGen.class.php
+END
+GroupCodeGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/817/staging/includes/data_classes/generated/GroupCodeGen.class.php
+END
+ThreadGen.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/allyforce_project/!svn/ver/809/staging/includes/data_classes/generated/ThreadGen.class.php
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid
+END
+meta_data_binder.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/meta_data_binder.tpl
+END
+resolve_content_item_case.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/resolve_content_item_case.tpl
+END
+_main.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/_main.tpl
+END
+constructor.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/constructor.tpl
+END
+resolve_content_item.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/resolve_content_item.tpl
+END
+meta_add_column.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/meta_add_column.tpl
+END
+meta_add_type_column.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/meta_add_type_column.tpl
+END
+_subclass.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/_subclass.tpl
+END
+meta_add_edit_column.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_datagrid/meta_add_edit_column.tpl
+END

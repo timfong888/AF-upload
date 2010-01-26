@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database
+END
+QMySqli5Database.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database/QMySqli5Database.class.php
+END
+QPostgreSqlDatabase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database/QPostgreSqlDatabase.class.php
+END
+QMySqlDatabase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database/QMySqlDatabase.class.php
+END
+QSqlServerDatabase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database/QSqlServerDatabase.class.php
+END
+QMySqliDatabase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/database/QMySqliDatabase.class.php
+END

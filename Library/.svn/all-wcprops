@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/allyforce_project/!svn/ver/836/staging/Library
+END
+Home.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/allyforce_project/!svn/ver/359/staging/Library/Home.class.php
+END
+AccountPopupRequest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/allyforce_project/!svn/ver/827/staging/Library/AccountPopupRequest.class.php
+END
+AddAllyPopup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/835/staging/Library/AddAllyPopup.class.php
+END
+SignupCode.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/820/staging/Library/SignupCode.class.php
+END
+Ally.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/allyforce_project/!svn/ver/740/staging/Library/Ally.class.php
+END
+ThreadList.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/325/staging/Library/ThreadList.class.php
+END
+bc_library.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/allyforce_project/!svn/ver/257/staging/Library/bc_library.php
+END
+Thread.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/allyforce_project/!svn/ver/50/staging/Library/Thread.class.php
+END
+Login.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/allyforce_project/!svn/ver/477/staging/Library/Login.class.php
+END
+Target_popup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/574/staging/Library/Target_popup.class.php
+END
+TargetCP.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/allyforce_project/!svn/ver/515/staging/Library/TargetCP.class.php
+END
+Salesforce_popup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/677/staging/Library/Salesforce_popup.class.php
+END
+Offernew.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/allyforce_project/!svn/ver/653/staging/Library/Offernew.class.php
+END
+CompleteProfilePopup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/allyforce_project/!svn/ver/836/staging/Library/CompleteProfilePopup.class.php
+END
+ProfileActivity.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/allyforce_project/!svn/ver/836/staging/Library/ProfileActivity.class.php
+END
+AccountProfile.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/allyforce_project/!svn/ver/557/staging/Library/AccountProfile.class.php
+END
+account_detail.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/allyforce_project/!svn/ver/517/staging/Library/account_detail.class.php
+END
+ThreadLine.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/308/staging/Library/ThreadLine.class.php
+END
+billing.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/260/staging/Library/billing.class.php
+END
+AllyProfile.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/773/staging/Library/AllyProfile.class.php
+END
+OfferCP.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/299/staging/Library/OfferCP.class.php
+END
+Target.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/allyforce_project/!svn/ver/654/staging/Library/Target.class.php
+END
+MailMessage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/44/staging/Library/MailMessage.class.php
+END
+Signup2.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/625/staging/Library/Signup2.class.php
+END
+Signup3.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/625/staging/Library/Signup3.class.php
+END
+protected.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/442/staging/Library/protected.inc.php
+END
+MessageRequest.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/allyforce_project/!svn/ver/743/staging/Library/MessageRequest.class.php
+END
+reports.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/750/staging/Library/reports.class.php
+END
+MessageSend.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/742/staging/Library/MessageSend.class.php
+END
+UserProfile.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/579/staging/Library/UserProfile.class.php
+END
+Profile.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/allyforce_project/!svn/ver/47/staging/Library/Profile.class.php
+END
+Offer.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/allyforce_project/!svn/ver/544/staging/Library/Offer.class.php
+END
+billingcircle.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/256/staging/Library/billingcircle.class.php
+END
+Signup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/allyforce_project/!svn/ver/800/staging/Library/Signup.class.php
+END
+Target1.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/747/staging/Library/Target1.class.php
+END
+CodeAttendees.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/822/staging/Library/CodeAttendees.class.php
+END
+Signup3-addtargets.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/allyforce_project/!svn/ver/751/staging/Library/Signup3-addtargets.class.php
+END
+AddAllySubmitPopup.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/allyforce_project/!svn/ver/831/staging/Library/AddAllySubmitPopup.class.php
+END
+Signup3-addoffers.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/allyforce_project/!svn/ver/752/staging/Library/Signup3-addoffers.class.php
+END
+managerInviteReps.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/allyforce_project/!svn/ver/608/staging/Library/managerInviteReps.class.php
+END
+SignupInvite.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/allyforce_project/!svn/ver/752/staging/Library/SignupInvite.class.php
+END

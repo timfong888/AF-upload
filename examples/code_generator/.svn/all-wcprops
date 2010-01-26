@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator
+END
+objects.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/objects.php
+END
+about.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/about.php
+END
+intro.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/intro.php
+END
+mysql_myisam.sql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/mysql_myisam.sql
+END
+relationships.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/relationships.txt
+END
+primary_keys.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/primary_keys.php
+END
+indexes.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/indexes.php
+END
+reverse_relationships.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/reverse_relationships.php
+END
+save_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/save_delete.php
+END
+script_path.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/script_path.php
+END
+relationships.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/relationships.php
+END
+relationships_many.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/allyforce_project/!svn/ver/2/staging/examples/code_generator/relationships_many.php
+END

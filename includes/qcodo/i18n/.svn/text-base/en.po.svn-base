@@ -1,0 +1,41 @@
+msgid "%s must have at most %s characters"
+msgstr "%s must have at most %s characters"
+
+msgid "Must have at most %s characters"
+msgstr "Must have at most %s characters"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Sign In"
+msgstr "Sign In"
+
+msgid "Keep me signed in on this computer"
+msgstr "Keep me signed in on this computer"
+
+msgid "Forgot password?"
+msgstr "Forgot password?"
+
+msgid "Change work email"
+msgstr "Change work email"
+
+msgid "Not part of allyforce, yet?"
+msgstr "Not part of allyforce, yet?"
+
+msgid "Sign up Now!"
+msgstr "Sign up Now!"
+
+msgid "My Targets"
+msgstr "My Targets"
+
+msgid "My Offers"
+msgstr "My Offers"
+
+msgid "Allies"
+msgstr "Allies"

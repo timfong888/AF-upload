@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/allyforce_project/!svn/ver/829/staging/test
+END
+completeProfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/allyforce_project/!svn/ver/829/staging/test/completeProfile.php
+END
+signup_code
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/allyforce_project/!svn/ver/818/staging/test/signup_code
+END
+signup_code1
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/allyforce_project/!svn/ver/818/staging/test/signup_code1
+END
+completeProfile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/allyforce_project/!svn/ver/829/staging/test/completeProfile
+END
+cleanup_db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/allyforce_project/!svn/ver/818/staging/test/cleanup_db.sql
+END

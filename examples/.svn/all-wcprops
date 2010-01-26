@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/allyforce_project/!svn/ver/2/staging/examples
+END
+view_source.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/allyforce_project/!svn/ver/2/staging/examples/view_source.php
+END
+sql_server.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/allyforce_project/!svn/ver/2/staging/examples/sql_server.sql
+END
+mysql_innodb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/allyforce_project/!svn/ver/2/staging/examples/mysql_innodb.sql
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/allyforce_project/!svn/ver/2/staging/examples/index.php
+END

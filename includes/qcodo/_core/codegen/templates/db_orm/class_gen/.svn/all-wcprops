@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen
+END
+class_load_and_count_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/class_load_and_count_methods.tpl
+END
+associated_object_manytomany.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/2/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/associated_object_manytomany.tpl
+END
+property_get.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/property_get.tpl
+END
+_main.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/_main.tpl
+END
+object_save.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/object_save.tpl
+END
+manual_query_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/allyforce_project/!svn/ver/2/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/manual_query_methods.tpl
+END
+soap_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/soap_methods.tpl
+END
+object_delete.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/object_delete.tpl
+END
+property_comments.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/property_comments.tpl
+END
+index_load_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/index_load_methods.tpl
+END
+protected_member_objects.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/protected_member_objects.tpl
+END
+object_reload.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/object_reload.tpl
+END
+property_set.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/property_set.tpl
+END
+index_load_array.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/index_load_array.tpl
+END
+associated_object.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/allyforce_project/!svn/ver/2/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/associated_object.tpl
+END
+instantiation_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/instantiation_methods.tpl
+END
+index_load_single.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/index_load_single.tpl
+END
+qcodo_query_classes.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/qcodo_query_classes.tpl
+END
+protected_member_variables.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/protected_member_variables.tpl
+END
+associated_objects_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/associated_objects_methods.tpl
+END
+qcodo_query_methods.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/qcodo_query_methods.tpl
+END
+index_load_array_manytomany.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/allyforce_project/!svn/ver/2/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen/index_load_array_manytomany.tpl
+END

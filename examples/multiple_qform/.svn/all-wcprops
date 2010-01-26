@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform
+END
+intro.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/intro.tpl.php
+END
+PersonEditPanel.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/PersonEditPanel.tpl.php
+END
+ProjectEditPanel.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/ProjectEditPanel.tpl.php
+END
+intro.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/intro.php
+END
+ProjectViewPanel.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/ProjectViewPanel.tpl.php
+END
+PersonEditPanel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/PersonEditPanel.class.php
+END
+ProjectEditPanel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/ProjectEditPanel.class.php
+END
+ProjectViewPanel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/allyforce_project/!svn/ver/2/staging/examples/multiple_qform/ProjectViewPanel.class.php
+END
