@@ -4,11 +4,6 @@ body {
 	font-family: Geneva, Arial, Helvetica, sans-serif
 }
 
-p {
-	margin: 0px;
-
-}
-
 textarea {
 	width: 320px;
 	height: 100px;
@@ -491,12 +486,6 @@ div.index {
 }
 
 /******************** edit my profile *******************/
-
-p {
-
-	margin: 0px;
-
-}
 
 div#profile_edit textarea {
 	height: 153px;

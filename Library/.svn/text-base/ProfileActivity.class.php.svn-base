@@ -3,6 +3,7 @@ require('includes/prepend.inc.php');
 require_once('AddAllyPopup.class.php');
 require_once('AddAllySubmitPopup.class.php');
 require_once('CompleteProfilePopup.class.php');
+require_once('AccountPopupRequest.class.php');
 
 class ProfileActivityForm extends QForm {
 	
@@ -26,9 +27,8 @@ class ProfileActivityForm extends QForm {
 	protected $btnAddAllyPopup;
 	protected $completeProfilePopup;
 	protected $btnCompleteProfilePopup;
-
-
-	
+	protected $accountPopupRequest;
+	protected $btnAccountPopupRequest;
 
 	
 	
@@ -59,27 +59,38 @@ class ProfileActivityForm extends QForm {
             
 		$this->btnAddAllyPopup = new QButton($this);
 		$this->btnAddAllyPopup->Text = 'Show AddAlly Popup';
-		$this->btnAddAllyPopup->AddAction(new QClickEvent(), new QAjaxAction('btnAddAllyPopup_Click'));
+		$this->btnAddAllyPopup->AddAction(new QClickEvent(), new QAjaxAction('btn_AddAllyPopup_Click'));
 		
 		// Define the completeProfilePopup
 		$this->completeProfilePopup = new CompleteProfilePopup('AddAllyPopup', $this);
 		$this->completeProfilePopup->Visible = false;
-        $this->completeProfilePopup->BackColor = 'white';
+        $this->completeProfilePopup->BackColor = '#ffff';
         
 		$this->btnCompleteProfilePopup = new QButton($this);
 		$this->btnCompleteProfilePopup->Text = 'Show CompleteProfile Popup';
 		$this->btnCompleteProfilePopup->AddAction(new QClickEvent(), new QAjaxAction('btn_CompleteProfilePopup_Click'));
 		
-		// Define the addAllyPopupSubmit
+		
+		// Define the accountPopupRequest
+		//var_dump($this->objControlArray);
+		$this->accountPopupRequest = new AccountPopupRequest('AccountPopupRequest', $this);
+		$this->accountPopupRequest->Visible = false;
+        $this->accountPopupRequest->BackColor = '#ffff';
+        
+		$this->btnAccountPopupRequest = new QButton($this);
+		$this->btnAccountPopupRequest->Text = 'Show Account Request Popup';
+		$this->btnAccountPopupRequest->AddAction(new QClickEvent(), new QAjaxAction('btn_AccountRequestPopup_Click'));
+		
+		/*// Define the addAllyPopupSubmit
         $this->addAllyPopupSubmit = new AddAllySubmitPopup('AddAllyPopupSubmit', $this);
 		$this->addAllyPopupSubmit->Visible = false;
-        $this->addAllyPopupSubmit->BackColor = 'white';
+        $this->addAllyPopupSubmit->BackColor = 'white';*/
             
             
 	
 	}
 	
-		protected function btnAddAllyPopup_Click($strFormId, $strControlId, $strParameter) {
+		protected function btn_AddAllyPopup_Click($strFormId, $strControlId, $strParameter) {
 		
 			$this->addAllyPopup->ShowDialogBox();
 			
@@ -91,6 +102,11 @@ class ProfileActivityForm extends QForm {
 			
 		}
 
+		protected function btn_AccountRequestPopup_Click($strFormId, $strControlId, $strParameter) {
+		
+			$this->accountPopupRequest->ShowDialogBox();
+			
+		}
 		
 		
     protected function GetAllyOfferAccountIdForUserTargetAccountId($userTargetAccountId) {
@@ -219,18 +235,28 @@ class ProfileActivityForm extends QForm {
 	    
 	}
     // AddAllayPopup button Close. Redirect to method btnClose_Click() in AddAllayPopup.class.php
-	public function addAllyPopup__btnClose_Click() {
+	public function addAllyPopup_btnClose_Click() {
 	    $this->addAllyPopup->btnClose_Click();
 	   //$this->addAllyPopupSubmit->ShowDialogBox();‭
 	}
 	
-	public function addAllySubmitPopup_btnInvite_Click($strFormId, $strControlId, $strParameter) {
+	/*public function addAllySubmitPopup_btnInvite_Click($strFormId, $strControlId, $strParameter) {
 	    $this->addAllyPopupSubmit->btnInvite_Click($strFormId, $strControlId, $strParameter);
 	    
-	}
+	}*/
 	
 	public function CompleteProfilePopup_btnCreate_Click($strFormId, $strControlId, $strParameter) {
 	    $this->completeProfilePopup->btnCreate_Click($strFormId, $strControlId, $strParameter);
+	    
+	}
+	
+	public function AccountPopupRequest_btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter) {
+	    $this->accountPopupRequest->btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter);
+	    
+	}
+	
+	public function AcccountPopupReguest_btnClick_Request($strFormId, $strControlId, $strParameter) {
+	    $this->accountPopupRequest->btnClick_Request($strFormId, $strControlId, $strParameter);
 	    
 	}
 	

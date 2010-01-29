@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>signup_code1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">signup_code1</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/signup_code.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>c1</td>
+	<td>Bart</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>c2</td>
+	<td>Bart@simpson.homer</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>c4</td>
+	<td>bart</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>c5</td>
+	<td>bart</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>c3</td>
+	<td>label=East</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>c6</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>c7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>c8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//tr[@id='c1_row0']/td[1]/div/a</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>verifyTable</td>
+	<td>c1_row3</td>
+	<td>Some TestAlly</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
