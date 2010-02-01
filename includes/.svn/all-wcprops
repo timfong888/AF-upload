@@ -5,7 +5,7 @@ V 32
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/allyforce_project/!svn/ver/843/staging/includes
+/svn/allyforce_project/!svn/ver/845/staging/includes
 END
 configuration.inc.template.php
 K 25
@@ -77,7 +77,7 @@ banner.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/651/staging/includes/banner.inc.php
+/svn/allyforce_project/!svn/ver/845/staging/includes/banner.inc.php
 END
 stylesheets-no-tablecloth.inc.php
 K 25

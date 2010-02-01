@@ -1,7 +1,7 @@
 10
 
 dir
-842
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/_core/framework
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -25,40 +25,6 @@ vgrichina
 
 
 5e8a31fb-3d4b-46bc-af63-248cdb051360
-
-QStack.class.php
-file
-
-
-
-
-2010-01-19T20:26:30.078125Z
-8462c6598074a0e29cdbc2d4a316e84a
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1759
 
 QQuery.class.php
 file
@@ -94,14 +60,14 @@ vgrichina
 
 63206
 
-QUpdateUtility.class.php
+QStack.class.php
 file
 
 
 
 
-2010-01-19T20:26:30.218750Z
-1849206a11d239592a801fff86a6a59e
+2010-01-19T20:26:30.078125Z
+8462c6598074a0e29cdbc2d4a316e84a
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -126,7 +92,7 @@ vgrichina
 
 
 
-45133
+1759
 
 QString.class.php
 file
@@ -162,6 +128,40 @@ vgrichina
 
 2299
 
+QUpdateUtility.class.php
+file
+
+
+
+
+2010-01-19T20:26:30.218750Z
+1849206a11d239592a801fff86a6a59e
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+45133
+
 QRegex.class.php
 file
 
@@ -195,40 +195,6 @@ vgrichina
 
 
 1187
-
-QDateTimeSpan.class.php
-file
-
-
-
-
-2010-01-19T20:26:30.281250Z
-b7c5fdc5efc58742815453a784eb7b03
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10798
 
 QEmailServer.class.php
 file
@@ -264,14 +230,14 @@ vgrichina
 
 20556
 
-QI18n.class.php
+QDateTimeSpan.class.php
 file
 
 
 
 
-2010-01-19T20:26:30.343750Z
-e08a9f502ba3f55e00cb3c72a397d774
+2010-01-19T20:26:30.281250Z
+b7c5fdc5efc58742815453a784eb7b03
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -296,7 +262,7 @@ vgrichina
 
 
 
-11055
+10798
 
 QLexer.class.php
 file
@@ -332,14 +298,14 @@ vgrichina
 
 3763
 
-QType.class.php
+QI18n.class.php
 file
 
 
 
 
-2010-01-19T20:26:30.406250Z
-43d14669e70e8724e359668f73cf4dad
+2010-01-19T20:26:30.343750Z
+e08a9f502ba3f55e00cb3c72a397d774
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -364,7 +330,7 @@ vgrichina
 
 
 
-12057
+11055
 
 QExceptions.class.php
 file
@@ -399,6 +365,40 @@ vgrichina
 
 
 5883
+
+QType.class.php
+file
+
+
+
+
+2010-01-19T20:26:30.406250Z
+43d14669e70e8724e359668f73cf4dad
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12057
 
 QSoapService.class.php
 file

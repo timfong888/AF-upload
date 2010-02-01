@@ -1,14 +1,14 @@
 10
 
 dir
-840
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/DBchanges
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2010-01-13T02:11:53.731340Z
-817
+2010-02-01T22:02:18.343547Z
+849
 vgrichina
 
 
@@ -25,6 +25,40 @@ vgrichina
 
 
 5e8a31fb-3d4b-46bc-af63-248cdb051360
+
+Dumping.sql
+file
+
+
+
+
+2010-02-01T22:35:02.156250Z
+65a464028f5f7104eec78bc29ada4cf5
+2010-02-01T22:02:18.343547Z
+849
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5167
 
 DBchanges.odt
 file
@@ -59,4 +93,72 @@ vgrichina
 
 
 23185
+
+UserGroupCodeAssn.sql
+file
+
+
+
+
+2010-02-01T22:35:02.171875Z
+39968fa046a9c19ff185186be56a1c02
+2010-02-01T22:02:18.343547Z
+849
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+634
+
+GroupCodeScript.sql
+file
+
+
+
+
+2010-02-01T22:35:02.187500Z
+c12874b7f2d3dc02c7e59d6c6f42e944
+2010-02-01T22:02:18.343547Z
+849
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+397
 

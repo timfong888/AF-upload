@@ -1,7 +1,7 @@
 10
 
 dir
-842
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/fonts
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -332,40 +332,6 @@ has-props
 
 133786
 
-_URW_LICENSE.txt
-file
-
-
-
-
-2010-01-19T20:26:38.140625Z
-94d55d512a9ba36caa9b7df079bae19f
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-17992
-
 PalladioBold.pfb
 file
 
@@ -399,6 +365,40 @@ has-props
 
 
 133139
+
+_URW_LICENSE.txt
+file
+
+
+
+
+2010-01-19T20:26:38.140625Z
+94d55d512a9ba36caa9b7df079bae19f
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17992
 
 Chancery.afm
 file

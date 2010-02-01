@@ -1,7 +1,7 @@
 10
 
 dir
-840
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/drafts
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -536,40 +536,6 @@ vgrichina
 
 3270
 
-message_list.php
-file
-
-
-
-
-2010-01-19T20:26:54.953125Z
-1882b54c298a81eac1ff63bc22a51ab5
-2010-01-06T03:05:07.758147Z
-809
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2983
-
 group_code_list.tpl.php
 file
 
@@ -604,16 +570,16 @@ vgrichina
 
 1050
 
-group_code_list.php
+message_list.php
 file
 
 
 
 
-2010-01-19T20:26:54.984375Z
-762ee4f599eecf658008a112fa00ddec
-2010-01-10T03:21:56.573507Z
-813
+2010-01-19T20:26:54.953125Z
+1882b54c298a81eac1ff63bc22a51ab5
+2010-01-06T03:05:07.758147Z
+809
 vgrichina
 
 
@@ -636,7 +602,7 @@ vgrichina
 
 
 
-2620
+2983
 
 user_edit.tpl.php
 file
@@ -671,6 +637,40 @@ vgrichina
 
 
 1604
+
+group_code_list.php
+file
+
+
+
+
+2010-01-19T20:26:54.984375Z
+762ee4f599eecf658008a112fa00ddec
+2010-01-10T03:21:56.573507Z
+813
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2620
 
 user_edit.php
 file
@@ -740,40 +740,6 @@ timfong
 
 1036
 
-contact_list.php
-file
-
-
-
-
-2010-01-19T20:26:55.078125Z
-7cc6047d4e9e7cc6ce89921ffba89c2b
-2010-01-06T03:05:07.758147Z
-809
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2762
-
 user_details_edit.tpl.php
 file
 
@@ -807,6 +773,40 @@ vgrichina
 
 
 1608
+
+contact_list.php
+file
+
+
+
+
+2010-01-19T20:26:55.078125Z
+7cc6047d4e9e7cc6ce89921ffba89c2b
+2010-01-06T03:05:07.758147Z
+809
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2762
 
 message_edit.tpl.php
 file
@@ -876,40 +876,6 @@ vgrichina
 
 5851
 
-group_code_edit.tpl.php
-file
-
-
-
-
-2010-01-19T20:26:55.171875Z
-87621673b071799b376fb19c6815612b
-2010-01-10T03:21:56.573507Z
-813
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1123
-
 message_edit.php
 file
 
@@ -943,6 +909,40 @@ vgrichina
 
 
 5343
+
+group_code_edit.tpl.php
+file
+
+
+
+
+2010-01-19T20:26:55.171875Z
+87621673b071799b376fb19c6815612b
+2010-01-10T03:21:56.573507Z
+813
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1123
 
 offer_list.tpl.php
 file

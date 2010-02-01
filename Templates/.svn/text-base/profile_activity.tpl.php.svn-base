@@ -246,8 +246,8 @@
 <p><? $this->btnAddAllyPopup->Render(); ?></p>
 <? $this->completeProfilePopup->Render(); ?>
 <p><? $this->btnCompleteProfilePopup->Render(); ?></p>
-<? $this->accountPopupRequest->Render(); ?>
-<p><? $this->btnAccountPopupReques->Render(); ?></p>
+<? //$this->accountRequestPopup->Render(); ?>
+<p><? //$this->btnAccountRequesPopup->Render(); ?></p>
 <? $this->RenderEnd(); ?>
 </body>
 </html>

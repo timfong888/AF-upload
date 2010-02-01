@@ -3,7 +3,7 @@ require('includes/prepend.inc.php');
 require_once('AddAllyPopup.class.php');
 require_once('AddAllySubmitPopup.class.php');
 require_once('CompleteProfilePopup.class.php');
-require_once('AccountPopupRequest.class.php');
+require_once('AccountRequestPopup.class.php');
 
 class ProfileActivityForm extends QForm {
 	
@@ -27,8 +27,8 @@ class ProfileActivityForm extends QForm {
 	protected $btnAddAllyPopup;
 	protected $completeProfilePopup;
 	protected $btnCompleteProfilePopup;
-	protected $accountPopupRequest;
-	protected $btnAccountPopupRequest;
+	//protected $accountRequestPopup;
+	//protected $btnAccountRequestPopup;
 
 	
 	
@@ -70,16 +70,17 @@ class ProfileActivityForm extends QForm {
 		$this->btnCompleteProfilePopup->Text = 'Show CompleteProfile Popup';
 		$this->btnCompleteProfilePopup->AddAction(new QClickEvent(), new QAjaxAction('btn_CompleteProfilePopup_Click'));
 		
-		
-		// Define the accountPopupRequest
+		/*
+		// Define the accountRequestPopup
 		//var_dump($this->objControlArray);
-		$this->accountPopupRequest = new AccountPopupRequest('AccountPopupRequest', $this);
-		$this->accountPopupRequest->Visible = false;
-        $this->accountPopupRequest->BackColor = '#ffff';
+		$this->accountRequestPopup = new AccountRequestPopup('AccountRequestPopup', $this);
+		$this->accountRequestPopup->Visible = false;
+        $this->accountRequestPopup->BackColor = '#ffff';
         
-		$this->btnAccountPopupRequest = new QButton($this);
-		$this->btnAccountPopupRequest->Text = 'Show Account Request Popup';
-		$this->btnAccountPopupRequest->AddAction(new QClickEvent(), new QAjaxAction('btn_AccountRequestPopup_Click'));
+		$this->btnAccountRequestPopup = new QButton($this);
+		$this->btnAccountRequestPopup->Text = 'Show Account Request Popup';
+		$this->btnAccountRequestPopup->AddAction(new QClickEvent(), new QAjaxAction('btn_AccountRequestPopup_Click'));
+		*/
 		
 		/*// Define the addAllyPopupSubmit
         $this->addAllyPopupSubmit = new AddAllySubmitPopup('AddAllyPopupSubmit', $this);
@@ -102,11 +103,11 @@ class ProfileActivityForm extends QForm {
 			
 		}
 
-		protected function btn_AccountRequestPopup_Click($strFormId, $strControlId, $strParameter) {
+		/*protected function btn_AccountRequestPopup_Click($strFormId, $strControlId, $strParameter) {
 		
-			$this->accountPopupRequest->ShowDialogBox();
+			$this->accountRequestPopup->ShowDialogBox();
 			
-		}
+		}*/
 		
 		
     protected function GetAllyOfferAccountIdForUserTargetAccountId($userTargetAccountId) {
@@ -250,15 +251,15 @@ class ProfileActivityForm extends QForm {
 	    
 	}
 	
-	public function AccountPopupRequest_btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter) {
-	    $this->accountPopupRequest->btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter);
+	/*public function AccountRequestPopup_btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter) {
+	    $this->accountRequestPopup->btnClick_RemoveFromTargets($strFormId, $strControlId, $strParameter);
 	    
 	}
 	
-	public function AcccountPopupReguest_btnClick_Request($strFormId, $strControlId, $strParameter) {
-	    $this->accountPopupRequest->btnClick_Request($strFormId, $strControlId, $strParameter);
+	public function AcccountRequestPopup_btnClick_Request($strFormId, $strControlId, $strParameter) {
+	    $this->accountRequestPopup->btnClick_Request($strFormId, $strControlId, $strParameter);
 	    
-	}
+	}*/
 	
 
  

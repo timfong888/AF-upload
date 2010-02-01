@@ -1,14 +1,14 @@
 10
 
 dir
-843
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2010-01-29T18:54:28.459984Z
-843
+2010-01-29T19:53:10.846516Z
+845
 timfong
 has-props
 
@@ -28,7 +28,7 @@ has-props
 
 billing_notice.inc.php
 file
-842
+
 
 
 
@@ -62,7 +62,7 @@ timfong
 
 configuration.inc.template.php
 file
-842
+
 
 
 
@@ -96,7 +96,7 @@ timfong
 
 signup2.inc.php
 file
-842
+
 
 
 
@@ -130,7 +130,7 @@ timfong
 
 configuration_pro.inc.php
 file
-842
+
 
 
 
@@ -164,7 +164,7 @@ soper
 
 header.inc.php
 file
-842
+
 
 
 
@@ -201,7 +201,7 @@ dir
 
 stylesheets-no-facebox.inc.php
 file
-842
+
 
 
 
@@ -235,7 +235,7 @@ timfong
 
 prepend.inc.php
 file
-842
+
 
 
 
@@ -269,7 +269,7 @@ soper
 
 footer.inc.php
 file
-842
+
 
 
 
@@ -303,7 +303,7 @@ soper
 
 _LICENSE.txt
 file
-842
+
 
 
 
@@ -340,7 +340,7 @@ dir
 
 signup.inc.php
 file
-842
+
 
 
 
@@ -374,7 +374,7 @@ timfong
 
 billing_link_wrap_0.inc.php
 file
-842
+
 
 
 
@@ -408,14 +408,14 @@ timfong
 
 banner.inc.php
 file
-842
 
 
 
-2010-01-19T20:26:39.984375Z
-62c35171e946776e95fb7386621b93c3
-2009-03-09T07:48:41.582105Z
-651
+
+2010-01-29T19:52:25.609375Z
+5c499e028b7cf8d3e76de13f22b7bf61
+2010-01-29T19:53:10.846516Z
+845
 timfong
 
 
@@ -438,11 +438,11 @@ timfong
 
 
 
-460
+618
 
 stylesheets-no-tablecloth.inc.php
 file
-842
+
 
 
 
@@ -476,7 +476,7 @@ timfong
 
 billing_link_wrap_1.inc.php
 file
-842
+
 
 
 
@@ -513,7 +513,7 @@ dir
 
 _README.txt
 file
-842
+
 
 
 
@@ -547,7 +547,7 @@ enzo
 
 stylesheets.inc.php
 file
-842
+
 
 
 

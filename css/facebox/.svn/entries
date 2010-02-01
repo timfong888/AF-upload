@@ -1,7 +1,7 @@
 10
 
 dir
-840
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/css/facebox
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -25,40 +25,6 @@ timfong
 
 
 5e8a31fb-3d4b-46bc-af63-248cdb051360
-
-loading.gif
-file
-
-
-
-
-2010-01-19T20:27:30.531250Z
-7e99e1159a3686f6aa4f90043c554483
-2009-11-28T05:33:26.842965Z
-759
-timfong
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2767
 
 fbx-border-sprite.png
 file
@@ -94,17 +60,18 @@ has-props
 
 324
 
-facebox.js
+loading.gif
 file
 
 
 
 
-2010-01-19T20:27:30.671875Z
-fcc9a551c878f7b19b2567932b9077c5
+2010-01-19T20:27:30.531250Z
+7e99e1159a3686f6aa4f90043c554483
 2009-11-28T05:33:26.842965Z
 759
 timfong
+has-props
 
 
 
@@ -125,8 +92,7 @@ timfong
 
 
 
-
-9696
+2767
 
 test.html
 file
@@ -162,6 +128,40 @@ timfong
 
 1369
 
+facebox.js
+file
+
+
+
+
+2010-01-19T20:27:30.671875Z
+fcc9a551c878f7b19b2567932b9077c5
+2009-11-28T05:33:26.842965Z
+759
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9696
+
 logo.png
 file
 
@@ -196,40 +196,6 @@ has-props
 
 3841
 
-faceplant.css
-file
-
-
-
-
-2010-01-19T20:27:30.921875Z
-4e53725a03b873fefdd3392f60b141fd
-2009-11-28T05:33:26.842965Z
-759
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1681
-
 stairs.jpg
 file
 
@@ -263,6 +229,40 @@ has-props
 
 
 123145
+
+faceplant.css
+file
+
+
+
+
+2010-01-19T20:27:30.921875Z
+4e53725a03b873fefdd3392f60b141fd
+2009-11-28T05:33:26.842965Z
+759
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1681
 
 test_programmatic.html
 file
@@ -366,40 +366,6 @@ timfong
 
 46438
 
-remote.html
-file
-
-
-
-
-2010-01-19T20:27:31.093750Z
-52a7da2796aac58036e55411b167edbf
-2009-11-28T05:33:26.842965Z
-759
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-52
-
 facebox.css
 file
 
@@ -433,6 +399,40 @@ timfong
 
 
 1572
+
+remote.html
+file
+
+
+
+
+2010-01-19T20:27:31.093750Z
+52a7da2796aac58036e55411b167edbf
+2009-11-28T05:33:26.842965Z
+759
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+52
 
 screenshots
 dir

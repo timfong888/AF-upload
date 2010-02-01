@@ -1,7 +1,7 @@
 10
 
 dir
-840
+849
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/images
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -25,40 +25,6 @@ has-props
 
 
 5e8a31fb-3d4b-46bc-af63-248cdb051360
-
-tblue.gif
-file
-
-
-
-
-2010-01-19T20:25:15.421875Z
-ace07b440af06f5b846b0bf814d9e8b7
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-246
 
 my-home.gif
 file
@@ -94,14 +60,14 @@ has-props
 
 971
 
-small_img.jpg
+tblue.gif
 file
 
 
 
 
-2010-01-19T20:25:15.531250Z
-5b230510ba5e0271527f8a2b84570be8
+2010-01-19T20:25:15.421875Z
+ace07b440af06f5b846b0bf814d9e8b7
 2008-05-14T02:10:51.909637Z
 3
 enzo
@@ -126,7 +92,7 @@ has-props
 
 
 
-866
+246
 
 select.gif
 file
@@ -161,6 +127,40 @@ has-props
 
 
 223
+
+small_img.jpg
+file
+
+
+
+
+2010-01-19T20:25:15.531250Z
+5b230510ba5e0271527f8a2b84570be8
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+866
 
 message.gif
 file
@@ -298,40 +298,6 @@ has-props
 
 14164
 
-my-targets.gif
-file
-
-
-
-
-2010-01-19T20:25:16.734375Z
-c11e8a4c5a0b6e00763d5b4e84c6a398
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1044
-
 check.png
 file
 
@@ -365,6 +331,40 @@ has-props
 
 
 50311
+
+my-targets.gif
+file
+
+
+
+
+2010-01-19T20:25:16.734375Z
+c11e8a4c5a0b6e00763d5b4e84c6a398
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1044
 
 give_btn.gif
 file
@@ -1327,40 +1327,6 @@ has-props
 
 43
 
-bg_red_l.gif
-file
-
-
-
-
-2010-01-19T20:25:17.812500Z
-37d20808626fd437a4877a06c62f7e84
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-76
-
 ask.png
 file
 
@@ -1394,6 +1360,40 @@ has-props
 
 
 409
+
+bg_red_l.gif
+file
+
+
+
+
+2010-01-19T20:25:17.812500Z
+37d20808626fd437a4877a06c62f7e84
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+76
 
 tred.gif
 file
@@ -1497,40 +1497,6 @@ has-props
 
 123
 
-see_mess.gif
-file
-
-
-
-
-2010-01-19T20:25:17.984375Z
-5e54c231a76e162fdbcbc9070e8fb802
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-517
-
 bg_red_r.gif
 file
 
@@ -1564,6 +1530,40 @@ has-props
 
 
 102
+
+see_mess.gif
+file
+
+
+
+
+2010-01-19T20:25:17.984375Z
+5e54c231a76e162fdbcbc9070e8fb802
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+517
 
 my-offers.gif
 file
@@ -1667,40 +1667,6 @@ has-props
 
 403
 
-bg_red.gif
-file
-
-
-
-
-2010-01-19T20:25:19.109375Z
-c9c2525d087266a3d224ef4b0b6da8c8
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-96
-
 Thumbs.db
 file
 
@@ -1734,6 +1700,40 @@ has-props
 
 
 159232
+
+bg_red.gif
+file
+
+
+
+
+2010-01-19T20:25:19.109375Z
+c9c2525d087266a3d224ef4b0b6da8c8
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+96
 
 plus.gif
 file
@@ -1837,40 +1837,6 @@ has-props
 
 18539
 
-hands.gif
-file
-
-
-
-
-2010-01-19T20:25:19.562500Z
-e7159055a6d0910ac1abe3a7fafb1d3e
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-420
-
 img1.gif
 file
 
@@ -1904,6 +1870,40 @@ has-props
 
 
 1517
+
+hands.gif
+file
+
+
+
+
+2010-01-19T20:25:19.562500Z
+e7159055a6d0910ac1abe3a7fafb1d3e
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+420
 
 img2.gif
 file
@@ -1939,40 +1939,6 @@ has-props
 
 1683
 
-round_box.gif
-file
-
-
-
-
-2010-01-19T20:25:19.750000Z
-e1ccfac91c285acfdf56c744d8d634ee
-2008-05-14T02:10:51.909637Z
-3
-enzo
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-188
-
 img3.gif
 file
 
@@ -2007,14 +1973,14 @@ has-props
 
 633
 
-img4.gif
+round_box.gif
 file
 
 
 
 
-2010-01-19T20:25:19.953125Z
-0827cef70f41c8a9af85a8dacbc0b56a
+2010-01-19T20:25:19.750000Z
+e1ccfac91c285acfdf56c744d8d634ee
 2008-05-14T02:10:51.909637Z
 3
 enzo
@@ -2039,7 +2005,7 @@ has-props
 
 
 
-2267
+188
 
 logo_2.png
 file
@@ -2074,6 +2040,40 @@ has-props
 
 
 13695
+
+img4.gif
+file
+
+
+
+
+2010-01-19T20:25:19.953125Z
+0827cef70f41c8a9af85a8dacbc0b56a
+2008-05-14T02:10:51.909637Z
+3
+enzo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2267
 
 rc_tl.gif
 file

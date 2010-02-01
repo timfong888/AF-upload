@@ -30,13 +30,13 @@ class CompleteProfilePopup extends QDialogBox {
 	
 	
 	$this->objUser = unserialize($_SESSION['User']);
+		parent::__construct($objParentObject, $strControlId);
+		$this->strCloseCallback = $strCloseCallback;
 		$this->objUserDetails = UserDetails::LoadById($this->objUser->UserDetailId);
 		$this->AllyId = '121';
 	    $this->objTarget =  Target::LoadArrayByUserId($this->objUser->Id);		
 	    $this->objOffer = Offer::LoadArrayByUserOwnerId($this->objUser->Id);
 	
-        parent::__construct($objParentObject, $strControlId);
-		$this->strCloseCallback = $strCloseCallback;
 		
 		$strLastName = QApplication::QueryString('iname');
 		$strTitle = QApplication::QueryString('title');

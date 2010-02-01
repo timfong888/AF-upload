@@ -1,11 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/allyforce_project/!svn/ver/817/staging/DBchanges
+/svn/allyforce_project/!svn/ver/849/staging/DBchanges
+END
+Dumping.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/allyforce_project/!svn/ver/849/staging/DBchanges/Dumping.sql
 END
 DBchanges.odt
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svn/allyforce_project/!svn/ver/817/staging/DBchanges/DBchanges.odt
+END
+UserGroupCodeAssn.sql
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/allyforce_project/!svn/ver/849/staging/DBchanges/UserGroupCodeAssn.sql
+END
+GroupCodeScript.sql
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/849/staging/DBchanges/GroupCodeScript.sql
 END
