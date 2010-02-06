@@ -1,8 +1,8 @@
 <?php
-	/**
-	 * Class for processing pop up window 
-	 * 'Cut and Paste large strings of Target Names' functionality
-	 */
+/**
+ * Class for processing pop up window 
+ * 'Cut and Paste large strings of Target Names' functionality
+ */
 require('prepend.inc.php');
 
 class CompleteProfilePopup extends QDialogBox {
@@ -12,6 +12,7 @@ class CompleteProfilePopup extends QDialogBox {
 	public $txtTarget;
 	public $txtOffer;
 	public $btnCreate;
+	public $btnClose;
 	public $objUser;
 	public $objUserDetails;
 	public $AllyId;
@@ -80,6 +81,11 @@ class CompleteProfilePopup extends QDialogBox {
 		$this->btnCreate->AddAction(new QClickEvent(), new QAjaxAction('CompleteProfilePopup_btnCreate_Click'));
 		$this->btnCreate->PrimaryButton = true;
 		$this->btnCreate->CssClass = "Signup_submit";
+		
+		$this->btnClose = new QButton($this);
+		$this->btnClose->Text = QApplication::Translate('Close');
+		$this->btnClose->AddAction(new QClickEvent(), new QAjaxAction('completeProfilePopup_btnClose_Click'));
+		$this->btnClose->CssClass = 'alliesInvite';
 	}
 	
     // Handles autocomplete
@@ -145,6 +151,10 @@ class CompleteProfilePopup extends QDialogBox {
 		QApplication::DisplayAlert("Your Profile was completed sucessfully");
 
 		return true;
+	}
+	
+	public function btnClose_Click() {
+	    $this->HideDialogBox();
 	}
 }
 

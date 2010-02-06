@@ -1,14 +1,14 @@
 10
 
 dir
-849
+861
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/Templates
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2010-02-01T22:01:13.695587Z
-848
+2010-02-06T02:14:17.254445Z
+860
 vgrichina
 
 
@@ -950,11 +950,11 @@ file
 
 
 
-2010-01-19T20:24:28.859375Z
-c9a39f995aceb794431e819a3cc49fe4
-2010-01-13T02:10:47.389698Z
-816
-vgrichina
+2010-02-02T00:11:00.109375Z
+74af78d72d1f2cdba4e68ced10a8e3e8
+2010-02-02T00:25:05.952757Z
+850
+timfong
 
 
 
@@ -976,7 +976,7 @@ vgrichina
 
 
 
-1547
+1548
 
 target1.tpl.php
 file
@@ -1154,10 +1154,10 @@ file
 
 
 
-2010-01-22T19:38:43.484375Z
-1da9084693c5da5780aec8e31c63545b
-2010-01-21T19:07:44.233229Z
-836
+2010-02-06T16:11:03.062500Z
+81437e47cfbaae98bc237b5d28af89ac
+2010-02-06T02:13:57.759378Z
+859
 vgrichina
 
 
@@ -1180,7 +1180,7 @@ vgrichina
 
 
 
-1073
+1131
 
 header4.tpl.php
 file
@@ -1256,33 +1256,11 @@ file
 
 
 
-2010-02-01T22:34:56.375000Z
-2b56a80a72f2acb0c0d7bc6505428b5e
-2010-02-01T22:01:13.695587Z
-848
+
+54a1b4f0da8c1e13d7768fd18c7223fb
+2010-02-06T02:14:17.254445Z
+860
 vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-10241
 
 header5.tpl.php
 file
@@ -1562,10 +1540,10 @@ file
 
 
 
-2010-02-01T22:34:56.421875Z
-a8b9b413e0e2679304d24f8cbd2eedca
-2010-02-01T22:00:30.400939Z
-847
+2010-02-06T16:11:03.171875Z
+ab55c116a3ad4ac91af24ee2f29f1fe8
+2010-02-06T02:14:17.254445Z
+860
 vgrichina
 
 
@@ -1588,7 +1566,7 @@ vgrichina
 
 
 
-656
+1007
 
 insiderforce
 dir
@@ -2010,10 +1988,10 @@ file
 
 
 
-2010-01-27T03:02:09.281250Z
-c1ec5804e0ad3d4418cccc9625f59fc1
-2010-01-24T15:50:53.785858Z
-840
+2010-02-06T16:11:03.203125Z
+1dc82c5f30355346cbbfd02d47958787
+2010-02-06T02:13:57.759378Z
+859
 vgrichina
 
 
@@ -2036,7 +2014,7 @@ vgrichina
 
 
 
-900
+922
 
 manager_invite_allies.tpl.php
 file

@@ -4,7 +4,8 @@
 		<div class="span-10">
 			<h2 class="center"><span class="red">Complete/Edit Your Profile!</span></h2>
 			<div class='quiet push-1 span-9'>Ooops!  Looks like your profile
-			hasn't been filled out, yet.  To fully use Allyforce, make sure you <strong>complete your profile</strong>.</div>
+			hasn't been filled out, yet.  To fully use Allyforce, make sure you <strong>complete your profile</strong>
+			</div>
 			<div class="span-7 push-2" >
 				<label>Last Name:</label>
 				<br />
@@ -26,9 +27,8 @@
 				<br />
 				<?php $_CONTROL->txtTarget->Render(); ?>     
 				<br /><br />
-	  			<?php $_CONTROL->btnCreate->Render(); ?>     
-
-			</div>
-						
-		</div>
+	  			<?php $_CONTROL->btnCreate->Render(); ?> 
+	  			<?php $_CONTROL->btnClose->Render(); ?>   
+            </div>			
+        </div>
 

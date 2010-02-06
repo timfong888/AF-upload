@@ -1,0 +1,36 @@
+/* scaffold */
+
+@grid
+{
+    grid-width:940;
+    right-gutter-width:20;
+    column-count:16;
+    baseline:18;
+}
+
+@constants 
+{
+	
+	yellow			:#FFF6BF;
+	orange			:#ff9933;
+	
+}
+
+/* Mixins */
+=byellow { 
+	background-color:!yellow;
+	color:#514721;
+	border: 5px solid !orange;
+} 
+
+
+div#code_attendees {
+	
+	div#welcome {
+		+byellow;
+		padding: 10px;
+		
+	}
+}
+
+

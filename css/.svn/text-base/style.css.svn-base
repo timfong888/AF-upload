@@ -1620,3 +1620,37 @@ table.account-allies {
 table.button {
 	margin: 0px;
 }
+/*  popups for ProfileActivity.class*/
+.profileActivity_addAllyPopup{
+    
+    width: 350px;
+    height: 300px;
+    background-color: white; 
+    padding: 10px; 
+    border-width: 1px; 
+    border-color: #2f4f4f; 
+    border-style: solid;
+}
+
+.profileActivity_completeProfilePopup{
+    
+    width: 400px;
+    height: 550px;
+    background-color: white; 
+    padding: 10px; 
+    border-width: 1px; 
+    border-color: #2f4f4f; 
+    border-style: solid;
+}
+
+.profileActivity_accountRequestPopup{
+    
+    width: 450px;
+    height: 150px;
+    background-color: white; 
+    padding: 10px; 
+    border-width: 1px; 
+    border-color: #2f4f4f; 
+    border-style: solid;
+}
+

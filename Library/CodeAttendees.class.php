@@ -2,8 +2,8 @@
 // Class to manage invite information in My Offers Webpage
 // Template: allies.tpl.php
 
-require_once("OfferCP.class.php");
-require_once('MailMessage.class.php');
+//require_once("OfferCP.class.php");
+//require_once('MailMessage.class.php');
 
 class CodeAttendeesForm extends QForm {
 
@@ -14,7 +14,6 @@ class CodeAttendeesForm extends QForm {
 	protected $objCodes;     
 	
 	protected function Form_Create() {
-		
 		// Add Target Data Grid
 		$this->dtgAllies = new QDataGrid($this);
 		$this->dtgAllies->CellPadding = 3;
@@ -72,13 +71,20 @@ class CodeAttendeesForm extends QForm {
 	}	
 	
 	protected function Form_PreRender() {	 
-		$objUser = unserialize($_SESSION['User']);
-	    $this->objCodes = $objUser->GetGroupCodeArray();
+		$this->objUser = unserialize($_SESSION['User']);
+	    $this->objCodes = $this->objUser->GetGroupCodeArray();
 	    $this->strCode = $this->objCodes[0]->SignupCode;
 	}
 
 	public function dtgAllies_Bind() {
-        $this->dtgAllies->DataSource = User::LoadArrayByGroupCode($this->objCodes[0]->Id);
+	    $arrAllysExceptMe = array();
+	    $arrAllys = User::LoadArrayByGroupCode($this->objCodes[0]->Id);
+	    foreach($arrAllys as $ally) {
+	        if($ally->Id != $this->objUser->Id) {
+	            $arrAllysExceptMe[] = $ally;
+	        }
+	    }
+        $this->dtgAllies->DataSource = $arrAllysExceptMe;
 	}
 }
 ?>

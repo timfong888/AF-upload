@@ -14,7 +14,7 @@
     require('prepend.inc.php');
 	$blnShowHide=false;
 	$blnMap=false;
-	require( __TEMPLATES__  . '/top.tpl.php');
+	#require( __TEMPLATES__  . '/top.tpl.php');
 	?>
 <body>
    <?php $this->RenderBegin(); ?>

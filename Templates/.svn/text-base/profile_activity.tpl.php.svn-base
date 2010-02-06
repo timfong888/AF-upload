@@ -11,6 +11,11 @@
 </head>
 <body>
 <?php $this->RenderBegin(); ?>
+<?$this->accountRequestPopup->Render();?>
+<?$this->completeProfilePopup->Render();?>
+<?$this->addAllyPopup->Render();?>
+
+
 <div class="container prepend-top">
 	
 	<?php require_once('header_new.tpl.php'); ?>
@@ -44,8 +49,12 @@
 			</div>
 		
 			<div class="span-2 last">
-				<a href="complete_profile_popup.php?allyId=<?= $this->objAllyUser->Id?>" rel="facebox" title="Complete Profile" >Invite as Ally</a><br />
-				<a href="add_ally_popup.php?allyId=<?= $this->objAllyUser->Id ?>" rel="facebox" title="Account Info Popup" >Invite as Ally</a>
+			    <? 
+			        if(!$this->IsMyAlly()) {
+                        $this->btnInviteAsAlly->Render();
+                    }  
+                ?>
+
 			</div>
 		</div>
 		<div class="span-5">
@@ -222,14 +231,12 @@
 				    <strong>Click</strong> Account to request a contact!
 				</div>
 				<div> 
-				 <? for($i = 0; $i < (count($this->Offers_Array($this->objUserTargets))<5?count($this->Offers_Array($this->objUserTargets)):5); $i++) {?>
-				        <div>
-				            <? $offers = $this->Offers_Array($this->objUserTargets); ?>
-				            <a href="account_popup_request.php?accountId=<?= $offers[$i]->Id ?>&allyId=<?= $this->objAllyUser->Id ?>" >
-                                <?= $offers[$i]->Name ?>
-                            </a>
-				        </div>
-				 <? } ?>
+				 <?foreach($this->arrAllyOffersButtons as $allyOffersButton){
+				    $allyOffersButton->Render();
+				    ?>
+				    <br />
+				    <?
+				 }?>
 				</div> 
 			</fieldset>
 		</div>
@@ -237,17 +244,11 @@
 	</div>
 		<div>
 		<style type="text/css">
-		.calculator_widget { width: 350px; height: 300px; background-color: 'white'; padding: 10px; border-width: 1px; border-color: black; border-style: solid; }
+
 		
 	</style>
 		</div>
 </div>
-<? $this->addAllyPopup->Render(); ?>
-<p><? $this->btnAddAllyPopup->Render(); ?></p>
-<? $this->completeProfilePopup->Render(); ?>
-<p><? $this->btnCompleteProfilePopup->Render(); ?></p>
-<? //$this->accountRequestPopup->Render(); ?>
-<p><? //$this->btnAccountRequesPopup->Render(); ?></p>
 <? $this->RenderEnd(); ?>
 </body>
 </html>

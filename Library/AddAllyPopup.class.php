@@ -3,40 +3,34 @@
 // Template: allies.tpl.php
 
 require_once('MailMessage.class.php');
+require_once('AddAllySubmitPopup.class.php');
 
 
 class AddAllyPopup extends QDialogBox {
 
 	public $btnInvite;
 	public $btnClose;
-
 	protected $htmlMailMessage;
 	protected $lblBottom;
 	protected $objUser;
 	public $objAlly;
 	protected $objOffer;
 	protected $btnDelButton;
-	
 	protected $objMessageArray;
-
 	protected $txtAlly;
-
 	protected $dtgAllies;
-
 	protected $objMessage;
 	protected $pnlAllyArray;
     protected $strCloseCallback;
     protected $strTemplate = 'Templates/add_ally_popup.tpl.php';
-    protected $strCssClass = 'calculator_widget';
+    //protected $strCssClass = 'calculator_widget';
     protected $blnMatteClickable = false;
     public $txtTextBox;
 
 
-
-
 	public function __construct($strCloseCallback, $objParentObject, $strControlId = null) {
-
 		parent::__construct($objParentObject, $strControlId);
+		
 		$this->strCloseCallback = $strCloseCallback;
 		$this->objUser = unserialize($_SESSION['User']);
 		$this->objAlly = User::LoadById(121);
@@ -50,14 +44,15 @@ class AddAllyPopup extends QDialogBox {
 
 		$this->btnClose = new QButton($this);
 		$this->btnClose->Text = QApplication::Translate('Close');
-		$this->btnClose->AddAction(new QClickEvent(), new QAjaxAction('addAllyPopup__btnClose_Click'));
+		$this->btnClose->AddAction(new QClickEvent(), new QAjaxAction('addAllyPopup_btnClose_Click'));
 		$this->btnClose->CssClass = 'alliesInvite';
 		
+			
 	}
 
 	public function btnInvite_Click($strFormId, $strControlId, $strParameter) {
            
-        //initialize adding to iContact
+        /*//initialize adding to iContact
         $api = new IcApi("http://api.icontact.com/icp");
         $api->setVersion("1.0");
         $api->setKey("xKmv8x9A72RvAFI1tEcFkbDqMEBjQSne");
@@ -157,20 +152,12 @@ class AddAllyPopup extends QDialogBox {
 		}
 
 		QEmailServer::Send($this->objMessage);
-		
-		//$this->addAllyPopupSubmit->ShowDialogBox();‭
-		//QApplication::Redirect(__SUBDIRECTORY__ . '/add_ally_submit_popup.php');
-		
-	
+		*/
 	}
 
-
 	public function btnClose_Click() {
-			$this->HideDialogBox();
-		}
-
-
-	
+	    $this->HideDialogBox();
+	}
 
 }
 ?>
