@@ -2,13 +2,7 @@
 <link href="/css/plugins/silksprite/sprites/sprite.css" rel="stylesheet" type="text/css"  />
 <link href="/css/tablecloth/tablecloth.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="/css/tablecloth/tablecloth.js"></script>
-
-
-		<!-- blueprintcss + blueprint buttons -->
-			<link rel="stylesheet" href="../css/blueprint/screen.css" type="text/css" media="screen, projection">
-			<link rel="stylesheet" href="../css/blueprint/print.css" type="text/css" media="print">	
-		<!--[if lt IE 8]><link rel="stylesheet" href="../css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-			<link rel="stylesheet" href="../css/blueprint/plugins/buttons/screen.css" type="text/css" media="screen">	
+	
 		
 		<!-- facebox installation scripts -->
 			<script src="../css/facebox/jquery.js" type="text/javascript"></script>
@@ -24,11 +18,7 @@
 		      		}) 
 		    	})
 		  	</script>
-			
-		<!--allyforce stylesheets-->
-			<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
-			<link rel="stylesheet" href="../css/newstyle.css" type="text/css" media="screen">
-			
+						
 		<!--new scaffold based sheets -->
 		    <link rel="stylesheet" href="/css/csscaffold/scaffold/index.php?f=/css/scaffold.css" />
 	

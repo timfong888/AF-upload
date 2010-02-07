@@ -35,17 +35,17 @@ class AllyForm extends QForm {
 
 		$this->txtEmail = new EmailTextBox($this);
 		$this->txtEmail->Required = true;
-		$this->txtEmail->CssClass = "span-6";
+		$this->txtEmail->CssClass = "email";
 
 		$this->txtFullName = new EmailTextBox($this);
 		$this->txtFullName->Required = true;
-		$this->txtFullName->CssClass = "span-6";
+		$this->txtFullName->CssClass = "name";
 
 		$this->btnInvite = new QButton($this);
 		$this->btnInvite->Text = QApplication::Translate('Invite');
 		$this->btnInvite->AddAction(new QClickEvent(), new QAjaxAction('btnInvite_Click'));
 		$this->btnInvite->PrimaryButton = true;
-		$this->btnInvite->CssClass = 'alliesInvite';
+		$this->btnInvite->CssClass = 'alliesInvitebtn';
 
 		$this->dtgAllies = new QDataGrid($this);
 		$this->dtgAllies->CellPadding = 5;
@@ -78,6 +78,7 @@ class AllyForm extends QForm {
 		$this->dtgAllies->SortColumnIndex = 1;
 			
 		// Make the DataGrid look nice
+		/*
 		$objStyle = $this->dtgAllies->RowStyle;
 		$objStyle->FontSize = 12;
 		$objStyle->BackColor = '#EEEEEE';
@@ -91,7 +92,8 @@ class AllyForm extends QForm {
 			
 		$objStyle = $this->dtgAllies->HeaderLinkStyle;
 		$objStyle->ForeColor = 'black';
-
+        */
+		
 		$this->dtgAllies->SetDataBinder('dtgAllies_Bind', $this);
 		
 		$this->lblMessage = new QLabel($this);
@@ -246,7 +248,7 @@ class AllyForm extends QForm {
 		if($objUser->UserDetail->Picture != '')
 			$strReturn.= '<img width=28 height=28 border="0" align="absmiddle" alt="" src="' . __SUBDIRECTORY__. '/Pictures/' . $objUser->UserDetail->Picture. '"/>'; 
 			
-		$strReturn.= '<a href="' . __SUBDIRECTORY__ . '/AllyProfile.php?aid=' . $objUser->Id . '">' . $objUser->FullName . '</a>';
+		$strReturn.= '<a href="' . __SUBDIRECTORY__ . '/profile_activity.php?aid=' . $objUser->Id . '">' . $objUser->FullName . '</a>';
 		
 		return $strReturn;
 	}

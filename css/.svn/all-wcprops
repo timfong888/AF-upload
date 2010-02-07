@@ -7,7 +7,7 @@ newstyle.css
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/allyforce_project/!svn/ver/783/staging/css/newstyle.css
+/svn/allyforce_project/!svn/ver/862/staging/css/newstyle.css
 END
 print.css
 K 25
@@ -37,11 +37,17 @@ style.css
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/allyforce_project/!svn/ver/853/staging/css/style.css
+/svn/allyforce_project/!svn/ver/873/staging/css/style.css
+END
+scaffold.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/allyforce_project/!svn/ver/873/staging/css/scaffold.css
 END
 style2.css
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/allyforce_project/!svn/ver/679/staging/css/style2.css
+/svn/allyforce_project/!svn/ver/870/staging/css/style2.css
 END

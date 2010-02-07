@@ -1,82 +1,119 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<title>Allyforce - Sign Up Page - Enter Code</title>
-		<?php require_once('./includes/stylesheets.inc.php'); ?>
-	 
-	</head>
-
-	<?php
-    require('prepend.inc.php');
+<?php
+	require('prepend.inc.php');
 	$blnShowHide=false;
 	$blnMap=false;
 	require( __TEMPLATES__  . '/top.tpl.php');
-	?>
+?>
+
+<title>Allyforce: Signup to Exchange Contacts Today</title>
+<div class="container" id="signup_code">
+	<?php $this->RenderBegin();?>
+	<?php require_once(__INCLUDES__ . "/banner_external.inc.php"); ?>
 	<body>
+		<!--
 		<div id="tutorial">
 			<a href="javascript:void(0)" onclick="window.open('/user/chumbawumba','tutorial',
 			'width=420, height=700, location=no, scrollbars=1, resizable=1')">See the types of accounts Tim can exchange with you!</a> 
-		<?php $this->RenderBegin(); ?>
-		</div>
-	 
-		<div class="container prepend-top">
-		 
+		</div>-->
+	 	<div id='demo'>
+	 		<h1>Exchange Leads.  Beat Quota</h1>
+			<h3>Watch the 2-minute Video to Learn How</h3>
+			<object id="scPlayer" width="480" height="384"> 
+			<param name="movie" value="http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/jingswfplayer.swf"></param> 
+			<param name="quality" value="high"></param> <param name="bgcolor" value="#FFFFFF"></param> <param name="flashVars" value="thumb=http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/FirstFrame.jpg&containerwidth=480&containerheight=384&content=http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/allyforce-demo1.swf"></param> <param name="allowFullScreen" value="true"></param> <param name="scale" value="showall"></param> <param name="allowScriptAccess" value="always"></param> <param name="base" value="http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/"></param>  <embed src="http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/jingswfplayer.swf" quality="high" bgcolor="#FFFFFF" width="480" height="384" type="application/x-shockwave-flash" allowScriptAccess="always" flashVars="thumb=http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/FirstFrame.jpg&containerwidth=480&containerheight=384&content=http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/allyforce-demo1.swf" allowFullScreen="true" base="http://content.screencast.com/users/bigblueguy/folders/Allyforce/media/a122fef2-63f3-433d-98d5-688306993943/" scale="showall"></embed> </object>				
+		</div>	
+							
+		<div id='signup'>
+			<h2>Sign Up for Free Today and Beat Quota </h2>
+			
+			<div class='row'>
+				<span class='label'>First Name:</span>
+				<span class="formfield"><?php $this->txtFirstName->Render(); ?></span>
+			</div>
+
+			<div class='row'>
+				<span class='label'>Work Email:</span>
+				<span class="formfield"><?php $this->txtEmail->RenderWithError(); ?></span>
+			</div>
+			
+			<div class='row'>
+				<span class='label'>Password:</span>
+				<span class="formfield"><?php $this->txtPassword->RenderWithError(); ?></span>
+			</div>		
+
+			<div class='row'>
+				<span class='label'>Retype password:</span>
+				<span class="formfield"><?php $this->txtRetypePassword->RenderWithError(); ?></span>
+			</div>	
+			
+			<div class='row'>
+				<span class='label'>Region:</span>
+				<span class="formfield"><?php $this->txtDropDownListRegion->Render(); ?></span>
+			</div>	
+			
+			<div class='row'>
+				<span class='label'>CODE:</span>
+				<span class="formfield"><?php $this->txtSignupCode->Render(); ?></span>
+			</div>	
+
+			<div class='row'>
+				<?php $this->chkAgree->Render()?>&nbsp;&nbsp;I agree to the Terms and Conditions.
+			</div>
+						
+			<div class='signupbtn'><?php $this->btnCreate->Render(); ?></div>
+		</div><!-- sign up code -->
 		
-			<?php //require_once('header_external.tpl.php'); ?>	
-			<div class='span-20' id='sign-up-header'>
-				<h1>Find <strong>New Contacts</strong> and Opportunities Easily.</h1>
-				<h1><strong>Exchange Leads</strong> With Reps You Trust.</h1>
-			</div>
-					
-			<div class='prepend-2 span-8' id='sign-up-code'>
-				<fieldset>
-					<legend>Sign Up</legend>
-					
-					<Label>First Name:</Label><br />
-					<?php $this->txtFirstName->Render(); ?>
-					<br /><br />
-					<label>Work Email:</label><br />
-					<?php $this->txtEmail->RenderWithError(); ?>
-					<br /><br />
-					<label>Password:</label><br />
-					<?php $this->txtPassword->RenderWithError(); ?>
-					<br /><br />
-					<label>Retype password:</label><br />			
-					<?php $this->txtRetypePassword->RenderWithError(); ?>
-					<br /><br />
-					<label>Region:</label><br />
-					<?php $this->txtDropDownListRegion->Render(); ?>
-					<br /><br />
-					<label>CODE:</label><br />
-					<span class='quiet small'>Make sure you enter the right code exactly
-					as given or you may have an account with fewer allies and functions!</span>
-					<?php $this->txtSignupCode->Render(); ?>				
-					<br /><br />
-					<?php $this->chkAgree->Render()?>&nbsp;&nbsp;I agree to the Terms and Conditions.
-					<br /><br />
-					
-					<?php $this->btnCreate->Render(); ?>
-				</fieldset>
-			</div><!-- sign up code -->
-			
-			<div class='prepend-1 span-6'>
-				
-				<p><strong>Allyforce</strong> allows you to find new contacts, accounts, and sales opportunities by 
-				<strong>exchanging leads</strong> with non-competing sales-reps in your territory.</p>
-
-				<p>By giving contacts you have that may have already bought or will 
-				not buy from you with an Ally, you can <strong>uncover new opportunities</strong> faster.</p>
-
-				<p>If you received a <strong>CODE</strong> from one of our events, it means <strong>other reps 
-				like you</strong> from the same industry or targeting the same prospects will also begin to join.</p>
-
-				<p><strong>Sign up today</strong> and start finding new deals right now!</p>
-			</div>
-				
-			
-		</div> <!--container-->
-		 <?php $this->RenderEnd(); ?>
-		 <?php require_once(__TEMPLATES__ . "/footer.global.tpl.php") ?> 
+		<div id="explain">
+		<ul class="list1">
+			<li class="security">
+				<h3>Exchange contacts <span>selectively and securely</span></h3>
+					<p>
+						Selectively and securely give and receive contact and account information to 
+						other partners you choose.
+						<a href="#signup">  Signup now! >></a>
+					</p>
+			</li>
+	
+			<li class="prospects">
+				<h3>Up-to-date <span>contact info</span></h3>
+					<p>
+						Just as you know the latest contacts, so will your partners.  
+						Exchange selectively to get the latest contacts.
+					<a href="#signup">  Signup now! >></a>
+					</p>
+			</li>
+	
+			<li class="accounts">
+				<h3>Get real <span>account</span> insights</h3>
+					<p>
+						Real sales reps in your territory can tell you what they know about an account, 
+						from budget, to install-base, to internal politics.  Real insider-information
+						you can't get anywhere else.
+						<a href="#signup">  Signup now! >></a>
+					</p>
+			</li>
+	    </ul> <!--list1-->
+		
+		<ul class="list2">
+			<li class="partnership">
+				<h3>Easily leverage <span>partnerships</span></h3>
+					<p>
+						Make partnerships work, whether formal or informal, by enabling
+						the exchange and measurement of actionable information out in the field.
+						<a href="#signup">  Signup now! >></a>
+					</p>
+			</li>
+	
+			<li class="coverage">
+				<h3>Build pipeline and get meetings <span>faster</span></h3>
+					<p>
+						 Increase the number of feet on the street who know about your territory.
+						<a href="#signup">  Signup now! >></a>
+					</p>
+			</li>
+		</ul> <!--list2-->
+		</div>	<!--explain-->	
+	<?php $this->RenderEnd(); ?>
+<?php require_once(__TEMPLATES__ . "/footer.global.tpl.php") ?> 
 </body>
 </html>	

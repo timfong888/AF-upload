@@ -25,13 +25,13 @@ class SignupCodeForm extends QForm {
 		$strEmail = QApplication::QueryString('email');
 
 		$this->txtFirstName = new QTextBox($this);
-		$this->txtFirstName->CssClass = "Signup_input";
+		$this->txtFirstName->CssClass = "SignupCode_input";
 		$this->txtFirstName->Required = true;
 		$this->txtFirstName->Text = $strFirstName;
 				
 		
 		$this->txtEmail = new EmailTextBox($this);
-		$this->txtEmail->CssClass = "Signup_input";
+		$this->txtEmail->CssClass = "SignupCode_input";
 		$this->txtEmail->Text = $strEmail;
 		
 		$this->txtDropDownListRegion = new QListBox($this);
@@ -40,20 +40,20 @@ class SignupCodeForm extends QForm {
 		$this->txtDropDownListRegion->AddItem('East', 'East');
 		$this->txtDropDownListRegion->AddItem('Central', 'Central');
 		$this->txtDropDownListRegion->AddItem('West', 'West');
-		$this->txtDropDownListRegion->CssClass = "Signup_input_dropeDown";
+		$this->txtDropDownListRegion->CssClass = "SignupCode_input";
 		
 		$this->txtPassword = new QTextBox($this);
 		$this->txtPassword->TextMode = QTextMode::Password;
-		$this->txtPassword->CssClass = "Signup_input";
+		$this->txtPassword->CssClass = "SignupCode_input";
 		$this->txtPassword->Required = true;
 
 		$this->txtRetypePassword = new QTextBox($this);
 		$this->txtRetypePassword->TextMode = QTextMode::Password;
-		$this->txtRetypePassword->CssClass = "Signup_input";
+		$this->txtRetypePassword->CssClass = "SignupCode_input";
 		$this->txtRetypePassword->Required = true;
 		
 		$this->txtSignupCode = new QTextBox($this);
-		$this->txtSignupCode->CssClass = "Signup_input";
+		$this->txtSignupCode->CssClass = "SignupCode_input";
 		$this->txtSignupCode->Required = true;
 		$this->txtSignupCode->Text = $strSignupCode;
 		

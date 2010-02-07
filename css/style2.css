@@ -306,26 +306,8 @@ input#send{
 		outline-width:medium;
 	}
 	
-	ul.list {
-		list-style: none;
-	}
-	li.security {
-		background:transparent url(../images/signup/blue-lock-icon.png) no-repeat scroll 0 4px;
-	}
-	
-	li.prospects {
-		background:transparent url(../images/signup/bulletProspects.png) no-repeat scroll 0 4px;
-	}
-	li.accounts {
-		background:transparent url(../images/signup/bulletAccounts.png) no-repeat scroll 0 4px;
-	}
-	
-	li.partnership {
-		background:transparent url(../images/signup/bulletPartnership.png) no-repeat scroll 0 4px;
-	}
-	li.coverage {
-		background:transparent url(../images/signup/bulletCoverage.png) no-repeat scroll 0 4px;
-	}
+
+
 	
 	li.reseller_1 {
 		background:transparent url(../images/signup/bulletReseller1.gif) no-repeat scroll 0 4px;

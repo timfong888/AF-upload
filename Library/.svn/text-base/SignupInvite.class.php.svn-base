@@ -92,26 +92,26 @@ class SignupInviteForm extends QForm{
 		$strEmail = QApplication::QueryString('email');
 		
 		$this->txtFirstName = new QTextBox($this);
-		$this->txtFirstName->CssClass = "span-6";
+		$this->txtFirstName->CssClass = "signup_input";
 		$this->txtFirstName->Required = true;
 		$this->txtFirstName->Text = $strFirstName;
 				
 		$this->txtLastName = new QTextBox($this);
-		$this->txtLastName->CssClass = "span-6";
+		$this->txtLastName->CssClass = "signup_input";
 		$this->txtLastName->Required = true;
 
 		$this->txtEmail = new EmailTextBox($this);
-		$this->txtEmail->CssClass = "Signup_input_1";
+		$this->txtEmail->CssClass = "signup_input";
 		$this->txtEmail->Text = $strEmail;
 
 		$this->txtPassword = new QTextBox($this);
 		$this->txtPassword->TextMode = QTextMode::Password;
-		$this->txtPassword->CssClass = "span-6";
+		$this->txtPassword->CssClass = "signup_input";
 		$this->txtPassword->Required = true;
 
 		$this->txtRetypePassword = new QTextBox($this);
 		$this->txtRetypePassword->TextMode = QTextMode::Password;
-		$this->txtRetypePassword->CssClass = "span-6";
+		$this->txtRetypePassword->CssClass = "signup_input";
 		$this->txtRetypePassword->Required = true;
 
 		$this->chkAgree = new QCheckBox($this);
@@ -347,11 +347,14 @@ class SignupInviteForm extends QForm{
 		QApplication::DisplayAlert("Your Signup was completed sucessfully");
 		
 		# based on whether invite came from manager determine the next sequence
+		# simplify this for now
+		/*
 		if($manager=='y') {
 			QApplication::Redirect(__SUBDIRECTORY__ . '/signup2.php?');
 		} else {
 			QApplication::Redirect(__SUBDIRECTORY__ . '/allies.php');
-		}
+		}*/
+		QApplication::Redirect(__SUBDIRECTORY__ . '/allies.php');
 		return true;
 
 	}

@@ -332,12 +332,6 @@ table.profileuser .bord input{
 
 /************** my-targets ********************/
 
-div#targets {
-	border: 5px solid #ee0000;
-	background-color: #aa0000;
-	height: 100px;
-	padding: 20px; 
-}
 
 
 col#mytargets {
@@ -690,15 +684,7 @@ div#offers {
 /****************** my-allies *******************/
 
 
-div#invite_allies {
-	background-color: #FF6600;
-	border: 5px solid #ff9933;
-	padding: 20px;
-	padding-bottom: 30px;
-	color: #FFFFFF;
-	height: 100px;
-	
-}
+
 
 .tinvite input {
 	border: 1px solid #000000
@@ -783,17 +769,6 @@ div.submit {
 
 }
 
-/* div.submit input {
-
-	background: #CCCCCC url(fondoBoton.jpg) repeat-x scroll 0%;
-	border: 1px solid #27518A;
-
-} */
-
-div.row {
-	margin: 10px 0pt 10px 10px;
-
-}
 
 .file_asset a {
 
@@ -1144,16 +1119,6 @@ span.numballieswhotarget{
 	margin:9px 0px;
 }
 
-
-.Signup_submit{
-	background:url(images/account.jpg) no-repeat top left;
-	width:113px;
-	height:23px;
-	border:none;
-	font-size:11px;
-	font-weight:bold;
-
-}
 
 /*--.Signup_check{
 	border:1px solid #000000;
@@ -1560,31 +1525,6 @@ ul.nav a {
 	padding: 10px;
 }
 
-ul.bluemenuNav {
-	list-style: none;
-	float: left;
-	margin-bottom: 20px;
-}
-ul.bluemenuNav li {float: left;}	
-
-ul.bluemenuNav a.here {
-	float: left;
-	list-style: none;
-	background-color: #FF8C00;
-	color: #000000;
-	border-color: #4169E1;
-	
-}
-ul.bluemenuNav a {
-	background-color: #4169E1;
-	color: #FFFFFF;
-	padding: 8px 2px 8px 2px;
-	text-align: center;
-	margin-right: 5px;
-	width: 8em;
-	display: block;
-}
-
 ul.inviteNav {
 	list-style: none;
 	float:  left;
@@ -1632,16 +1572,7 @@ table.button {
     border-style: solid;
 }
 
-.profileActivity_completeProfilePopup{
-    
-    width: 400px;
-    height: 550px;
-    background-color: white; 
-    padding: 10px; 
-    border-width: 1px; 
-    border-color: #2f4f4f; 
-    border-style: solid;
-}
+
 
 .profileActivity_accountRequestPopup{
     

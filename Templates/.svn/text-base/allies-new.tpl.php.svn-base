@@ -1,30 +1,35 @@
-<?php require_once(__TEMPLATES__ . "/header5.tpl.php") ?>
+<?php require_once('includes/header.inc.php'); ?>
 <?php require_once(__TEMPLATES__ . "/body.global.tpl.php") ?>
 <?php $this->RenderBegin(); ?>
 
-<div class="span-18" id="invite_allies">
-	<h3 class="white">Invite Sales Reps</h3>
-	<form action="" method="post" id="fallies">
-		<div class="span-6">
-			<label>Email</label><br />
-			<?php $this->txtEmail->RenderWithError(); ?>
+<div class="container" id="allies">
+  	<?php $select_home = "0" ;?>
+	<?php $select_allies = "here" ;?>
+	<?php $select_threads = "0" ;?>
+	<?php require_once(__TEMPLATES__ . "/header_new.tpl.php") ?>
+	<div id="invite_allies">
+		<h3>Invite Sales Reps</h3>
+		<div id="message">
+			<?php $this->lblMessage->Render()?>
 		</div>
-		
-		<div class="span-6 last">
-			<label>Name</label><br />
-			<?php $this->txtFullName->RenderWithError(); ?>			
-		</div>
-		
-		<div class="span-6 last">
-			<br />
-			<?php $this->btnInvite->Render(); ?><br />
-		</div>
-		
-		<div class="span-8"><?php $this->lblMessage->Render()?><br /></div>
-	</form>
-</div>
+			
+		<form action="" method="post" id="fallies">
+			<div class="row">
+				<span class="label">Email:</span>
+				<span class="formfield"><?php $this->txtEmail->RenderWithError(); ?></span>
+			</div>
+			
+			<div class="row">
+				<span class="label">Name:</span>
+				<span class="formfield"><?php $this->txtFullName->RenderWithError(); ?>	</span>		
+			</div>
+			
+			<?php $this->btnInvite->Render(); ?>
+			
+		</form>
+	</div> <!--invite_allies-->
 
-<div class="span-18">	
+<div class="allies_list">	
 	<?php $this->dtgAllies->Render(); ?>
 </div>
 <?php $this->RenderEnd(); ?>  

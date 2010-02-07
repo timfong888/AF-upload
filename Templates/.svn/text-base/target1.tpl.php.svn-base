@@ -1,41 +1,39 @@
-<?php require_once(__TEMPLATES__ . "/header6.tpl.php") ?>
+<?php require_once('includes/header.inc.php'); ?>
 <?php require_once(__TEMPLATES__ . "/body.global.tpl.php") ?>
- <?php $this->RenderBegin(); ?>
+	<?php $select_home = "0" ;?>
+	<?php $select_allies = "0" ;?>
+	<?php $select_threads = "0" ;?>
+	<?php $select_targets = "here" ;?>
+<?php $this->RenderBegin(); ?>
 	    
-	<div class="span-18" id="targets">
-		<div class="span-9">
-		<h3 class="white">Add Target Accounts
-			<!-- pop-up help icon -->
-			<a href ="#" class="tooltip"><img border="0" src="images/ask.png" alt="ask">
-				<span class="tooltips_style">
-				Enter the name of companies that you are Targeting.<br><br>
-				Allyforce will start to auto-complete if it already has the name
-				in its database.  <br><br>
-				Otherwise, type the name of the company.	
-				</span>	
-			</a></h3>
+<div class="container" id="targets">
+	<?php require_once(__TEMPLATES__ . "/header_new.tpl.php") ?>
+	
+	<div id="add_target">
+		<h2>Add Target Accounts</h2>
 		  
 			<span id="loader_ctl" style="display: none;"><img src="images/loader.gif" id="loader"></span>
 		  
 			<?php $this->pnlAddTarget->Render(); ?>			
-		  </div>
+	</div> <!--add_target-->
 		  
-		  <div class="span-9 last">  
+	<div class="span-9 last">  
 						<a href="javascript:void(0)" onclick="window.open('target_popup.php','targets',
 						'width=500, height=500, screenX=600')" class="button positive">
 			 				<span class="ss_sprite ss_cut_red">&nbsp;</span> Cut and Paste More Targets
 							(Pop-Up)
 						</a>
-		   </div>
-     </div> <!-- targets -->	
+	</div>
+
 	
-	<div class="span-18" id="target_list">		
+	 <div id="target_list">		
 
        	<?php $this->dtgTargets->Render(); ?>
         
      </div><!-- /target-list-->
-   </div><!-- /container-->
-   <?php require_once(__TEMPLATES__ . "/footer.global.tpl.php") ?>
-<?php $this->RenderEnd(); ?> 
+
+   	<?php require_once(__TEMPLATES__ . "/footer.global.tpl.php") ?>
+	<?php $this->RenderEnd(); ?> 
+</div><!-- container-->
 </body>
 </html>

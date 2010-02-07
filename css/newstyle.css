@@ -59,42 +59,6 @@ div.admin_link {
 	margin-bottom: 10px;	
 }
 
-/* header navigation */
-ul.bluemenuNav {
-	list-style: none;
-	float: left;
-	margin-bottom: 20px;
-}
-ul.bluemenuNav li {float: left;}	
-
-ul.bluemenuNav a.here {
-	float: left;
-	list-style: none;
-	background-color: #FF8C00;
-	color: #000000;
-	border-color: #4169E1;
-	
-}
-ul.bluemenuNav a {
-	background-color: #4169E1;
-	color: #FFFFFF;
-	padding: 7px 2px 7px 2px;
-	text-align: center;
-	margin-right: 5px;
-	width: 7em;
-	display: block;
-}
-
-ul.bluemenuNav a:hover {
-	background-color: orange;
-	color: #FFFFFF;
-	padding: 7px 2px 7px 2px;
-	text-align: center;
-	margin-right: 5px;
-	width: 7em;
-	display: block;
-}
-
 
 /* mod to blueprintcss buttons */
 

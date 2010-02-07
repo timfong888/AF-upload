@@ -37,11 +37,10 @@ class TargetForm extends QForm {
 //		$this->pnlWaitIcon->blnDisplay = true;
 		
 		$this->txtNewTarget->AddAction(new QAutoCompleteTextBoxEvent(), new QAjaxAction('txtNewTarget_Change', $this->pnlWaitIcon));
-		$this->txtNewTarget->Width="200";
 		
 		$this->btnAddTarget = new QButton($this->pnlAddTarget,"btnAddTarget");
 		$this->btnAddTarget->CssClass =  "button";
-		$this->btnAddTarget->Text = "Add";
+		$this->btnAddTarget->Text = "Add Account to Targets";
 
 		$this->btnAddTarget->AddAction(new QClickEvent(), new QAjaxAction('btnAddTarget_Click'));
 		$this->txtNewTarget->AddAction(new QEnterKeyEvent(), new QAjaxAction('btnAddTarget_Click'));

@@ -26,45 +26,5 @@
 	?> 
 </head>
 
-<style type="text/css">
-		#banner_menu {
-			margin-left: 500px;
-		}
-		
-		#banner_menu a {
-			color: #999999;
-			border: none;
-
-		}
-		#banner_index {
-			float: none;
-		}
-		#banner_index a {
-			border: none;
-		}
-		#banner_index img {
-			border: none;
-		}
-		#banner_menu span{
-			font-size: 20px;
-			color: #2990FF;
-			font-weight: bold;
-			
-		}
-		
-
-</style>
 <body>
-	<div id="container">
-
-		<div id="banner_index">
-			<a href="/index.php" ><img alt="logo" src="http://<?php echo $domain ?>/images/logo_beta.png" /></a>
-			
-			<div id="banner_menu">
-				<a href="/login.php"><span>login</span></a> &nbsp;  | &nbsp; <a href="/about.php">about us</a> &nbsp; 
-				|&nbsp; <a href="/tour.php">tour</a> &nbsp; |&nbsp; <a href="http://blog.allyforce.com">blog</a> &nbsp; | &nbsp;<a href="/html/tos.htm">terms of service</a> &nbsp; |&nbsp; 
-				<a href="/html/privacy.htm">privacy policy</a>
-			</div>
-							
-	   </div><!-- /banner -->
 

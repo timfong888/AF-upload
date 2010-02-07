@@ -19,13 +19,13 @@ SignupCode.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/allyforce_project/!svn/ver/820/staging/Library/SignupCode.class.php
+/svn/allyforce_project/!svn/ver/871/staging/Library/SignupCode.class.php
 END
 Ally.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/allyforce_project/!svn/ver/740/staging/Library/Ally.class.php
+/svn/allyforce_project/!svn/ver/871/staging/Library/Ally.class.php
 END
 ThreadList.class.php
 K 25
@@ -211,7 +211,7 @@ Target1.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/allyforce_project/!svn/ver/747/staging/Library/Target1.class.php
+/svn/allyforce_project/!svn/ver/873/staging/Library/Target1.class.php
 END
 CodeAttendees.class.php
 K 25
@@ -247,5 +247,5 @@ SignupInvite.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/allyforce_project/!svn/ver/752/staging/Library/SignupInvite.class.php
+/svn/allyforce_project/!svn/ver/871/staging/Library/SignupInvite.class.php
 END

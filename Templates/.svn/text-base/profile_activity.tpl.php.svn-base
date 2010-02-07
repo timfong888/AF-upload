@@ -15,11 +15,11 @@
 <?$this->completeProfilePopup->Render();?>
 <?$this->addAllyPopup->Render();?>
 
-
-<div class="container prepend-top">
-	
+<div class="container" id="profile_activity">
+	<?php $select_home = "0" ;?>
+	<?php $select_allies = "0" ;?>
+	<?php $select_threads = "0" ;?>
 	<?php require_once('header_new.tpl.php'); ?>
-	<!--convert the ally email into a gravatar md5 hash-->	
 			
 	<!-- this is a CONDITIONAL DIV: IF User.Ally.Contacts.Sent.Count < User.Ally.Contacts.Received.Count -->
 	<!---
@@ -38,53 +38,46 @@
 		</div>
 	</div> --->
 	
-	<div class="span-6 push-1" id="left-margin">
-	<div class="span-6">
-		<fieldset>
-		<legend> <?= $this->objAllyUser->FullName ?> Profile </legend>
-		<div class="span-5">
-			<div class="span-3">
-										
-		<img src="http://www.gravatar.com/avatar?d=monsterid&gravatar_id=<?php md5( strtolower($this->objAllyUser->Username));?>">
-			</div>
-		
-			<div class="span-2 last">
+	<div id="left-side">	
+	<div id="profile">
+		<h2><?= $this->objAllyUser->FullName ?>'s Profile</h2>
+		<div class="gravatar">										
+				<img src="http://www.gravatar.com/avatar?d=monsterid&gravatar_id=<?php md5( strtolower($this->objAllyUser->Username));?>">	
+			<div class="invite_link">
 			    <? 
 			        if(!$this->IsMyAlly()) {
                         $this->btnInviteAsAlly->Render();
                     }  
                 ?>
-
 			</div>
 		</div>
-		<div class="span-5">
-			<hr class="space"></hr>
-		</div>
-		<div class="span-2 quiet" align="right">
-		Company:<br /><br />
-		
-		Title:<br /><br />
-		
-		Territory:<br /><br />
 
-		City:
-		</div> <!--labels-->
-		
-		<div class="span-3 last">
-			<strong><?= $this->objAllyAccount->Name ?></strong><br /><br />
+		<div id="user_details">
+			<div class="row">
+				<span class="label">Company:</span>
+			    <span class="detail"><?= $this->objAllyAccount->Name ?></span>
+			</div>
 			
-			<strong><?= $this->objAllyUser->UserDetail->Territory ?></strong><br /><br />
+			<div class="row">
+				<span class="label">Title:</span>
+				<span class="detail"><?= $this->objAllyUser->UserDetail->Territory ?></span>
+			</div>
 			
-			<strong><?= $this->objAllyUser->UserDetail->Region ?></strong><br /><br />
+			<div class="row">
+				<span class="label">Territory:</span>
+				<span class="detail"><?= $this->objAllyUser->UserDetail->Region ?></span>
+			</div>
 			
-			<strong><?= $this->objAllyUser->UserDetail->City ?></strong>
-		</div> <!--field values-->		
-	</fieldset>
-	</div> <!--fieldset profile-->
+			<div class="row">
+				<span class="label">City:</span>
+				<span class="detail"><?= $this->objAllyUser->UserDetail->City ?></span>
+			</div>
+			
+		</div> <!--user_details-->
 	
-	<div class="span-6">
-		<fieldset>
-			<legend>Allies (3)</legend>
+	</div> <!--profile-->
+	<div class="allies">
+			<h2>Allies (3)</h2>
 			<p class='small'>A <span class='green loud'>GREEN score</span> means <?= $this->objAllyUser->FullName ?>
 			gave more to his ally than he received.  <span class='red'>RED </span>means
 			<?= $this->objAllyUser->FullName ?> <span class='red'>received more</span> than he gave, <span class='red'>so make sure he gives when you give!</span>!</p>
@@ -108,108 +101,95 @@
 				    <div class="span-1 last positive-give-score-column">
 					    +2
 				    </div>
-				
-				    <hr class="space"> </hr>
-				
+							
 			    </div>
 			<? } ?>	
-		</fieldset>
+
 	</div>
-	</div> <!--left-margin-->
-	
-	<div class="span-8" id="feed">
-		<fieldset>
-			<legend>Activity Feed</legend>
+	</div> <!--left-side-->
 		
+	<div id="feed">
+		<h2>Activity Feed</h2>			
+		<div id="target_feed">
+			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;<a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> recently added <strong>Targets:</strong><br /><br />
+			<div id="target_feed_list">
+				<?php $arrayTargets = $this->ArrayTargetsForActivityFeed($this->objAllyTargets);
+				    foreach($arrayTargets as $target){
+				    $accountName = $this->AccountNameForActivityFeed($target);?>
+				        <a href="account_profile.php?aid=<?=$accountName->Id?>">
+				            <?=$accountName->Name?>
+				        </a>
+                        <br />
+				  <?}?>
 
+			</div>
+
+		</div><!--target_feed-->
+		
+		<div id="receive_contact_feed">
+			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			  <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> received a <strong>Contact</strong> at:<br /><br />
+			<div id="receive_contact_feed_list">
+			    <?php $receivedArray = $this->ArrayThreadForActivityFeed($this->objAllyReceive);?>
+				<?foreach($receivedArray as $resiveFrom){
+				        $accountName = $this->AccountNameForActivityFeed($resiveFrom);
+				        $userName = $this->NameOfResiverForActivityFeedThread($resiveFrom);?>
+			            <a href="account_detail.php?aid=<?=$accountName->Id?>">
+			                <?=$accountName->Name?>
+			            </a> from 
+			            
+			            <a href="profile_activity.php?aid=<?=$userName->Id?>">
+			                <?=$userName->FullName?>
+			            </a>
+                        <br />
+				 <?}?>
+			</div> <!--receive_contact_feed_list-->
 			
-			<div class="span-7 " id="target_feed">
-				<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;<a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> recently added <strong>Targets:</strong><br /><br />
-				<div class="span-6 push-1" id="target_feed_list">
-					<?php $arrayTargets = $this->ArrayTargetsForActivityFeed($this->objAllyTargets);
-					    foreach($arrayTargets as $target){
-					    $accountName = $this->AccountNameForActivityFeed($target);?>
-					        <a href="account_profile.php?aid=<?=$accountName->Id?>">
-					            <?=$accountName->Name?>
-					        </a>
-                            <br />
-					  <?}?>
-	
-				</div>
-				<hr class="span-7"></hr>
-			</div><!--target_feed-->
+		</div><!--receive_contact_feed-->			
+
+		<div id="send_contact_feed">
+			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> sent a <strong>Contact</strong> at:<br /><br />
+			<div id="send_contact_feed_list">
+			    <? $sendArray = $this->ArrayThreadForActivityFeed($this->objAllySend); ?>
+				<? foreach($sendArray as $sendTo) { 
+				        $accountName = $this->AccountNameForActivityFeed($sendTo);
+				        $userName = $this->NameOfSenderForActivityFeedThread($sendTo); ?>
+			            <a href="account_detail.php?aid=<?=$accountName->Id?>">
+			                <?=$accountName->Name?>
+			            </a> to 
+			            
+			            <a href="profile_activity.php?aid=<?=$userName->Id?>">
+			                <?=$userName->FullName?>
+			            </a>
+                        <br />
+				<?}?>
+			</div> <!--send_contact_feed_list-->
+
+		</div><!--send_contact_feed-->
+
+		<div id="offer_feed">
+			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> can <strong>Offer</strong> up:<br /><br />
+			<div class="span-6 push-1" id="send_contact_feed_list">
+				<? $arrayOffers = $this->ArrayOffersForActivityFeed($this->objAllyOffers);?>
+ 				<? foreach($arrayOffers as $offer){
+				        $accountName = $this->AccountNameForActivityFeed($offer);?>
+				        <a href="account_detail.php?aid<?=$accountName->Id?>">
+				            <?=$accountName->Name?>
+				        </a>
+                        <br />
+				<?}?>
+			</div> <!--send_contact_feed_list-->
 			
-
-
-			<div class="span-7" id="receive_contact_feed">
-				<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
-				  <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> received a <strong>Contact</strong> at:<br /><br />
-				<div class="span-6 push-1" id="receive_contact_feed_list">
-				    <?php $receivedArray = $this->ArrayThreadForActivityFeed($this->objAllyReceive);?>
-					<?foreach($receivedArray as $resiveFrom){
-					        $accountName = $this->AccountNameForActivityFeed($resiveFrom);
-					        $userName = $this->NameOfResiverForActivityFeedThread($resiveFrom);?>
-				            <a href="account_profile.php?aid=<?=$accountName->Id?>">
-				                <?=$accountName->Name?>
-				            </a> from 
-				            
-				            <a href="profile_activity.php?aid=<?=$userName->Id?>">
-				                <?=$userName->FullName?>
-				            </a>
-                            <br />
-					 <?}?>
-					</div> <!--receive_contact_feed_list-->
-				
-				<hr class="span-7"></hr>
-			</div><!--receive_contact_feed-->			
-
-			<div class="span-7" id="send_contact_feed">
-				<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
-				   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> sent a <strong>Contact</strong> at:<br /><br />
-				<div class="span-6 push-1" id="send_contact_feed_list">
-				    <? $sendArray = $this->ArrayThreadForActivityFeed($this->objAllySend); ?>
-					<? foreach($sendArray as $sendTo) { 
-					        $accountName = $this->AccountNameForActivityFeed($sendTo);
-					        $userName = $this->NameOfSenderForActivityFeedThread($sendTo); ?>
-				            <a href="account_profile.php?aid=<?=$accountName->Id?>">
-				                <?=$accountName->Name?>
-				            </a> to 
-				            
-				            <a href="profile_activity.php?aid=<?=$userName->Id?>">
-				                <?=$userName->FullName?>
-				            </a>
-                            <br />
-					<?}?>
-				</div> <!--send_contact_feed_list-->
-				
-				<hr class="span-7"></hr>
-			</div><!--send_contact_feed-->
-
-			<div class="span-7" id="offer_feed">
-				<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
-				   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> can <strong>Offer</strong> up:<br /><br />
-				<div class="span-6 push-1" id="send_contact_feed_list">
-					<? $arrayOffers = $this->ArrayOffersForActivityFeed($this->objAllyOffers);?>
-     				<? foreach($arrayOffers as $offer){
-					        $accountName = $this->AccountNameForActivityFeed($offer);?>
-					        <a href="account_profile.php?aid<?=$accountName->Id?>">
-					            <?=$accountName->Name?>
-					        </a>
-                            <br />
-					<?}?>
-				</div> <!--send_contact_feed_list-->
-				
-				<hr class="span-7"></hr>
-			</div><!--send_contact_feed-->
-			
-			<a href="More>>">More>></a>			
-		</fieldset>
+		</div><!--send_contact_feed-->
+		
+		<a href="More>>">More>></a>			
 	</div> <!--feed-->
 	
-	<div class="span-6 last" id="right-profile">
-		<div class="span-5 last" id="want-contacts">
-			<fieldset>
-				<legend id="green"><?= $this->objAllyUser->FullName ?> Wants Contacts</legend>
+	<div id="profile_contacts">
+		<div id="want-contacts">
+			<h4><?= $this->objAllyUser->FullName ?> Wants Contacts</h4>
 	            <div>
 	                <? $limit=(count($this->Targets_Array($this->objUserOffers))<5?count($this->Targets_Array($this->objUserOffers)):5); ?>
 	                <? for($i = 0; $i < $limit; $i++) {?>
@@ -221,12 +201,10 @@
 				        </div>
 				    <? } ?>
 	            </div>
-			</fieldset>
 		</div>
 		
-		<div class="span-5 last" id="has-contacts">
-			<fieldset>
-				<legend id="red"> <?= $this->objAllyUser->FullName ?> Has Contacts </legend>
+		<div id="has-contacts">
+			<h4><?= $this->objAllyUser->FullName ?> Has Contacts </h4>
 				<div class='quiet small'>
 				    <strong>Click</strong> Account to request a contact!
 				</div>
@@ -238,16 +216,10 @@
 				    <?
 				 }?>
 				</div> 
-			</fieldset>
 		</div>
 		
-	</div>
-		<div>
-		<style type="text/css">
+	</div><!--profile_contacts-->
 
-		
-	</style>
-		</div>
 </div>
 <? $this->RenderEnd(); ?>
 </body>

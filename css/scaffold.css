@@ -2,35 +2,556 @@
 
 @grid
 {
-    grid-width:940;
+    grid-width:960;
     right-gutter-width:20;
     column-count:16;
     baseline:18;
 }
 
 @constants 
-{
-	
+{	
 	yellow			:#FFF6BF;
 	orange			:#ff9933;
-	
+	light_orange	:#FFE0B2;
+	grey			:#A8A8A8;
+	light_blue		:#EBF3FB;
+	blue			:#3385D6;
+	light_grey		:#F6F6F6;
+	green			:#2E8A2E;
+	light_green		:#EBFAEB;
+	red				:#800000;
+	light_red		:#FFCCCC;
+	white			:#FFFFFF;
+	highlight_text	:#FFFFE0;
 }
 
+div.container {
+	+columns(16);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 /* Mixins */
 =byellow { 
-	background-color:!yellow;
+	background-color:$yellow;
 	color:#514721;
-	border: 5px solid !orange;
+	border: 5px solid $orange;
 } 
 
+=box($bordercolor, $backgroundcolor) 
+
+{
+		padding: 15px;
+		padding-top: 5px;
+		border-style: solid;
+		border-width: 3px;
+		border-color: $bordercolor;		
+		background-color: $backgroundcolor;
+}
 
 div#code_attendees {
 	
 	div#welcome {
 		+byellow;
 		padding: 10px;
+		+columns(12);
+		
+	}
+	
+	div#code_grid {
+		+columns(12);
 		
 	}
 }
 
+div#profile_activity {
+	
+	div#left-side {
+		+columns(4);
+	}
+	div#profile {
+		+box($blue, $light_blue);
+		
+		label {
+			font-weight: 600;
+		}
+		float: none;
+	}
+	div.gravatar {		
+		position: relative;
+		margin-bottom: 20px;
+		
+		img {
+			border-style: solid;
+			border-color: $grey;
+			
+			+box-shadow(5px, 5px, 5px, $grey);
+		}
+		
+		div.invite_link {
+			position:absolute;
+			top: 0;
+			left: 110px;
+		}
+	}
+	
+	div#user_details {
+		div.row {
+			 clear: both;
+			 padding-top: 10px;
+		
+			span.label {
+				float: left;
+				text-align: right;
+				width: 60px;
+			}
+			
+			span.detail {
+				float:right;
+				text-align: left;
+				width: 110px;
+				font-weight: 600;
+			}
+		}
+	}
+	
+	div.allies {
+		+box($orange, $light_orange);
+		margin-top: 15px;		
+	}
+	
+	div#feed {
+		+columns(6);
+		
+	}
+	
+	div#profile_contacts {
+		+columns(3);
+		+last;
+		float: right;
+		
+		div#want-contacts {
+			+box($green,$light_green);
+			margin-bottom: 15px;
+			padding-top: 5px;
 
+		}
+	
+		div#has-contacts {
+			+box($red,$light_red);
+		}
+		
+	}
+
+} /*profile_activity*/
+
+/* override qcodo */
+
+input.textbox {
+	background-color: white;
+	border-color: $yellow;
+	
+	&:hover {
+		background-color: $light_blue;
+	}
+}
+
+/* targets */
+
+div#add_target {
+	border: 5px solid #ee0000;
+	background-color: #aa0000;
+	height: 140px;
+	padding: 20px; 
+	position: relative;
+	
+	span.warning {
+		color: white;
+		position: absolute;
+		top: 30px;
+		left: 0px;
+	}
+	
+	h2 {
+		color: white;
+		margin-top: -5px;
+	}
+	input.textbox {
+		width: 300px;
+		margin-bottom: 30px;
+		
+		&:focus, &:hover {
+			background-color: $highlight_text;
+			border-color: $light_red;
+		}
+				
+	}
+	
+	input#btnAddTarget, input#btnAddTarget:hover {
+		+button;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: $orange;
+		border-style: solid;
+		border-width: 3px;
+		border-color: $yellow;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		+border-radius(10px);
+		margin-left: 100px;
+		font-size: 14px;
+		
+		&:hover {
+			background-color: $green;
+			color: white;
+			border-width: 3px;
+			border-color: $light_green;
+		}
+		
+	}
+		
+	div.pnlAddTarget {
+		+columns(6);		
+	}
+}
+
+
+
+/* css for the headers */
+
+div#header_new {
+	
+	height: 100px;
+	position: relative;
+	
+	div#logo {
+		float: left;
+	}
+	
+	div#blueNav {
+		position: absolute;
+		bottom: 0;
+		
+	}
+	ul.bluemenuNav {
+		list-style: none;
+		float: left;
+		
+		li {
+			float: left;
+		}
+		
+		a.here {
+			float: left;
+			list-style: none;
+			background-color: #FF8C00;
+			color: #000000;
+			border-color: #4169E1;
+	
+		}
+		
+		a {
+			background-color: #4169E1;
+			color: #FFFFFF;
+			padding: 7px 2px 7px 2px;
+			text-align: center;
+			margin-right: 5px;
+			width: 7em;
+			display: block;
+		}
+		
+		a:hover {
+			background-color: $orange;
+			color: #FFFFFF;
+			padding: 7px 2px 7px 2px;
+			text-align: center;
+			margin-right: 5px;
+			width: 7em;
+			display: block;
+		}
+	}
+	
+	ul.nav {
+		margin-left: 20px;
+	}
+	div#nav {
+		margin-left: 60%;
+		
+		img {
+			float: left;
+			border-style: solid;
+			border-color: $blue;
+		}
+		
+		h5 {
+			padding-left: 65px;
+			color: $grey;
+		}
+	}
+}
+
+/* allies */
+
+div#invite_allies {
+	background-color: $orange;
+	border: 5px solid $light_orange;
+	padding: 20px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	color: #FFFFFF;
+	height: 100px;
+	
+	h3 {
+		line-height: 1em;
+		+columns(7);
+	}
+	div#message {
+		height: 1.1em;
+		float: right;
+	}
+	
+	div.row {
+		clear: both;
+		padding-top: 10px;
+		
+		span.label {
+			float: left;
+			font-weight: 600;
+			+columns(2);
+			text-align: right;
+		}
+		
+		input.email {
+			+columns(4);
+		}
+		
+		input.name {
+			+columns(4);
+		}
+	}
+	
+	input.alliesInvitebtn {
+		+button;
+		width: 120px;
+	}
+	
+	table.datagrid_allies {
+		color: white;
+		
+		a span {
+			color: white;
+		}
+	}
+	
+}
+
+/*  popups for ProfileActivity.class*/
+
+.profileActivity_completeProfilePopup{
+    
+    width: 400px;
+    height: 550px;
+    background-color: white; 
+    padding: 10px; 
+    border-width: 1px; 
+    border-color: #2f4f4f; 
+    border-style: solid;
+	margin-top: 200px;
+	
+	div.complete_profile_popup {
+		
+		div.row {
+			clear: both;
+			padding-top: 20px;
+
+			span.label {
+				font-weight: 600;
+				text-align: right;
+				padding-right: 20px;
+				width: 90px;
+				float: left;
+			}
+			
+			span.formfield {
+				text-align: left;
+				width: 300px;
+				float: right;
+				margin-top: -35px;
+				padding-left: 15px;
+			}
+		}
+	}
+}
+
+/* external pages banner */
+
+/* Signup Pages*/
+
+input.SignupCode_input, select.SignupCode_input, input.signup_input {
+	width: 220px;
+	border-style: solid;
+	border-color: $orange;	
+}
+
+div.trial {
+	padding: 10px;
+}
+div#signup_invite, div#signup_code {
+	
+	ul#banner_menu {
+		margin-left: 400px;
+		list-style: none;
+		
+		li {
+			float: left;
+		}
+		
+		a {
+			padding: 20px;
+			margin-right: 15px;
+			text-decoration: none;
+			
+			&:hover {
+				text-decoration: underline;
+			}	
+		}
+				
+		span {
+			font-size: 20px;
+			color: #2990FF;
+			font-weight: bold;
+		}
+	}
+	
+	.Signup_input_1 {
+		width: 270px;
+	}
+		
+	div#invitation {
+		
+	}
+	
+	div#demo {
+		+columns(7);
+		float: left;
+	}
+	
+div#explain {
+	+columns(14);
+	+push(1);
+	ul.list1 {
+		float: left;
+		+columns(6);
+	}
+	
+	ul.list2 {
+		float: right;
+		+columns(6);
+	}
+}
+	
+	div#signup {
+		clear: all;
+		float: right;
+		width: 400px;
+		+box($orange, $light_blue);
+
+		div.row {
+			clear: both;
+			padding-top: 20px;
+			height: 2em;
+
+			span.label {
+				font-weight: 600;
+				text-align: right;
+				width: 120px;
+				float: left;
+			}
+			
+			span.formfield {
+				text-align: left;
+				width: 240px;
+				float: right;
+			}
+		}
+				
+		div.signupbtn {
+			
+			padding-top: 15px;
+			margin-left: 27%;
+			
+			input.Signup_submit {
+				+button;
+				background-color: $orange;
+				border-color: $light_orange;
+				color: black;
+				font-weight: bold;
+				font-size: 18px;
+				padding-left: 25px;
+				padding-right: 25px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				+border-radius(10px);
+				border-width: 3px;
+			}
+		}
+	}
+	
+	div#mytargets {
+		clear: both;
+		
+	}
+	ul.list, ul.list1, ul.list2 {
+		list-style: none;
+		
+		h3 {
+			margin-left: 45px;
+		}
+	}
+
+	li {
+		margin-left: -40px;
+		
+		&.security {
+			background:transparent url(../images/signup/blue-lock-icon.png) no-repeat;
+		}
+		
+		&.prospects {
+			background:transparent url(../images/signup/bulletProspects.png) no-repeat;
+		}
+		
+		&.partnership {
+			background:transparent url(../images/signup/bulletPartnership.png) no-repeat scroll;
+		}
+		
+		&.coverage {
+			background:transparent url(../images/signup/bulletCoverage.png) no-repeat scroll;
+		}
+		
+		&.accounts {
+			background:transparent url(../images/signup/bulletAccounts.png) no-repeat scroll;
+		}
+				
+		p {
+			margin-top: 25px;
+		}
+	}
+
+	#banner_menu a {
+		color: #999999;
+		border: none;
+
+	}
+	#banner_index {
+		float: none;
+	}
+
+	#banner_index img {
+		border: none;
+	}
+	
+		
+}

@@ -23,7 +23,7 @@ signup2.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svn/allyforce_project/!svn/ver/685/staging/includes/signup2.inc.php
+/svn/allyforce_project/!svn/ver/871/staging/includes/signup2.inc.php
 END
 configuration_pro.inc.php
 K 25
@@ -35,13 +35,13 @@ header.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/277/staging/includes/header.inc.php
+/svn/allyforce_project/!svn/ver/869/staging/includes/header.inc.php
 END
 stylesheets-no-facebox.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/svn/allyforce_project/!svn/ver/781/staging/includes/stylesheets-no-facebox.inc.php
+/svn/allyforce_project/!svn/ver/867/staging/includes/stylesheets-no-facebox.inc.php
 END
 prepend.inc.php
 K 25
@@ -95,7 +95,7 @@ stylesheets.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/allyforce_project/!svn/ver/782/staging/includes/stylesheets.inc.php
+/svn/allyforce_project/!svn/ver/873/staging/includes/stylesheets.inc.php
 END
 _README.txt
 K 25

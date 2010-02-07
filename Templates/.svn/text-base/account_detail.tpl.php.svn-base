@@ -1,7 +1,6 @@
-<?php require_once(__TEMPLATES__ . "/header10.tpl.php") ?>
 <?php $this->RenderBegin(); ?>
 
-<div id="account-header" class="span-20">
+<div id="account_detail" class="container">
 	<div class="span-4">
 		<h2 class="red">Gymboree</h2>
 	</div>

@@ -1,0 +1,42 @@
+<!-- this signup2 file included through a require_once() statement -->
+		
+	<div class="signup2">
+		<h3><span class="highlight">Accept invitation</span> to begin exchanging contacts NOW</h3>
+		
+		<div class="row">
+			<label for="fname">First Name</label><br />
+			<?php $this->txtFirstName->Render(); ?>
+		</div>
+		
+		<div class="row">
+			<label for="lname">Last Name</label><br />
+			<?php $this->txtLastName->Render(); ?>
+		</div>
+	
+		<div class="row">
+			<label for="email">Email Address</label><br />
+		
+			<?php $this->txtEmail->RenderWithError(); ?> <br />
+		</div>
+	
+		<div class="row">
+			<label for="password">Password</label><br />
+			<?php $this->txtPassword->RenderWithError(); ?>
+		</div>
+		
+		<div class="row">
+			<label for="password">Retype Password</label><br />
+			<?php $this->txtRetypePassword->RenderWithError(); ?>
+		</div>
+	</div>
+
+	<div class="trial">
+		Your plan is FREE for the BETA Trial Period.  You can cancel at any time.
+		Please review our <a href="http://www.allyforce.com/html/tos.htm">Terms of Service</a>
+		and <a href="http://www.allyforce.com/html/privacy.htm">Privacy Policy</a>.<br><br>
+		<?php $this->chkAgree->Render()?>&nbsp;&nbsp;<strong>I understand and agree</strong>
+		
+	</div>
+	<div class="signupbtn">
+		<?php $this->btnCreate->Render(); ?>
+	</div>
