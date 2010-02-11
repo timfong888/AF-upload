@@ -1,5 +1,6 @@
 <?php
-	/**
+
+/**
 	 *	QAutoCompleteTextBox 
 	 *	Using the JQuery Library:
 	 *		http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
@@ -31,7 +32,7 @@
 		 */
 		protected $blnMustMatch=false;
 		/**
-		 * Whether or not the comparison looks inside (i.e. does "ba" match "foo bar") the search results. Only important if you use caching. Don’t mix with autofill. Default: false
+		 * Whether or not the comparison looks inside (i.e. does "ba" match "foo bar") the search results. Only important if you use caching. Donï¿½t mix with autofill. Default: false
 		 */
 		protected $blnMatchContains=false;
 		/**
