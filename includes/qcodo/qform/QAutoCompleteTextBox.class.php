@@ -1,5 +1,6 @@
 <?php
-	/**
+	
+/**
 	 *	QAutoCompleteTextBox 
 	 *	Using the JQuery Library:
 	 *		http://bassistance.de/jquery-plugins/jquery-plugin-autocomplete/
@@ -12,6 +13,7 @@
 	 *	2007-08-16 Change autofill to autoFill in the GetScript function according to the Christophe Damour post
 	 *	2007-07-03 Local Data Set
 	 */
+	
 	class QAutoCompleteTextBox extends QTextBoxBase{
 
 		// APPEARANCE
@@ -31,7 +33,7 @@
 		 */
 		protected $blnMustMatch=false;
 		/**
-		 * Whether or not the comparison looks inside (i.e. does "ba" match "foo bar") the search results. Only important if you use caching. Don’t mix with autofill. Default: false
+		 * Whether or not the comparison looks inside (i.e. does "ba" match "foo bar") the search results. Only important if you use caching. Donï¿½t mix with autofill. Default: false
 		 */
 		protected $blnMatchContains=false;
 		/**
@@ -369,6 +371,6 @@
 	// Empty Event
 	class QAutoCompleteTextBoxEvent extends QEvent {
 //		const EventName = 'onkeyup';
-		protected $strJavaScriptEvent = 'onkeyup';
+		protected $strJavaScriptEvent = '';
 	}
 ?>
