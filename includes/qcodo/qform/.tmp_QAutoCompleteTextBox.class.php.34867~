@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
+	
+=======
 
+>>>>>>> 49a42eb42d59df9e247ab439814d5bc0c85f82f9
 /**
 	 *	QAutoCompleteTextBox 
 	 *	Using the JQuery Library:
