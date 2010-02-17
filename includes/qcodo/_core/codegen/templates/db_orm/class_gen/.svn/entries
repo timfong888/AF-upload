@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/_core/codegen/templates/db_orm/class_gen
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -25,40 +25,6 @@ vgrichina
 
 
 5e8a31fb-3d4b-46bc-af63-248cdb051360
-
-class_load_and_count_methods.tpl
-file
-
-
-
-
-2010-01-19T20:26:09.109375Z
-f0142150989e00800b5151e6c9c0c6b2
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2230
 
 associated_object_manytomany.tpl
 file
@@ -94,14 +60,14 @@ enzo
 
 8376
 
-property_get.tpl
+class_load_and_count_methods.tpl
 file
 
 
 
 
-2010-01-19T20:26:09.171875Z
-2ad10ba0e7094fd79eeb608c960b6d9f
+2010-01-19T20:26:09.109375Z
+f0142150989e00800b5151e6c9c0c6b2
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -126,7 +92,7 @@ vgrichina
 
 
 
-5594
+2230
 
 _main.tpl
 file
@@ -162,6 +128,40 @@ vgrichina
 
 2297
 
+property_get.tpl
+file
+
+
+
+
+2010-01-19T20:26:09.171875Z
+2ad10ba0e7094fd79eeb608c960b6d9f
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5594
+
 object_save.tpl
 file
 
@@ -195,40 +195,6 @@ vgrichina
 
 
 6845
-
-manual_query_methods.tpl
-file
-
-
-
-
-2010-01-19T20:26:09.265625Z
-8a99c8f5cf406f374188386ae3801041
-2008-04-28T04:18:30.559220Z
-2
-enzo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5404
 
 soap_methods.tpl
 file
@@ -264,6 +230,40 @@ vgrichina
 
 4143
 
+manual_query_methods.tpl
+file
+
+
+
+
+2010-01-19T20:26:09.265625Z
+8a99c8f5cf406f374188386ae3801041
+2008-04-28T04:18:30.559220Z
+2
+enzo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5404
+
 object_delete.tpl
 file
 
@@ -298,14 +298,14 @@ vgrichina
 
 3708
 
-property_comments.tpl
+protected_member_objects.tpl
 file
 
 
 
 
-2010-01-19T20:26:09.390625Z
-aba1d96b770bef1686ee9fef33989ab6
+2010-01-19T20:26:09.343750Z
+e952a2abd20d44c415c741308725256b
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -330,7 +330,7 @@ vgrichina
 
 
 
-2925
+1881
 
 index_load_methods.tpl
 file
@@ -366,14 +366,14 @@ vgrichina
 
 736
 
-protected_member_objects.tpl
+property_comments.tpl
 file
 
 
 
 
-2010-01-19T20:26:09.343750Z
-e952a2abd20d44c415c741308725256b
+2010-01-19T20:26:09.390625Z
+aba1d96b770bef1686ee9fef33989ab6
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -398,7 +398,7 @@ vgrichina
 
 
 
-1881
+2925
 
 object_reload.tpl
 file

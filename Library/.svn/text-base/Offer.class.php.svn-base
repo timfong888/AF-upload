@@ -19,7 +19,6 @@ class OfferForm extends QForm {
 
 	protected function Form_Create() {
 
-
 		$this->pnlAddOffer = new QPanel($this);
 		$this->pnlAddOffer->Position = QPosition::Relative;
 		$this->pnlAddOffer->CssClass = 'pnlAddOffer';
@@ -74,9 +73,7 @@ class OfferForm extends QForm {
 			$this->pnlOfferArray[$i] = new OfferCP($this->pnlOfferDisplay,"pnlOffer" . $objOffer->AccountId,$objOffer); 
 
 			$i++;
-
 		}
-
 	}
 
 	protected function btnAddOffer_Click($strFormId, $strControlId, $strParameter) {

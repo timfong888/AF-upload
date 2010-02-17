@@ -68,15 +68,15 @@ class TargetForm extends QForm {
 		$this->dtgTargets->SortColumnIndex = 0;
 			
 		$objStyle = $this->dtgTargets->RowStyle;
-		$objStyle->FontSize = 14;
-		$objStyle->BackColor = 'a7e0fd';
+		//$objStyle->FontSize = 14;
+		//$objStyle->BackColor = 'a7e0fd';
 		$objStyle = $this->dtgTargets->AlternateRowStyle;
-		$objStyle->BackColor = '#eaeaea';
+		//$objStyle->BackColor = '#eaeaea';
 		$objStyle = $this->dtgTargets->HeaderRowStyle;
-		$objStyle->ForeColor = 'white';
-		$objStyle->BackColor = '#328AA4';		
+		//$objStyle->ForeColor = 'white';
+		//$objStyle->BackColor = '#328AA4';		
 		$objStyle = $this->dtgTargets->HeaderLinkStyle;
-		$objStyle->ForeColor = 'white';
+		//$objStyle->ForeColor = 'white';
 
 		$this->dtgTargets->SetDataBinder('dtgTargets_Bind', $this); 
 		// End Load Target DataGrid
@@ -127,7 +127,7 @@ class TargetForm extends QForm {
 				$objTarget->UserId = $objUser->Id;
 				$objTarget->AccountId = $objAccount->Id;
 				$objTarget->Save();
-				#QApplication::DisplayAlert("New account was added successfully");
+				QApplication::DisplayAlert("New account was added successfully");
 			}
 		}
 		else {
@@ -143,7 +143,7 @@ class TargetForm extends QForm {
 			$objTarget->UserId = $objUser->Id;
 			$objTarget->AccountId = $objAccount->Id;
 			$objTarget->Save();
-			#QApplication::DisplayAlert("New account was added successfully");
+			QApplication::DisplayAlert("New account was added successfully");
 		}
 		
 		$this->txtNewTarget->Text = "";
@@ -176,7 +176,7 @@ class TargetForm extends QForm {
 		}
 		
 		}
-		exit();
+		//exit();
 	}
 	
 	public function DeleteButton_Render(Target $objTarget) {

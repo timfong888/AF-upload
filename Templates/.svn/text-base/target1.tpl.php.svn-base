@@ -12,19 +12,33 @@
 	<div id="add_target">
 		<h2>Add Target Accounts</h2>
 		  
-			<span id="loader_ctl" style="display: none;"><img src="images/loader.gif" id="loader"></span>
+			<span id="loader_ctl" style="display: none;">
+				<img src="images/loader.gif" id="loader">
+			</span>
 		  
 			<?php $this->pnlAddTarget->Render(); ?>			
 	</div> <!--add_target-->
-		  
-	<div class="span-9 last">  
-						<a href="javascript:void(0)" onclick="window.open('target_popup.php','targets',
-						'width=500, height=500, screenX=600')" class="button positive">
-			 				<span class="ss_sprite ss_cut_red">&nbsp;</span> Cut and Paste More Targets
-							(Pop-Up)
-						</a>
-	</div>
-
+	
+	<div id="target_explain">
+		<h2>Why Add Target Accounts?</h2>
+		<p><span>Target Accounts</span> are those companies that you would like your allies to
+		give you contacts and insight into.  The more you have, the better.</p>
+		
+		<p>To add <span>Target Accounts</span> by cutting and pasting a list (one company per line),
+		click on the link below.</p>
+		
+		<div class="popup">  
+			<a href="javascript:void(0)" onclick="window.open('target_popup.php','targets',
+			'width=500, height=500, screenX=600')" class="button positive">
+ 				<span class="ss_sprite ss_cut_red">&nbsp;</span> Cut and Paste More Targets
+				(Pop-Up)
+			</a>
+			
+			<a href="#info" rel="facebox">Test</a>
+    			<iframe id="info" style="display: none; border: 0; padding: 0; margin: 0;" src="/target_popup.php">
+    		</iframe>
+		</div>		
+	</div>	  
 	
 	 <div id="target_list">		
 

@@ -26,12 +26,6 @@ class OfferCP extends QCollapsablePanel  {
 		$this->objOffer = $objOffer;
 		$this->CssClass = "offer_list";
 
-		/* commented out
-		$this->Button->SetCustomStyle("padding-top", "5px");
-		*/
-		
-//		$this->Button->SetCustomStyle("float", "left");
-
 		$this->Header->Template = __TEMPLATES__ . "/OfferCPHeader.tpl.php";
 		$this->Header->CssClass = "Offer_header";
 
@@ -40,10 +34,8 @@ class OfferCP extends QCollapsablePanel  {
 		$this->lblName = new QLabel($this->Header);
 		$this->lblName->CssClass = "Account_Offered";
 		
-		$this->lblName->SetCustomStyle("width", "33%");
 		$this->lblName->Text = $this->objOffer->Account->Name  . "(" . $intNContacts . ")";
 		
-
 		$AlliesArray = $objUser->GetUserAsAlliesArray();
 		
 		$intAllies = 0;
@@ -55,25 +47,11 @@ class OfferCP extends QCollapsablePanel  {
 		
 		$this->lblAllies = new QLabel($this->Header);
 		$this->lblAllies->CssClass = "numballieswhotarget";	
-		/* commenting style out -- just use CSS */
-		/*
-		$this->lblAllies->SetCustomStyle("width", "33%");
-		$this->lblAllies->SetCustomStyle("margin-left", "33%");
-		$this->lblAllies->SetCustomStyle("text-align", "center");
-		*/
+
 		$this->lblAllies->Text = $intAllies;
 			
-		
-
 		$this->lblThreads = new QLabel($this->Header);
-		$this->lblThreads->CssClass = "numballiesgiven_account";
-		/* commenting style out -- just use CSS */
-		/*
-		$this->lblThreads->SetCustomStyle("width", "33%");
-		$this->lblThreads->SetCustomStyle("margin-left", "66%");
-		$this->lblThreads->SetCustomStyle("text-align", "center");
-		*/
-		
+		$this->lblThreads->CssClass = "numballiesgiven_account";		
 		$this->lblThreads->Text = $intAllies;
 		
 
@@ -109,8 +87,8 @@ class OfferCP extends QCollapsablePanel  {
 			
 		// Make the DataGrid look nice
 		$objStyle = $this->dtgContacts->RowStyle;
-		$objStyle->FontSize = 12;
-		$objStyle->BackColor = 'a7e0fd';
+//		$objStyle->FontSize = 12;
+//		$objStyle->BackColor = 'a7e0fd';
 
 		// Uncommented this section (lines 102-103)//
 		$objStyle = $this->dtgContacts->AlternateRowStyle;

@@ -1,125 +1,119 @@
-<?php require_once(__TEMPLATES__ . "/header3.tpl.php") ?>
+<?php require_once('includes/header.inc.php'); ?>
+<?php require_once(__TEMPLATES__ . "/body.global.tpl.php") ?>
 <?php $this->RenderBegin(); ?>
 
-	<div class="span-18 prepend-1 center">
+<div class="container" id="threads">
+  	<?php $select_home = "0" ;?>
+	<?php $select_allies = "0" ;?>
+	<?php $select_threads = "here" ;?>
+	<?php $select_targets = "0" ;?>
+	<?php require_once(__TEMPLATES__ . "/header_new.tpl.php") ?>
+	
+	<div class="message_display">
 		<?php $this->lblMessage->Render()?>
 	</div>
-	<div class="span-18 prepend-1 center">
+	
+	<div class="subject_display">
 		<?php if(isset($this->lblSubject)) $this->lblSubject->Render(); ?>
 	</div>
 	
-	<div class="span-18 prepend-1">
+	<div class="thread_display">
 		<?php 
 			if(isset($this->pnlThreadDisplay))
 			$this->pnlThreadDisplay->Render();
 		?>
 	</div>
 	
-	<div class="span-18 prepend-1">
-	<?php
-		if(!$this->objMessageArray) { ?>
-		<div class="span-3 prepend-1"><strong>To:</strong></div>
-		<div class="span-7 last">
-			<a href="<?php echo __SUBDIRECTORY__ . '/AllyProfile.php?aid=' . $this->objAlly->Id; ?>"><?php echo $this->objAlly->FullName ?></a>,<?php echo '&nbsp;' . $this->objAlly->AccountIdObject->Name; ?>
-		</div>
-		<hr class="space"	/>
-		
-		<div class="span-3 prepend-1"><strong>Subject:</strong></div>
-		<div class="span-11 last">
-			<?php 
+	<div id="message_thread">
+		<?php
+			if(!$this->objMessageArray) { ?>
+			<div class="row">
+				<span class='label'>To:</span>
+				<span class='value'><a href="<?php echo __SUBDIRECTORY__ . '/profile_activity.php?aid=' . $this->objAlly->Id; ?>"><?php echo $this->objAlly->FullName ?></a>,<?php echo '&nbsp;' . $this->objAlly->AccountIdObject->Name; ?></span>
+			</div>
+			
+		<div class="row">
+			<span class='label'>Subject:</span>
+		    <span class='value'><?php 
 				if(isset($this->objAccount)){
 					echo '<a href="#">';
 					echo $this->objAccount->Name .  "?";
 					echo '</a>';
 				}
-
 				?>&nbsp;&nbsp; Request from <?php echo $this->objUser->FullName; ?>
-
-			<?php	} ?>
-		</div>	
-		<hr class="space"	/>
+			</span>
+		</div>
+		<?php	} ?>	<!--end of IF messageArray-->
 		
-		<div class="span-2 prepend-1 append-15">
-			<strong> 
+		<div class="reply">
 			<?php 
 				if($this->objMessageArray) 
-					echo "Reply:";
+					echo "<label>Reply:</label>";
 				else	
-					echo "Message(optional):"; 
+					echo "<label>Message(optional):</label>"; 
 					 
-			?>		 
-			</strong>
-		</div>
-		
-		<div class="span-11 prepend-4 last">
-			<?php $this->txtMessage->Render(); ?> 
-		</div>
-		
-		<div class="span-11 prepend-1 last">
-			<?php
-				if($this->msgType == MessageType::Reply) {
-			?>
-					
-			<strong>Company</strong>
-					<?php
-					if(isset($this->objAccount))
-						echo $this->objAccount->Name;
-					else
-						echo $this->txtCompany->RenderWithError(); ?> 
+			?>	
+			<?php $this->txtMessage->Render(); ?>
+				 		
+			<div id="give_contact">
+				<h2>Give Contacts 
+			<?php if($this->msgType == MessageType::Reply) {?>
 						
-				<?php 
-				if(isset($this->lstContacts))
-					$this->lstContacts->Render();
-				else
-					echo "No contacts available";
-				?>  
-					&nbsp;&nbsp;&nbsp; <strong>OR
-					Offer New Contact</strong>&nbsp;&nbsp;&nbsp; <img border="0"
-						align="absmiddle" alt="" src="images/tblue.gif" /> <img border="0"
-						align="absmiddle" alt="" src="images/tred.gif" /> <br />
-					<br />
-
-		</div>
-		<div class="span-19 prepend-1" id="message_request">
-			<fieldset>	
-			<legend>Give Contacts</legend>	
-			<div class="span-9">
-				<div class="span-2">Name</div>
-			
-				<div class="span-6 last"><?php $this->txtContactName->RenderWithError(); ?></div>
-				<hr class="space" />				
-				<div class="span-2">Email</div>
-				<div class="span-6 last"><?php $this->txtContactEmail->RenderWithError(); ?></div>
-			</div>
+				<strong>Company</strong>
+						<?php
+						if(isset($this->objAccount))
+							echo $this->objAccount->Name;
+						else
+							echo $this->txtCompany->RenderWithError(); ?> 
+							
+					<?php 
+					if(isset($this->lstContacts))
+						$this->lstContacts->Render();
+					else
+						echo "No contacts available";
+					?>  
+				</h2>
+					
+					<div class="row">
+						<span class='label'>Name</span>
+						<span class="formfield"><?php $this->txtContactName->RenderWithError(); ?></span>
+					</div>
+				
+					<div class="row">
+						<span class='label'>Email</span>
+						<span class="formfield"><?php $this->txtContactEmail->RenderWithError(); ?></span>
+					</div>
 		
-			<div class="span-9 last">				
-				<div class="span-2">Title</div>
-				<div class="span-6 last"><?php $this->txtContactTitle->RenderWithError(); ?></div>
-				<hr class="space" />				
-				<div class="span-2">Phone</div>
-				<div class="span-6 last"><?php $this->txtContactPhone->RenderWithError(); ?></div>
-			</div>	
-		</div>	
-		</fieldset>		
-		<?php	} ?>			
-			<!-- End Send contact requested -->
+					<div class="row">
+						<span class='label'>Title</span>
+						<span class="formfield"><?php $this->txtContactTitle->RenderWithError(); ?></span>
+					</div>
+					
+					<div class="row">
+						<span class='label'>Phone</span>
+						<span class="formfield"><?php $this->txtContactPhone->RenderWithError(); ?></span>
+					</div>
+									
+			</div>	<!--give_contacts-->
+			
+			<div class="button">
+				<?php $this->btnGive->Render(); ?>
+				<a href="#">Cancel</a>
+			</div>
+	</div> <!--reply-->
+	<?php	} ?>			
 						
 			<?php
 			if(!$this->objMessageArray) {
 			?>
-			<hr class="space" />
+
 			<h4><strong>Appended to bottom</strong></h4>
 			<?php $this->lblBottom->Render(); ?>
 				
 			<?php
 				}
 			?>
-		</div>
-		<hr class="space" />
-		<div class="span-18 push-4">
-			<?php $this->btnGive->Render(); ?>
-			<a href="#">Cancel</a>
-		</div>
+
 	</div>
 
 </div><!-- /container-->

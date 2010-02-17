@@ -52,9 +52,13 @@ class CodeAttendeesForm extends QForm {
 		        'HtmlEntities=false'
 		    )
 		);
-		$this->dtgAllies->GetColumn(0)->Width = '50px';
+		//$this->dtgAllies->GetColumn(0)->Width = '50px';
+		$objStyle = $this->dtgAllies->GetColumn(0);
+		$objStyle->CssClass = "col0";
+		
 		$this->dtgAllies->SortColumnIndex = 0;
-			
+		
+		/*	
 		$objStyle = $this->dtgAllies->RowStyle;
 		$objStyle->FontSize = 12;
 		$objStyle->BackColor = 'a7e0fd';
@@ -65,7 +69,8 @@ class CodeAttendeesForm extends QForm {
 		$objStyle->BackColor = '#328AA4';		
 		$objStyle = $this->dtgAllies->HeaderLinkStyle;
 		$objStyle->ForeColor = 'white';
-
+		*/
+		
 		$this->dtgAllies->SetDataBinder('dtgAllies_Bind', $this); 
 		// End Load Target DataGrid	
 	}	
@@ -73,7 +78,8 @@ class CodeAttendeesForm extends QForm {
 	protected function Form_PreRender() {	 
 		$this->objUser = unserialize($_SESSION['User']);
 	    $this->objCodes = $this->objUser->GetGroupCodeArray();
-	    $this->strCode = $this->objCodes[0]->SignupCode;
+	    if(isset($this->objCodes[0]->SignupCode))$this->strCode = $this->objCodes[0]->SignupCode;
+
 	}
 
 	public function dtgAllies_Bind() {

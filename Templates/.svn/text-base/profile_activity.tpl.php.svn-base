@@ -1,29 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
-<?php require_once('includes/stylesheets.inc.php'); ?>
-	 
-<!-- note: change the root directory to correspond to CONFIGURATION.INC.PHP files -->
-
+<?php require_once('includes/header.inc.php'); ?>
+<?php require_once(__TEMPLATES__ . "/body.global.tpl.php") ?>
+	<?php $select_home = "0" ;?>
+	<?php $select_allies = "0" ;?>
+	<?php $select_targets = "0" ;?>
+	<?php $select_threads = "0" ;?>
 <title>Profile Activity - <? echo $this->objAllyUser->FullName;?> </title>
-</head>
-<body>
 <?php $this->RenderBegin(); ?>
 <?$this->accountRequestPopup->Render();?>
 <?$this->completeProfilePopup->Render();?>
 <?$this->addAllyPopup->Render();?>
 
 <div class="container" id="profile_activity">
-	<?php $select_home = "0" ;?>
-	<?php $select_allies = "0" ;?>
-	<?php $select_threads = "0" ;?>
 	<?php require_once('header_new.tpl.php'); ?>
-			
-	<!-- this is a CONDITIONAL DIV: IF User.Ally.Contacts.Sent.Count < User.Ally.Contacts.Received.Count -->
+	
+	  <!-- this is a CONDITIONAL DIV: IF User.Ally.Contacts.Sent.Count < User.Ally.Contacts.Received.Count -->
 	<!---
-	<div class='span-18 push-1 box byellow' id='give_accounts'>
+	<div class='' id='give_accounts'>
 		<h3 class='red'>You Owe This Ally Some Contacts!</h3>
 		<p>This ally has <strong>given</strong> you more contacts that you have given.  Make sure 
 		you don't get known as a Taker and start losing opportunities to meet quota.  <strong>Give
@@ -42,7 +34,7 @@
 	<div id="profile">
 		<h2><?= $this->objAllyUser->FullName ?>'s Profile</h2>
 		<div class="gravatar">										
-				<img src="http://www.gravatar.com/avatar?d=monsterid&gravatar_id=<?php md5( strtolower($this->objAllyUser->Username));?>">	
+				<img src="http://www.gravatar.com/avatar?d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>">
 			<div class="invite_link">
 			    <? 
 			        if(!$this->IsMyAlly()) {
@@ -60,7 +52,7 @@
 			
 			<div class="row">
 				<span class="label">Title:</span>
-				<span class="detail"><?= $this->objAllyUser->UserDetail->Territory ?></span>
+				<span class="detail"><?= $this->objAllyUser->UserDetail->Title ?></span>
 			</div>
 			
 			<div class="row">
@@ -77,18 +69,13 @@
 	
 	</div> <!--profile-->
 	<div class="allies">
-			<h2>Allies (3)</h2>
-			<p class='small'>A <span class='green loud'>GREEN score</span> means <?= $this->objAllyUser->FullName ?>
-			gave more to his ally than he received.  <span class='red'>RED </span>means
-			<?= $this->objAllyUser->FullName ?> <span class='red'>received more</span> than he gave, <span class='red'>so make sure he gives when you give!</span>!</p>
+			<h2><?= $this->objAllyUser->FullName ?>'s Allies</h2>
 			
 			<? foreach($this->objAllyAllies as $alliesArray) { ?>
-			    <div class="span-5">
-				    <div class="span-2" id="image_column">
-					    <img src="http://www.gravatar.com/avatar?size=30&d=monsterid&gravatar_id=<?= md5( strtolower($alliesArray->Username)); ?>" >				
-				    </div>
+			    <div class="ally_info">
+					<img src="http://www.gravatar.com/avatar?size=30&d=monsterid&gravatar_id=<?=  md5( strtolower($alliesArray->Username)); ?>" >				
 				
-				    <div class="span-2" id="name-co-column">
+				    <div class="name-co-column">
 					    <a href="/profile_activity.php?aid=<?= str_replace(' ','_',$alliesArray->Id) ?>" >
 					         <?= $alliesArray->FullName ?>
 					    </a>
@@ -96,10 +83,6 @@
 					    <b>
 					        <?= Account::LoadById($alliesArray->AccountId)->Name ?>
 					    </b>
-				    </div>
-			
-				    <div class="span-1 last positive-give-score-column">
-					    +2
 				    </div>
 							
 			    </div>
@@ -111,7 +94,7 @@
 	<div id="feed">
 		<h2>Activity Feed</h2>			
 		<div id="target_feed">
-			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;<a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> recently added <strong>Targets:</strong><br /><br />
+			<img src="http://www.gravatar.com/avatar?size=25&d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>" /><a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> recently added <strong>Targets:</strong><br /><br />
 			<div id="target_feed_list">
 				<?php $arrayTargets = $this->ArrayTargetsForActivityFeed($this->objAllyTargets);
 				    foreach($arrayTargets as $target){
@@ -127,7 +110,7 @@
 		</div><!--target_feed-->
 		
 		<div id="receive_contact_feed">
-			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			<img src="http://www.gravatar.com/avatar?size=25&d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>">
 			  <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> received a <strong>Contact</strong> at:<br /><br />
 			<div id="receive_contact_feed_list">
 			    <?php $receivedArray = $this->ArrayThreadForActivityFeed($this->objAllyReceive);?>
@@ -138,8 +121,9 @@
 			                <?=$accountName->Name?>
 			            </a> from 
 			            
-			            <a href="profile_activity.php?aid=<?=$userName->Id?>">
-			                <?=$userName->FullName?>
+			                <img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=<?php echo md5( strtolower($userName->Username));?>">
+						<a href="profile_activity.php?aid=<?=$userName->Id?>">
+							<?=$userName->FullName?>
 			            </a>
                         <br />
 				 <?}?>
@@ -148,7 +132,7 @@
 		</div><!--receive_contact_feed-->			
 
 		<div id="send_contact_feed">
-			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			<img src="http://www.gravatar.com/avatar?size=25&d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>" >
 			   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> sent a <strong>Contact</strong> at:<br /><br />
 			<div id="send_contact_feed_list">
 			    <? $sendArray = $this->ArrayThreadForActivityFeed($this->objAllySend); ?>
@@ -169,7 +153,7 @@
 		</div><!--send_contact_feed-->
 
 		<div id="offer_feed">
-			<img src="http://www.gravatar.com/avatar?size=15&d=monsterid&gravatar_id=$hash_ally_email">&nbsp;
+			<img src="http://www.gravatar.com/avatar?size=25&d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>" >
 			   <a href="profile_activity.php?aid=<?= $this->objAllyUser->Id ?>"><?= $this->objAllyUser->FullName ?></a> can <strong>Offer</strong> up:<br /><br />
 			<div class="span-6 push-1" id="send_contact_feed_list">
 				<? $arrayOffers = $this->ArrayOffersForActivityFeed($this->objAllyOffers);?>
@@ -208,7 +192,7 @@
 				<div class='quiet small'>
 				    <strong>Click</strong> Account to request a contact!
 				</div>
-				<div> 
+				<div>
 				 <?foreach($this->arrAllyOffersButtons as $allyOffersButton){
 				    $allyOffersButton->Render();
 				    ?>

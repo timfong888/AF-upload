@@ -1,4 +1,5 @@
 	<!--header_new.tpl.php -->
+	<LINK REL="SHORTCUT ICON" HREF="http://" . __DOMAIN__ . "/favicon.ico" />
 	<div id="header_new">
 		<?php
 			$objUser = unserialize($_SESSION['User']);
@@ -11,7 +12,7 @@
 		
 		<div id="blueNav">
 			<ul class='bluemenuNav'>
-				<li> <a class='<?php echo $select_home ?>' href="profile_activity_self.tpl.php ">Home</a></li>
+				<li> <a class='<?php echo $select_home ?>' href="home.php ">Home</a></li>
 				<li> <a class='<?php echo $select_allies ?>' href="allies.php ">Allies</a></li>
 				<li> <a class='<?php echo $select_targets ?>' href="targets.php ">Targets</a></li>
 				<li> <a class='<?php echo $select_threads ?>' href="threads.php">Messages</a></li>
@@ -21,15 +22,12 @@
 			<img src="http://www.gravatar.com/avatar?s=45&d=monsterid&gravatar_id=<?php echo $gravatarid3;?>">
 			<ul class='nav'>
 				<a href="profile.php"><?php echo $objUser->FullName; ?>'s Profile</a> |
-				<a href="Logout">Logout</a> |
+				<a href="/logout">Logout</a> |
 				<a href="Contact">Contact</a>
 			</ul>
-			<h5>YOUR CODES: 
+			<h5><a href="code_attendees.php">YOUR CODES: </a>
 			    <a href="code_attendees.php">
-			        <?			
-			            //echo $this->strCode;
-			            
-                    ?>
+			        <?php echo $objUser->Code ;?>
                 </a>
             </h5>
 		</div>

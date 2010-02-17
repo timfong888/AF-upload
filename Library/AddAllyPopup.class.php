@@ -26,6 +26,8 @@ class AddAllyPopup extends QDialogBox {
     //protected $strCssClass = 'calculator_widget';
     protected $blnMatteClickable = false;
     public $txtTextBox;
+    public $allyId;
+    public $allyName;
 
 
 	public function __construct($strCloseCallback, $objParentObject, $strControlId = null) {
@@ -33,7 +35,7 @@ class AddAllyPopup extends QDialogBox {
 		
 		$this->strCloseCallback = $strCloseCallback;
 		$this->objUser = unserialize($_SESSION['User']);
-		$this->objAlly = User::LoadById(121);
+		$this->objAlly = User::LoadById($this->allyId);
 		//$this->objAlly = User::LoadById($_GET['allyId']);
 		
 		$this->btnInvite = new QButton($this);

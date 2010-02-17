@@ -121,16 +121,16 @@ class MessageSendForm extends QForm {
 		$this->txtMessage->Rows = 5;
 		$this->txtMessage->Columns = 20;
 		$this->txtMessage->TextMode = "MultiLine";
-		$this->txtMessage->CssClass = "inputbox_offer";
+		$this->txtMessage->CssClass = "inputbox_request";
 
 		$this->txtContactName = new QTextBox($this);
-		$this->txtContactName->CssClass = "inputbox_offer";
+		$this->txtContactName->CssClass = "textbox";
 		$this->txtContactEmail = new EmailTextBox($this);
-		$this->txtContactEmail->CssClass = "inputbox_offer";
+		$this->txtContactEmail->CssClass = "textbox";
 		$this->txtContactTitle = new QTextBox($this);
-		$this->txtContactTitle->CssClass = "inputbox_offer";
+		$this->txtContactTitle->CssClass = "textbox";
 		$this->txtContactPhone = new QTextBox($this);
-		$this->txtContactPhone->CssClass = "inputbox_offer";
+		$this->txtContactPhone->CssClass = "textbox";
 			
 
 		if(!$this->objMessageArray)
@@ -340,10 +340,10 @@ class MessageSendForm extends QForm {
 		//Create message	
 		//Contact div to include in body
 		if(isset($objContact)){
-			$contact_body_message = '<div class="contact"><span id=name>' . $objContact->Name . '</span>';
-			$contact_body_message.= '<span id=title>' . $objContact->Title . '</span>';
-			$contact_body_message.= '<span id=email>' . $objContact->Email . '</span>';
-			$contact_body_message.= '<span id=phone>' . $objContact->Phone . '</span></div>';
+			$contact_body_message = '<div class="contact"><div class=row id=name>' . $objContact->Name . '</div>';
+			$contact_body_message.= '<div class=row id=title>' . $objContact->Title . '</div>';
+			$contact_body_message.= '<div class=row id=email>' . $objContact->Email . '</div>';
+			$contact_body_message.= '<div class=row id=phone>' . $objContact->Phone . '</div></div>';
 		}
 		$objMessage = new Message();
 		$objMessage->FromUserId = $this->objUser->Id;
@@ -351,7 +351,7 @@ class MessageSendForm extends QForm {
 
 		$objMessage->OfferId = ($this->objOffer) ? $this->objOffer->Id : 0;
 		$objMessage->Subject = $this->objMessage->Subject;
-		$objMessage->Body = $this->txtMessage->Text;
+		$objMessage->Body = '<div class="bmessage">' . $this->txtMessage->Text . '</div>';
 		$objMessage->MessageTypeId = MessageType::Send;
 		$objMessage->DateTime = QDateTime::Now();
 				

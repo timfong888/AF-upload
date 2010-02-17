@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/assets/js
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -10,8 +10,8 @@ http://allyforce.unfuddle.com/svn/allyforce_project
 2009-12-24T00:24:13.223966Z
 797
 vgrichina
-
-
+has-props
+has-prop-mods
 
 
 
@@ -97,6 +97,13 @@ soper
 
 1373
 
+jquery-1.4.1.js
+file
+0
+
+
+add
+
 _README.txt
 file
 
@@ -136,7 +143,7 @@ file
 
 
 
-
+delete
 2010-01-19T20:24:56.437500Z
 a6d3d83bed7a207c1c00dd21cb0fd567
 2008-10-30T16:13:31.063510Z
@@ -170,7 +177,7 @@ file
 
 
 
-
+delete
 2010-01-19T20:24:56.656250Z
 2d32e72ec93128c0b4572bda9aa354a0
 2008-10-30T16:13:31.063510Z
@@ -198,4 +205,11 @@ soper
 
 
 30149
+
+jquery-autocomplete
+dir
+
+
+
+add
 

@@ -1,15 +1,15 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/_core
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
+2010-02-11T18:18:41.077981Z
+894
+timfong
 
 
 
@@ -69,11 +69,11 @@ file
 
 
 
-2010-01-19T20:26:31.234375Z
-bc300d9777fc71af7a96494c31adfba8
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
+2010-02-10T00:13:19.546875Z
+1aa7c4a08f4a4cd7386179cf05fc5493
+2010-02-11T18:18:41.077981Z
+894
+timfong
 has-props
 
 
@@ -95,7 +95,7 @@ has-props
 
 
 
-13733
+13759
 
 codegen
 dir

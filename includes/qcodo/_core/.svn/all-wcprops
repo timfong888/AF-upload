@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core
+/svn/allyforce_project/!svn/ver/894/staging/includes/qcodo/_core
 END
 qcodo_orm_only.inc.php
 K 25
@@ -13,7 +13,7 @@ qcodo.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/_core/qcodo.inc.php
+/svn/allyforce_project/!svn/ver/894/staging/includes/qcodo/_core/qcodo.inc.php
 END
 manifest.xml
 K 25

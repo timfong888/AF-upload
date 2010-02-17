@@ -35,11 +35,11 @@ class AllyForm extends QForm {
 
 		$this->txtEmail = new EmailTextBox($this);
 		$this->txtEmail->Required = true;
-		$this->txtEmail->CssClass = "email";
+		$this->txtEmail->CssClass = "textbox";
 
 		$this->txtFullName = new EmailTextBox($this);
 		$this->txtFullName->Required = true;
-		$this->txtFullName->CssClass = "name";
+		$this->txtFullName->CssClass = "textbox";
 
 		$this->btnInvite = new QButton($this);
 		$this->btnInvite->Text = QApplication::Translate('Invite');
@@ -56,7 +56,7 @@ class AllyForm extends QForm {
 
 		// Enable Pagination, and set to 5 items per page
 		$objPaginator = new QPaginator($this->dtgAllies);
-		$this->dtgAllies->CssClass = 'datagrid_allies';
+		$this->dtgAllies->CssClass = 'datagrid';
 		$this->dtgAllies->Paginator = $objPaginator;
 		$this->dtgAllies->ItemsPerPage = 10;
 
@@ -66,10 +66,8 @@ class AllyForm extends QForm {
 		array('OrderByClause' => QQ::OrderBy(QQN::User()->FullName), 'ReverseOrderByClause' => QQ::OrderBy(QQN::User()->FullName,false))));
 		$this->dtgAllies->AddColumn(new QDataGridColumn('Ally Company', '<?= $_ITEM->AccountIdObject->Name ?>', 'Width=120',
 		array('OrderByClause' => QQ::OrderBy(QQN::User()->AccountIdObject->Name), 'ReverseOrderByClause' => QQ::OrderBy(QQN::User()->AccountIdObject->Name,false))));
-		$this->dtgAllies->AddColumn(new QDataGridColumn("Account You've Received", '<?=  ?>', 'Width=60'));
-		$this->dtgAllies->AddColumn(new QDataGridColumn("Accounts You've Given", '<?= ?>', 'Width=60'));
+
 		$this->dtgAllies->AddColumn(new QDataGridColumn("Recommended Request", '<?=  ?>', 'Width=120'));
-		$this->dtgAllies->AddColumn(new QDataGridColumn("Recommended Give", '<?=  ?>', 'Width=120'));
 
 		// Let's make sorting Ajax-ified
 		$this->dtgAllies->UseAjax = true;
@@ -244,10 +242,12 @@ class AllyForm extends QForm {
 	public function AllyColumn_Render(User $objUser) {
 			
 		$strReturn = "";
-		
+		/* remove UserPicture 
 		if($objUser->UserDetail->Picture != '')
 			$strReturn.= '<img width=28 height=28 border="0" align="absmiddle" alt="" src="' . __SUBDIRECTORY__. '/Pictures/' . $objUser->UserDetail->Picture. '"/>'; 
-			
+		*/
+		$gravatar = md5(strtolower($objUser->Username));
+		$strReturn.= '<img src="http://www.gravatar.com/avatar?size=30&d=monsterid&gravatar_id=' .  $gravatar . '"';
 		$strReturn.= '<a href="' . __SUBDIRECTORY__ . '/profile_activity.php?aid=' . $objUser->Id . '">' . $objUser->FullName . '</a>';
 		
 		return $strReturn;

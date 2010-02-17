@@ -5,7 +5,7 @@ V 32
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/allyforce_project/!svn/ver/845/staging/includes
+/svn/allyforce_project/!svn/ver/902/staging/includes
 END
 configuration.inc.template.php
 K 25
@@ -35,7 +35,7 @@ header.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/869/staging/includes/header.inc.php
+/svn/allyforce_project/!svn/ver/926/staging/includes/header.inc.php
 END
 stylesheets-no-facebox.inc.php
 K 25
@@ -91,11 +91,17 @@ svn:wc:ra_dav:version-url
 V 80
 /svn/allyforce_project/!svn/ver/505/staging/includes/billing_link_wrap_1.inc.php
 END
+banner_external.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/allyforce_project/!svn/ver/901/staging/includes/banner_external.inc.php
+END
 stylesheets.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/allyforce_project/!svn/ver/873/staging/includes/stylesheets.inc.php
+/svn/allyforce_project/!svn/ver/902/staging/includes/stylesheets.inc.php
 END
 _README.txt
 K 25

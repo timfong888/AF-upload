@@ -1,14 +1,14 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/Templates/Mail
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2009-03-09T07:39:04.403531Z
-643
+2010-02-14T20:45:05.090383Z
+909
 timfong
 
 
@@ -100,10 +100,10 @@ file
 
 
 
-2010-01-19T20:24:18.734375Z
-22a5d29b56fbe799ee1108a0de937973
-2008-11-13T19:16:43.178014Z
-337
+2010-02-14T20:33:10.468750Z
+2b802e12c6f2ec863bf928bad9749dec
+2010-02-14T20:45:05.090383Z
+909
 timfong
 
 
@@ -126,7 +126,7 @@ timfong
 
 
 
-795
+792
 
 manager.html
 file

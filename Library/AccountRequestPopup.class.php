@@ -14,7 +14,7 @@ class AccountRequestPopup extends QDialogBox {
 	
 	protected $objUser;
 	public $objAccount;
-	protected $objTargets;
+	protected $objTarget;
 	protected $objMessageArray;
 	protected $objMessage;
 	
@@ -22,7 +22,7 @@ class AccountRequestPopup extends QDialogBox {
 	public $accountId;
 	public $accountName;
 	public $userId;
-	
+	private $message;
 	protected $strCloseCallback;
     protected $strTemplate = 'Templates/account_request_popup.tpl.php';
 	
@@ -41,7 +41,7 @@ class AccountRequestPopup extends QDialogBox {
 		);
 		$this->btnRequestContact->PrimaryButton = true;
 		$this->btnRequestContact->CssClass = 'positive';
-		
+		$this->btnRequestContact->AddCssClass('request');
 		
 		$this->btnRemoveOffer = new QButton($this);
 		$this->btnRemoveOffer->Text = QApplication::Translate('REMOVE from OFFERS');
@@ -61,6 +61,8 @@ class AccountRequestPopup extends QDialogBox {
 		);
 		$this->btnRemoveTarget->PrimaryButton = true;
 		$this->btnRemoveTarget->CssClass = 'negative';
+		$this->btnRemoveTarget->AddCssClass('remove_target');
+		$this->btnRemoveTarget->Visible = 'true';
 		
 		$this->btnAddToTargets = new QButton($this);
 		$this->btnAddToTargets->Text = QApplication::Translate('ADD to TARGETS');
@@ -70,17 +72,20 @@ class AccountRequestPopup extends QDialogBox {
 		);
 		$this->btnAddToTargets->PrimaryButton = true;
 		$this->btnAddToTargets->CssClass = 'positive';
+		$this->btnAddToTargets->AddCssClass('add_target');
+		$this->btnAddToTargets->Visible = 'false';
 		
 		$this->btnClose = new QButton($this);
-		$this->btnClose->Text = QApplication::Translate('Close');
+		$this->btnClose->Text = QApplication::Translate('Close (x)');
 		$this->btnClose->AddAction(new QClickEvent(), new QAjaxAction('accountRequestPopup_btnClose_Click'));
-		$this->btnClose->CssClass = 'alliesInvite';
-/**/
+		$this->btnClose->CssClass = 'close_popup';
+		/**/
 
 	}
 
 	public function btnClick_Request($strFormId, $strControlId, $strParameter) {
-        if(!Message::LoadArrayByOfferIdFromUserIdToUserId($this->accountId, $this->userId, $this->allyId)) {
+	$this->message = Message::LoadArrayByOfferIdFromUserIdToUserId($this->accountId, $this->userId, $this->allyId);
+        if(!$this->message) {
 		    $this->objMessage = new Message();
 		    $this->objMessage->FromUserId = $this->userId;
 		    $this->objMessage->ToUserId = $this->allyId;
@@ -90,8 +95,8 @@ class AccountRequestPopup extends QDialogBox {
 		    $this->objMessage->Subject = "Request";
 		    $this->objMessage->DateTime = QDateTime::Now(); 
 	        $this->objMessage->Save();
-        }
-	}
+        } 
+  	}
 	
 	
 	protected function btnInvite_Click_RemoveFromOffers($strFormId, $strControlId, $strParameter) {
@@ -102,23 +107,28 @@ class AccountRequestPopup extends QDialogBox {
 	
 	public function btnInvite_Click_RemoveFromTargets($strFormId, $strControlId, $strParameter) {
 	
-	    $this->objUser = User::LoadById($this->userId);
-		$this->objAccount = Account::LoadById($this->accountId);
-		$this->objTargets = Target::Load($this->userId, $this->accountId);
+	    //$this->objUser = User::LoadById($this->userId);
+		//$this->objAccount = Account::LoadById($this->accountId);
+		$this->objTarget = Target::Load($this->userId, $this->accountId);
         
-        if($this->objTargets){
-           $this->objTargets->Delete();
+        if($this->objTarget) {
+           $this->objTarget->Delete();
         }
+        $this->btnRemoveTarget->Visible = 'false';
+        $this->btnAddToTargets->Visible = 'true';
 	}
 	
 	public function btnInvite_Click_AddToTargets($strFormId, $strControlId, $strParameter) {
-        
-        if(!$this->objTargets){
-            $this->objTargets = new Target();           
-            $this->objTargets->UserId = $this->userId;
-            $this->objTargets->AccountId = $this->accountId;
-            $this->objTargets->Save();
+        $this->objTarget = Target::Load($this->userId, $this->accountId);
+        if(!$this->objTarget) {
+            $this->objTarget = new Target();           
+            $this->objTarget->UserId = $this->userId;
+            $this->objTarget->AccountId = $this->accountId;
+            $this->objTarget->Save();
         }
+        $this->btnAddToTargets->Visible = 'false';
+        $this->btnRemoveTarget->Visible = 'true'; 
+        
 	}
 
     public function btnClose_Click() {

@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/_core/codegen/templates/db_orm/meta_control
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -502,40 +502,6 @@ enzo
 
 158
 
-control_refresh_integer.tpl
-file
-
-
-
-
-2010-01-19T20:26:05.187500Z
-8f489d51282e3fd8a5b523aed1c8dc2e
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-265
-
 control_update_calendar.tpl
 file
 
@@ -570,18 +536,17 @@ has-props
 
 139
 
-control_update_manytomany_reference.tpl
+control_refresh_integer.tpl
 file
 
 
 
 
-2010-01-19T20:26:05.250000Z
-bcabb3460e0a305152facc366a0915ef
+2010-01-19T20:26:05.187500Z
+8f489d51282e3fd8a5b523aed1c8dc2e
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
-has-props
 
 
 
@@ -602,7 +567,8 @@ has-props
 
 
 
-605
+
+265
 
 control_refresh_reference.tpl
 file
@@ -637,6 +603,40 @@ vgrichina
 
 
 1649
+
+control_update_manytomany_reference.tpl
+file
+
+
+
+
+2010-01-19T20:26:05.250000Z
+bcabb3460e0a305152facc366a0915ef
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+605
 
 property_get_case.tpl
 file
@@ -774,40 +774,6 @@ has-props
 
 209
 
-control_update_type.tpl
-file
-
-
-
-
-2010-01-19T20:26:05.437500Z
-f9bfe1dcd03257997511982971373fde
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-144
-
 property_get.tpl
 file
 
@@ -841,6 +807,40 @@ vgrichina
 
 
 2020
+
+control_update_type.tpl
+file
+
+
+
+
+2010-01-19T20:26:05.437500Z
+f9bfe1dcd03257997511982971373fde
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+144
 
 control_refresh_string.tpl
 file
@@ -876,14 +876,14 @@ vgrichina
 
 265
 
-delete_object.tpl
+control_refresh_manytomany_reference.tpl
 file
 
 
 
 
-2010-01-19T20:26:05.500000Z
-6a94f851c001aa6f0d39f6c3c05effd6
+2010-01-19T20:26:05.453125Z
+5bc4fb303caf4f8292313f6d8d484080
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -908,7 +908,7 @@ vgrichina
 
 
 
-544
+1622
 
 control_update_checkbox.tpl
 file
@@ -944,14 +944,14 @@ has-props
 
 138
 
-control_refresh_manytomany_reference.tpl
+delete_object.tpl
 file
 
 
 
 
-2010-01-19T20:26:05.453125Z
-5bc4fb303caf4f8292313f6d8d484080
+2010-01-19T20:26:05.500000Z
+6a94f851c001aa6f0d39f6c3c05effd6
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -976,7 +976,7 @@ vgrichina
 
 
 
-1622
+544
 
 property_set_case.tpl
 file

@@ -4,8 +4,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <?php $domain = (__DOMAIN__) ; ?>
 	
-	<link href="http://<?php echo $domain ?>/css/style.css" rel="stylesheet" type="text/css"  />
-	<link href="http://<?php echo $domain ?>/css/style2.css" rel="stylesheet" type="text/css"  />
     <?php require_once(__INCLUDES__ . "/stylesheets.inc.php"); ?>
 	<?php require_once(__TEMPLATES__ . "/header.global.tpl.php"); ?>
 

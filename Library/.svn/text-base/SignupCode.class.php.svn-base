@@ -32,6 +32,7 @@ class SignupCodeForm extends QForm {
 		
 		$this->txtEmail = new EmailTextBox($this);
 		$this->txtEmail->CssClass = "SignupCode_input";
+		$this->txtFirstName->Required = true;
 		$this->txtEmail->Text = $strEmail;
 		
 		$this->txtDropDownListRegion = new QListBox($this);
@@ -173,7 +174,7 @@ class SignupCodeForm extends QForm {
 		$_SESSION['User'] = serialize($newUser);
 
 		QApplication::DisplayAlert("Your Signup was completed sucessfully");
-		QApplication::Redirect(__SUBDIRECTORY__ . '/code_attendees.php');
+		QApplication::Redirect(__SUBDIRECTORY__ . '/home.php');
 
 		return true;
 	}

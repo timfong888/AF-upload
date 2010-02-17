@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>Targets > Cut and Paste</title>
-	<script src="custom-form-elements.js" type="text/javascript" language="javascript"></script>
 	<script language="javascript">
 		function checkAll_1($action){
 			for (var i=0;i<document.forms[0].elements.length;i++)

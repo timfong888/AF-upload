@@ -21,25 +21,34 @@
 	<div class="container" id="code_attendees">
 		<?php $select_home = "0" ;?>
 		<?php $select_allies = "0" ;?>
+		<?php $select_targets = "0" ;?>
 	    <?php $select_threads = "0" ;?>
 		<?php require_once('header_new.tpl.php'); ?>
 		
-		<div id="welcome">
-			<h3 class="red">
+		<div id="add_code">
+			<h2>Add Another Code</h2>
+				<div class="row">
+					<span class="label">Code</span>
+					<span class="formfield"><input class="textbox" type="text"></span>
+				</div>
+					
+		</div>
+		<div id="code_explain">
+			<h2>
 			    Find an Ally from CODE: 
-			    <?			
+			    <span><?			
 			        echo $this->strCode;
-                ?>
-            </h3>
+                ?></span>
+            </h2>
 			
-			<p>The sales reps <b>target the same customers as you</b>.  
+			<p>These sales reps <b>target the same customers as you</b>.  
 			So try to reach out to as many potential partners to <b>begin exchanging 
-			leads</b> today!</p><br />
+			leads</b> today!</p>
  
 			<p>Just <strong>click on their name </strong>to see a profile and then *invite* 
 			them to join your network! </p>
 			
-		</div> <!--welcome-->
+		</div> <!--code_explain-->
 		
 		<div id="code_grid"> <!-- use QDataGrid -->
 			<?php $this->dtgAllies->Render(); ?>

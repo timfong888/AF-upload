@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/examples/other
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -94,40 +94,6 @@ enzo
 
 5254
 
-some_template_file.tpl.php
-file
-
-
-
-
-2010-01-19T20:27:57.156250Z
-a74f3edf7ccba4bc32b7548ce4039ab8
-2008-04-28T04:18:30.559220Z
-2
-enzo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1364
-
 attribute_overriding.php
 file
 
@@ -161,6 +127,40 @@ enzo
 
 
 1277
+
+some_template_file.tpl.php
+file
+
+
+
+
+2010-01-19T20:27:57.156250Z
+a74f3edf7ccba4bc32b7548ce4039ab8
+2008-04-28T04:18:30.559220Z
+2
+enzo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1364
 
 print.php
 file
@@ -298,40 +298,6 @@ enzo
 
 1487
 
-form_drafts.php
-file
-
-
-
-
-2010-01-19T20:27:57.281250Z
-e4fd9760871a0571874a2b91bb6dbb15
-2008-04-28T04:18:30.559220Z
-2
-enzo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1410
-
 meta_datagrids.tpl.php
 file
 
@@ -366,14 +332,14 @@ enzo
 
 1656
 
-alternate_template.tpl.php
+form_drafts.php
 file
 
 
 
 
-2010-01-19T20:27:57.312500Z
-e43371be54c0c81afe762ccfa96527c9
+2010-01-19T20:27:57.281250Z
+e4fd9760871a0571874a2b91bb6dbb15
 2008-04-28T04:18:30.559220Z
 2
 enzo
@@ -398,41 +364,7 @@ enzo
 
 
 
-29
-
-meta_datagrids.php
-file
-
-
-
-
-2010-01-19T20:27:57.328125Z
-ff9c6c0ba1de30e8a92bfd6572d1f584
-2008-04-28T04:18:30.559220Z
-2
-enzo
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2787
+1410
 
 metacontrols.tpl.php
 file
@@ -468,14 +400,14 @@ enzo
 
 2868
 
-alternate_template.php
+meta_datagrids.php
 file
 
 
 
 
-2010-01-19T20:27:57.375000Z
-2cba87f5bdae313184d71e9c92d77337
+2010-01-19T20:27:57.328125Z
+ff9c6c0ba1de30e8a92bfd6572d1f584
 2008-04-28T04:18:30.559220Z
 2
 enzo
@@ -500,7 +432,41 @@ enzo
 
 
 
-1271
+2787
+
+alternate_template.tpl.php
+file
+
+
+
+
+2010-01-19T20:27:57.312500Z
+e43371be54c0c81afe762ccfa96527c9
+2008-04-28T04:18:30.559220Z
+2
+enzo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+29
 
 metacontrols.php
 file
@@ -535,6 +501,40 @@ enzo
 
 
 5318
+
+alternate_template.php
+file
+
+
+
+
+2010-01-19T20:27:57.375000Z
+2cba87f5bdae313184d71e9c92d77337
+2008-04-28T04:18:30.559220Z
+2
+enzo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1271
 
 single.tpl.php
 file

@@ -124,8 +124,6 @@ class TargetCP extends QCollapsablePanel  {
 		$this->lblAllies->Text = $intAllies;
 		$this->lblAllies->CssClass = "Account_target_howmany_offer";
 
-		
-
 		//$this->Body->Template = __TEMPLATES__ . "/TargetCPBody.tpl.php";
 		$this->Body->AutoRenderChildren = true;
 		$this->Body->CssClass = "Target_body";
@@ -162,8 +160,8 @@ class TargetCP extends QCollapsablePanel  {
 			
 		// Make the DataGrid look nice
 		$objStyle = $this->dtgAllies->RowStyle;
-		$objStyle->FontSize = 12;
-		$objStyle->BackColor = 'a7e0fd';
+		//$objStyle->FontSize = 12;
+		//$objStyle->BackColor = 'a7e0fd';
 
 		// AlternateRowStyle -- was commented out //
 		$objStyle = $this->dtgAllies->AlternateRowStyle;

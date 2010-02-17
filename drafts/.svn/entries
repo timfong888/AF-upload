@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/drafts
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -536,40 +536,6 @@ vgrichina
 
 3270
 
-group_code_list.tpl.php
-file
-
-
-
-
-2010-01-19T20:26:54.921875Z
-5ca64aaa3802343912c4d32e9222f748
-2010-01-06T03:05:07.758147Z
-809
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1050
-
 message_list.php
 file
 
@@ -604,16 +570,16 @@ vgrichina
 
 2983
 
-user_edit.tpl.php
+group_code_list.tpl.php
 file
 
 
 
 
-2010-01-19T20:26:54.968750Z
-fa75911e2a58068365862da00db37d60
-2010-01-10T03:21:56.573507Z
-813
+2010-01-19T20:26:54.921875Z
+5ca64aaa3802343912c4d32e9222f748
+2010-01-06T03:05:07.758147Z
+809
 vgrichina
 
 
@@ -636,7 +602,7 @@ vgrichina
 
 
 
-1604
+1050
 
 group_code_list.php
 file
@@ -671,6 +637,40 @@ vgrichina
 
 
 2620
+
+user_edit.tpl.php
+file
+
+
+
+
+2010-01-19T20:26:54.968750Z
+fa75911e2a58068365862da00db37d60
+2010-01-10T03:21:56.573507Z
+813
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1604
 
 user_edit.php
 file
@@ -740,40 +740,6 @@ timfong
 
 1036
 
-user_details_edit.tpl.php
-file
-
-
-
-
-2010-01-19T20:26:55.062500Z
-0a52bfe72b688669b1bbc43d96b209a6
-2010-01-06T03:05:07.758147Z
-809
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1608
-
 contact_list.php
 file
 
@@ -807,6 +773,40 @@ vgrichina
 
 
 2762
+
+user_details_edit.tpl.php
+file
+
+
+
+
+2010-01-19T20:26:55.062500Z
+0a52bfe72b688669b1bbc43d96b209a6
+2010-01-06T03:05:07.758147Z
+809
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1608
 
 message_edit.tpl.php
 file
@@ -876,40 +876,6 @@ vgrichina
 
 5851
 
-message_edit.php
-file
-
-
-
-
-2010-01-19T20:26:55.156250Z
-22d36afa2ff18fa1028797ffc00cdcca
-2010-01-06T03:05:07.758147Z
-809
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5343
-
 group_code_edit.tpl.php
 file
 
@@ -943,6 +909,40 @@ vgrichina
 
 
 1123
+
+message_edit.php
+file
+
+
+
+
+2010-01-19T20:26:55.156250Z
+22d36afa2ff18fa1028797ffc00cdcca
+2010-01-06T03:05:07.758147Z
+809
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5343
 
 offer_list.tpl.php
 file

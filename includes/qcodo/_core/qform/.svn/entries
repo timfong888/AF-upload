@@ -1,7 +1,7 @@
 10
 
 dir
-861
+918
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/includes/qcodo/_core/qform
 http://allyforce.unfuddle.com/svn/allyforce_project
 
@@ -536,40 +536,6 @@ has-props
 
 2336
 
-QControlProxy.class.php
-file
-
-
-
-
-2010-01-19T20:26:21.875000Z
-a23ee71e6af9467fa50cfe02674a6ab2
-2009-12-24T00:14:14.371497Z
-795
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1136
-
 _actions.inc.php
 file
 
@@ -604,18 +570,17 @@ has-props
 
 13904
 
-QFloatTextBox.class.php
+QControlProxy.class.php
 file
 
 
 
 
-2010-01-19T20:26:21.921875Z
-6a8ce6a4c1012dae27b0b33ef72f1127
+2010-01-19T20:26:21.875000Z
+a23ee71e6af9467fa50cfe02674a6ab2
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
-has-props
 
 
 
@@ -636,7 +601,8 @@ has-props
 
 
 
-4122
+
+1136
 
 QTreeNavItem.class.php
 file
@@ -672,14 +638,14 @@ has-props
 
 3315
 
-QRadioButtonList.class.php
+QFloatTextBox.class.php
 file
 
 
 
 
-2010-01-19T20:26:22.000000Z
-79e8cbf5ea18ec0b055b5fd78edf5fcc
+2010-01-19T20:26:21.921875Z
+6a8ce6a4c1012dae27b0b33ef72f1127
 2009-12-24T00:14:14.371497Z
 795
 vgrichina
@@ -704,7 +670,7 @@ has-props
 
 
 
-9542
+4122
 
 _events.inc.php
 file
@@ -739,6 +705,40 @@ has-props
 
 
 4118
+
+QRadioButtonList.class.php
+file
+
+
+
+
+2010-01-19T20:26:22.000000Z
+79e8cbf5ea18ec0b055b5fd78edf5fcc
+2009-12-24T00:14:14.371497Z
+795
+vgrichina
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9542
 
 QDataGridRowStyle.class.php
 file

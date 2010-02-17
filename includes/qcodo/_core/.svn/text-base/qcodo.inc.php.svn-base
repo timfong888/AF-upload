@@ -51,7 +51,7 @@
 	function __ob_callback($strBuffer) {
 		return QApplication::OutputPage($strBuffer);
 	}
-	ob_start('__ob_callback');
+	//ob_start('__ob_callback'); //comment out tf-2-9-10
 
 	// Preload Other Framework Classes
 	require(__QCODO_CORE__ . '/framework/QDatabaseBase.class.php');

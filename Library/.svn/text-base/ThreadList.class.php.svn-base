@@ -55,15 +55,19 @@ class ThreadListForm extends QForm {
 		// sets the FontSize as 12px, and because that attribute is not overridden in AlternateRowStyle
 		// or HeaderRowStyle, both those styles will use the 12px Font Size.
 		$objStyle = $this->dtgThreads->RowStyle;
-		$objStyle->BackColor = '#ffffff';
-		$objStyle->FontSize = 12;
+		//$objStyle->BackColor = '#ffffff';
+		//$objStyle->FontSize = 12;
 
 		$objStyle = $this->dtgThreads->AlternateRowStyle;
-		$objStyle->BackColor = '#eeeeee';
+		//$objStyle->BackColor = '#eeeeee';
 
 		$objStyle = $this->dtgThreads->HeaderRowStyle;
-		$objStyle->ForeColor = '#ffffff';
-		$objStyle->BackColor = '#9900cc';
+		
+		//$objStyle->ForeColor = '#ffffff';
+		//$objStyle->BackColor = '#9900cc';
+		
+		$objStyle = $this->dtgThreads->GetColumn(0);
+		  $objStyle->CssClass = "col1";
 	}
 
 	public function RenderDateTime(Thread $objThread) {
@@ -73,8 +77,9 @@ class ThreadListForm extends QForm {
 	/* Assign an action to User profile link */
 	public function RenderAlly(Thread $objThread) {
 		$ally = ($this->_user->Id == $objThread->ReceiverUserId) ? $objThread->SenderUser : $objThread->ReceiverUser;
+		$hash = md5( strtolower($ally->Username));
 		$cssClass = $objThread->LastUser->Id != $this->_user->Id ? 'messagereceive' : '';
-		$link = sprintf('<a href="AllyProfile.php?aid=%s" class="%s">%s</a>', $ally->Id, $cssClass, $ally->FullName);
+		$link = sprintf('<img src="http://www.gravatar.com/avatar?size=30&d=monsterid&gravatar_id=%s" /><a href="profile_activity.php?aid=%s" class="%s">%s</a>',$hash, $ally->Id, $cssClass, $ally->FullName);
 		return $link;
 	}
 

@@ -6,24 +6,6 @@
 	require( __TEMPLATES__  . '/top.tpl.php');
 	
 ?>
-<style type="text/css">
-	#tagline {
-		font-size: 40px;
-		text-align: center;
-		color: #666666;
-	}
-	
-	#tagline span {
-		color: #ff6600;
-	}
-	
-	span {
-		color: #1187ff;
-	}
-	
-	
-
-</style>
 
 <h1>About Allyforce</h1>
 

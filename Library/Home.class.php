@@ -38,9 +38,7 @@ class HomeForm extends QForm {
 	
 		if(isset($_SESSION['User']))
 			$this->objUser = unserialize($_SESSION['User']);
-			
-		
-		
+					
 		$offMin=0;
 		$offMax=0;
 		$alliMax=0;

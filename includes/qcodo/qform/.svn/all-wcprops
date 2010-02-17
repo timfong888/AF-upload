@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/svn/allyforce_project/!svn/ver/795/staging/includes/qcodo/qform
+/svn/allyforce_project/!svn/ver/895/staging/includes/qcodo/qform
 END
 QButton.class.php
 K 25
@@ -25,7 +25,7 @@ QAutoCompleteTextBox.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/svn/allyforce_project/!svn/ver/298/staging/includes/qcodo/qform/QAutoCompleteTextBox.class.php
+/svn/allyforce_project/!svn/ver/895/staging/includes/qcodo/qform/QAutoCompleteTextBox.class.php
 END
 QControl.class.php
 K 25

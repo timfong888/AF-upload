@@ -34,40 +34,7 @@ class ProfileActivityForm extends QForm {
 	protected $arrAllyOffersButtons;
 	
 	protected function Form_PreRender() {
-	    $this->aid = $_REQUEST["aid"];
-	    $this->objAllyUser = User::LoadById($this->aid);
-	    $this->objAllyAccount = Account::LoadById($this->objAllyUser->AccountId);	
-	    $this->objAllyTargets = Target::LoadArrayByUserId($this->aid);		
-	    $this->objAllyOffers = Offer::LoadArrayByUserOwnerId($this->aid);	
-	    $this->objAllyAllies = User::LoadArrayByUserAsAllies($this->aid);
-	    $this->objUserUser = unserialize($_SESSION['User']);
-	    $this->objUserDetails = UserDetails::LoadById($this->objUserUser->UserDetailId);
-	    $this->objUserOffers = Offer::LoadArrayByUserOwnerId($this->objUserUser->Id);
-	    $this->objUserTargets = Target::LoadArrayByUserId($this->objUserUser->Id);
-	    $this->objAllySend = Thread::LoadArrayBySenderUserId($this->aid);
-	    $this->objAllyReceive = Thread::LoadArrayByReceiverUserId($this->aid);
 	    
-	     /*hand data for popup*/
-		    $this->accountRequestPopup->allyId = $this->objAllyUser->Id;
-		    $this->accountRequestPopup->userId = $this->objUserUser->Id;
-	    
-	    /*Create arry of Offers Linkbutton*/
-	    $this->arrAllyOffersButtons = array(); 
-	    $offersCount = count($this->Offers_Array($this->objUserTargets));
-		for($i = 0; $i < ($offersCount<5?$offersCount:5); $i++) {
-		    $offers = $this->Offers_Array($this->objUserTargets);
-		    /*hand data for popup*/
-		    $this->accountRequestPopup->accountId = $offers[$i]->Id;
-		    $this->accountRequestPopup->accountName = $offers[$i]->Name;
-		    
-		    $this->arrAllyOffersButtons[$i] = new QLinkButton($this);
-		    $this->arrAllyOffersButtons[$i]->Text = $offers[$i]->Name;
-		    $this->arrAllyOffersButtons[$i]->AddAction(new QClickEvent(), 
-		                                             new QAjaxAction('btn_AccountRequestPopup_Click'));
-            
-		}
-			
-		
 	}
 	
 	protected function Form_Create() {
@@ -79,6 +46,7 @@ class ProfileActivityForm extends QForm {
 		$this->addAllyPopup = new AddAllyPopup('AddAllyPopup', $this);
 		$this->addAllyPopup->Visible = false;
         $this->addAllyPopup->CssClass = 'profileActivity_addAllyPopup';
+
         
         $this->completeProfilePopup = new CompleteProfilePopup('AddAllyPopup', $this);
 		$this->completeProfilePopup->Visible = false;
@@ -107,6 +75,42 @@ class ProfileActivityForm extends QForm {
 		$this->btnInviteAsAlly = new QLinkButton($this);
 		$this->btnInviteAsAlly->Text = 'Invite as Ally';
 	    $this->btnInviteAsAlly->AddAction(new QClickEvent(), new QAjaxAction('btn_InviteAsAlly_Click'));
+	    
+	    /*___*/
+	    
+	    $this->aid = $_REQUEST["aid"];
+	    $this->objAllyUser = User::LoadById($this->aid);
+	    $this->objAllyAccount = Account::LoadById($this->objAllyUser->AccountId);	
+	    $this->objAllyTargets = Target::LoadArrayByUserId($this->aid);		
+	    $this->objAllyOffers = Offer::LoadArrayByUserOwnerId($this->aid);	
+	    $this->objAllyAllies = User::LoadArrayByUserAsAllies($this->aid);
+	    $this->objUserUser = unserialize($_SESSION['User']);
+	    $this->objUserDetails = UserDetails::LoadById($this->objUserUser->UserDetailId);
+	    $this->objUserOffers = Offer::LoadArrayByUserOwnerId($this->objUserUser->Id);
+	    $this->objUserTargets = Target::LoadArrayByUserId($this->objUserUser->Id);
+	    $this->objAllySend = Thread::LoadArrayBySenderUserId($this->aid);
+	    $this->objAllyReceive = Thread::LoadArrayByReceiverUserId($this->aid);
+	    
+	    /* Popups */
+	    
+	    //hand data for popup
+	    $this->accountRequestPopup->allyId = $this->objAllyUser->Id;
+	    $this->accountRequestPopup->userId = $this->objUserUser->Id;
+	    $this->addAllyPopup->allyId = $this->objAllyUser->Id;
+	    
+	    //Create arry of Offers Linkbutton
+	    $this->arrAllyOffersButtons = array(); 
+	    $offersCount = count($this->Offers_Array($this->objUserTargets));
+		for($i = 0; $i < ($offersCount<5?$offersCount:5); $i++) {
+		    $offers = $this->Offers_Array($this->objUserTargets);
+		    
+		    $this->arrAllyOffersButtons[$i] = new QLinkButton($this);
+		    $this->arrAllyOffersButtons[$i]->SetCustomAttribute("accountId", $offers[$i]->Id);
+		    $this->arrAllyOffersButtons[$i]->SetCustomAttribute("accountName", $offers[$i]->Name);
+		    $this->arrAllyOffersButtons[$i]->Text = $offers[$i]->Name;
+		    $this->arrAllyOffersButtons[$i]->AddAction(new QClickEvent(), 
+		                                             new QAjaxAction('btn_AccountRequestPopup_Click'));
+		}
 	}
 	
 	/*
@@ -288,10 +292,25 @@ class ProfileActivityForm extends QForm {
 	*/
 	 
 	protected function btn_AccountRequestPopup_Click($strFormId, $strControlId, $strParameter) {
-		$this->accountRequestPopup->ShowDialogBox();		
+	    $currentControl = null;
+		for($i = 0; $i < count($this->arrAllyOffersButtons); $i++) {
+		    if($this->arrAllyOffersButtons[$i]->ControlId == $strControlId) {
+		        $currentControl = $this->arrAllyOffersButtons[$i];
+		        break;
+		    }
+		}
+		if($currentControl != null) {
+            //hand data for popup
+		    $this->accountRequestPopup->accountId = $currentControl->GetCustomAttribute("accountId");
+		    $this->accountRequestPopup->accountName = $currentControl->GetCustomAttribute("accountName");
+		    
+		    $this->DefinePopup()->ShowDialogBox();
+        }
 	}
 	
 	public function accountRequestPopup_btnClose_Click() {
+	    $this->accountRequestPopup->accountId = null;
+	    $this->accountRequestPopup->accountName = null;
 	    $this->accountRequestPopup->btnClose_Click();  
 	}
 	 
@@ -311,15 +330,27 @@ class ProfileActivityForm extends QForm {
     *Check if profile complete
     */
     public function IsProfileComplete() {
-        if($this->objUserDetails->City) {
-            return true;
-        }
-        return false;
+        if(
+            !$this->objUserDetails->LName ||
+            !$this->objUserDetails->Title ||
+            !$this->objUserDetails->City
+        ) {
+            return false;
+        } 
+        return true;
     }
     
     /*
     *Check if this uther is my ally
     */
+         
+    /* public function IsRequestExist($intOfferId) {
+        $message = Message::LoadArrayByOfferIdFromUserIdToUserId($intOfferId, $this->objUserUser->Id, $this->objAllyUser->Id);
+        if($message) {
+            return true;
+        }
+        return false;
+    }*/
     
     public function IsMyAlly() {
         $count = User::CountByUserAsAllies($this->objUserUser->Id);
@@ -338,6 +369,17 @@ class ProfileActivityForm extends QForm {
             }  
         }
         return null;
+    }
+    
+     private function DefinePopup() {
+        if(!$this->IsProfileComplete()) {
+		    return $this->completeProfilePopup;
+		} else {
+            if(!$this->IsMyAlly()) {
+                return $this->addAllyPopup;
+            }  
+        }
+        return $this->accountRequestPopup;
     }
 }
 ?>

@@ -1,16 +1,19 @@
-<table class="messagethread">
-<tr>
-<td>
+<div class="messagethread">
+
+	<div class="author_gravatar">
 		<?php
-		if($_CONTROL->objMessage->FromUser->UserDetail->Picture != '')
-			echo '<img width=40 height=45 src="/Pictures/' .$_CONTROL->objMessage->FromUser->UserDetail->Picture .'">';
-		else
-			echo '<img width=40 height=45 src="/assets/images/file_asset_blank.png">';
-		?>	
-</td>
-<td class="author_info">
+			$email = $_CONTROL->objMessage->FromUser->Username;
+			$gravatar = md5(strtolower($email));
+			$id = $_CONTROL->objMessage->FromUser->Id;
+		?>
+			<a href="profile_activity.php?aid=<?php echo $id ?>">
+				<img src="http://www.gravatar.com/avatar?s=45&d=monsterid&gravatar_id=<?php echo $gravatar;?>">
+			</a>	
+	</div>
+	
+	<div class="author_info">
 		<?php 
-			echo '<b>'. $_CONTROL->objMessage->FromUser->FullName . '</b><br/>';
+			echo '<b><a href="profile_activity.php?aid=$id">'. $_CONTROL->objMessage->FromUser->FullName . '</b></a><br/>';
 			echo '<b>'. $_CONTROL->objMessage->FromUser->AccountIdObject->Name . '</b>';
 			echo "<br>"; 
 		?>
@@ -19,12 +22,12 @@
 				echo $_CONTROL->objMessage->DateTime->__toString("hh:mm z MMM D YY ");
 			?>
 		</div>
-
-</td>
-<td class="message_body">
-	<?php
-		echo $_CONTROL->objMessage->Body;
-	?>
-</td></tr>
-<tr><td></td><td colspan=2><hr></td></tr>
-</table>
+	
+	</div>
+	
+	<div class="message_body">
+		<?php
+			echo $_CONTROL->objMessage->Body;
+		?>
+	</div>
+</div>

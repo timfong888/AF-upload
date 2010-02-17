@@ -1,7 +1,7 @@
 <!--footer-->
 	<div class="footer" align="center"> 
 		<br /><br /> 
-		<span>copyright(&copy;) allyforce, inc 2007-2009  version 2069.15</span>
+		<span>copyright(&copy;) allyforce, inc 2007-2010  version 2080.15</span>
 	</div>
 	
 <!--google-->

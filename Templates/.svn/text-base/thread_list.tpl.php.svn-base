@@ -4,6 +4,7 @@
 <div class="container" id="thread_list">
 	<?php $select_home = "0" ;?>
 	<?php $select_allies = "0" ;?>
+	<?php $select_targets = "0" ;?>
 	<?php $select_threads = "here" ;?>
 	<?php require_once(__TEMPLATES__ . "/header_new.tpl.php") ?>
 	<br />

@@ -1,37 +1,37 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/allyforce_project/!svn/ver/861/staging/Library
+/svn/allyforce_project/!svn/ver/918/staging/Library
 END
 Home.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/allyforce_project/!svn/ver/359/staging/Library/Home.class.php
+/svn/allyforce_project/!svn/ver/925/staging/Library/Home.class.php
 END
 AddAllyPopup.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/allyforce_project/!svn/ver/859/staging/Library/AddAllyPopup.class.php
+/svn/allyforce_project/!svn/ver/914/staging/Library/AddAllyPopup.class.php
 END
 SignupCode.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/allyforce_project/!svn/ver/871/staging/Library/SignupCode.class.php
+/svn/allyforce_project/!svn/ver/925/staging/Library/SignupCode.class.php
 END
 Ally.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/allyforce_project/!svn/ver/871/staging/Library/Ally.class.php
+/svn/allyforce_project/!svn/ver/926/staging/Library/Ally.class.php
 END
 ThreadList.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/allyforce_project/!svn/ver/325/staging/Library/ThreadList.class.php
+/svn/allyforce_project/!svn/ver/922/staging/Library/ThreadList.class.php
 END
 bc_library.php
 K 25
@@ -61,7 +61,7 @@ TargetCP.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/allyforce_project/!svn/ver/515/staging/Library/TargetCP.class.php
+/svn/allyforce_project/!svn/ver/897/staging/Library/TargetCP.class.php
 END
 Salesforce_popup.class.php
 K 25
@@ -79,7 +79,7 @@ ProfileActivity.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/allyforce_project/!svn/ver/860/staging/Library/ProfileActivity.class.php
+/svn/allyforce_project/!svn/ver/916/staging/Library/ProfileActivity.class.php
 END
 AccountProfile.class.php
 K 25
@@ -91,7 +91,7 @@ CompleteProfilePopup.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/svn/allyforce_project/!svn/ver/859/staging/Library/CompleteProfilePopup.class.php
+/svn/allyforce_project/!svn/ver/892/staging/Library/CompleteProfilePopup.class.php
 END
 account_detail.class.php
 K 25
@@ -121,7 +121,7 @@ OfferCP.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/allyforce_project/!svn/ver/299/staging/Library/OfferCP.class.php
+/svn/allyforce_project/!svn/ver/897/staging/Library/OfferCP.class.php
 END
 Target.class.php
 K 25
@@ -129,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/allyforce_project/!svn/ver/654/staging/Library/Target.class.php
 END
-Signup2.class.php
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/allyforce_project/!svn/ver/625/staging/Library/Signup2.class.php
-END
 MailMessage.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svn/allyforce_project/!svn/ver/44/staging/Library/MailMessage.class.php
+END
+Signup2.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/625/staging/Library/Signup2.class.php
 END
 Signup3.class.php
 K 25
@@ -151,13 +151,7 @@ AccountRequestPopup.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/svn/allyforce_project/!svn/ver/860/staging/Library/AccountRequestPopup.class.php
-END
-MessageRequest.class.php
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/svn/allyforce_project/!svn/ver/743/staging/Library/MessageRequest.class.php
+/svn/allyforce_project/!svn/ver/918/staging/Library/AccountRequestPopup.class.php
 END
 protected.inc.php
 K 25
@@ -165,17 +159,23 @@ svn:wc:ra_dav:version-url
 V 69
 /svn/allyforce_project/!svn/ver/442/staging/Library/protected.inc.php
 END
-MessageSend.class.php
+MessageRequest.class.php
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/allyforce_project/!svn/ver/742/staging/Library/MessageSend.class.php
+V 76
+/svn/allyforce_project/!svn/ver/884/staging/Library/MessageRequest.class.php
 END
 reports.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svn/allyforce_project/!svn/ver/750/staging/Library/reports.class.php
+END
+MessageSend.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/911/staging/Library/MessageSend.class.php
 END
 UserProfile.class.php
 K 25
@@ -186,14 +186,14 @@ END
 Profile.class.php
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svn/allyforce_project/!svn/ver/47/staging/Library/Profile.class.php
+V 69
+/svn/allyforce_project/!svn/ver/909/staging/Library/Profile.class.php
 END
 Offer.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/544/staging/Library/Offer.class.php
+/svn/allyforce_project/!svn/ver/897/staging/Library/Offer.class.php
 END
 billingcircle.class.php
 K 25
@@ -211,13 +211,13 @@ Target1.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/allyforce_project/!svn/ver/873/staging/Library/Target1.class.php
+/svn/allyforce_project/!svn/ver/897/staging/Library/Target1.class.php
 END
 CodeAttendees.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/allyforce_project/!svn/ver/861/staging/Library/CodeAttendees.class.php
+/svn/allyforce_project/!svn/ver/925/staging/Library/CodeAttendees.class.php
 END
 Signup3-addtargets.class.php
 K 25

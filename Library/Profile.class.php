@@ -6,6 +6,7 @@ class ProfileForm extends QForm {
 	protected $txtFullName;
 	protected $txtCompany;
 	protected $txtEmail;
+	protected $txtTitle;
 	protected $txtBackupEmail;
 	protected $txtCodeName;
 	protected $txtCompanyURL;
@@ -16,6 +17,7 @@ class ProfileForm extends QForm {
 	protected $txtNewPassword;
 	protected $txtRetypePassword;
 	protected $flaPicture;
+	protected $lblMessage;
 
 	protected $objUser;
 
@@ -32,6 +34,9 @@ class ProfileForm extends QForm {
 		$this->txtCompany = new QTextBox($this);
 		$this->txtCompany->Text = $this->objUser->AccountIdObject->Name;
 
+		$this->txtTitle = new QTextBox($this);
+		$this->txtTitle->Text = $this->objUser->UserDetail->Title;
+		
 		$this->txtEmail = new EmailTextBox($this);
 		$this->txtEmail->Text = $this->objUser->Username;
 
@@ -67,6 +72,7 @@ class ProfileForm extends QForm {
 		$this->txtRetypePassword = new QTextBox($this);
 		$this->txtRetypePassword->TextMode = QTextMode::Password;
 
+/*
 		$this->flaPicture = new QFileAsset($this);
 		$this->flaPicture->TemporaryUploadPath = __DOCROOT__ . __SUBDIRECTORY__. '/Pictures/Temporary';
 		$this->flaPicture->FileAssetType = QFileAssetType::Image;
@@ -75,6 +81,7 @@ class ProfileForm extends QForm {
 		$this->flaPicture->ClickToView = true;
 		if($this->objUser->UserDetail->Picture)
 		$this->flaPicture->File = __DOCROOT__ . __SUBDIRECTORY__. '/Pictures/' . $this->objUser->UserDetail->Picture;
+*/
 
 		$this->btnSave = new QButton($this);
 
@@ -82,9 +89,16 @@ class ProfileForm extends QForm {
 		$this->btnSave->AddAction(new QClickEvent(), new QAjaxAction('btnSave_Click'));
 		$this->btnSave->PrimaryButton = true;
 
+/* added this */		
+		$this->lblMessage = new QLabel($this);
+		$this->lblMessage->Display = false;
+		$this->lblMessage->CssClass = "ProfileMessage";
+
 	}
 	protected function btnSave_Click($strFormId, $strControlId, $strParameter) {
 
+		$this->lblMessage->Display = False;
+		
 		if(!$this->txtEmail->Validate())
 		{
 			$this->txtEmail->Text = "";
@@ -134,6 +148,7 @@ class ProfileForm extends QForm {
 		$this->objUser->UserDetail->Territory = $this->txtTerritory->Text;
 		$this->objUser->UserDetail->Solutions = $this->txtSolutions->Text;
 
+/*
 		if($this->flaPicture->FileName)
 		{
 			if($this->flaPicture->FileName != $this->objUser->UserDetail->Picture and $this->objUser->UserDetail->Picture != "")
@@ -151,12 +166,15 @@ class ProfileForm extends QForm {
 			unlink( __DOCROOT__ . __SUBDIRECTORY__. '/Pictures/' . $this->objUser->UserDetail->Picture);
 			$this->objUser->UserDetail->Picture = "";
 		}
+*/
 
 		$this->objUser->UserDetail->Save();
 		$this->objUser->Save();
 		$_SESSION['User'] = serialize($this->objUser);
 
-		QApplication::DisplayAlert("Your profile was updated sucessfully");
+		//QApplication::DisplayAlert("Your profile was updated sucessfully");
+		$this->lblMessage->Text ="Profile Saved Dude!";
+		$this->lblMessage->Display = True;
 
 	}
 }

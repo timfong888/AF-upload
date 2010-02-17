@@ -1,46 +1,73 @@
-<?php require_once(__TEMPLATES__ . "/header2.tpl.php") ?>
+<?php require_once('includes/header.inc.php'); ?>
+<?php require_once(__TEMPLATES__ . "/body.global.tpl.php") ?>
 <?php $this->RenderBegin(); ?>
-<div class="container">
 
-<div class="span-10" id="profile_edit">
-	<h3 class="blue">Edit Profile</h3>
-	<div class="span-3"><strong>Full Name</strong></div>
-	<div class="span-5 prepend-1 last"><?php $this->txtFullName->RenderWithError(); ?></div>
-	<hr class="space" />
-	<div class="span-3"><strong>Username</strong></div>
-	<div class="span-5 prepend-1 last">  <?php $this->txtCodeName->RenderWithError(); ?></div>
-	<hr class="space" />
-	<div class="span-3"><strong>Company</strong></div>
-	<div class="span-5 prepend-1 last"><?php $this->txtCompany->RenderWithError(); ?></div>
-	<hr class="space" />
-	<div class="span-3"><strong>Company Email</strong></div>
-	<div class="span-5 prepend-1 last"><?php $this->txtEmail->RenderWithError(); ?></div>
-	<hr class="space" />
-	<div class="span-3"><strong>Backup Email</strong></div>
-	<div class="span-5 prepend-1 last"><?php $this->txtBackupEmail->RenderWithError(); ?></div>
-	<hr class="space" />
-	<div class="span-3"><strong>Upload Photo</strong></div>
-	<div class="span-5 prepend-1 last"><?php $this->flaPicture->RenderWithError(); ?></div>
-	<fieldset>
-		<legend>Change Password</legend>
-		<div class="span-4">New Password: </div>
-		<?php $this->txtNewPassword->RenderWithError(); ?><br />
-   	    <hr class="space" />
-		<div class="span-4">Retype Password:</div> 
-		<?php $this->txtRetypePassword->RenderWithError(); ?>
-	</fieldset>
+<div class="container" id="profile">
+  	<?php $select_home = "0" ;?>
+	<?php $select_allies = "0" ;?>
+	<?php $select_threads = "0" ;?>
+	<?php $select_targets = "0" ;?>
+	<?php require_once(__TEMPLATES__ . "/header_new.tpl.php") ?>
+	
+	<div id="profile_edit">
+		<h3>Edit Profile</h3>
+		<div id="message">
+			<?php $this->lblMessage->Render()?>
+		</div>
+		<div class="row">
+			<span class="label">Full Name:</span>
+			<span class="formfield"><?php $this->txtFullName->RenderWithError(); ?></span>
+		</div>
+	
+		<div class="row">
+			<span class="label">Username:</span>
+			<span class="formfield">  <?php $this->txtCodeName->RenderWithError(); ?></span>
+		</div>
+	
+		<div class="row">
+			<span class="label">Company:</span>
+			<span class="formfield"><?php $this->txtCompany->RenderWithError(); ?></span>
+		</div>
 
-</div>
+		<div class="row">
+			<span class="label">Title:</span>
+			<span class="formfield"><?php $this->txtTitle->RenderWithError(); ?></span>
+		</div>
+				
+		<div class="row">
+			<span class="label">Company Email:</span>
+			<span class="formfield"><?php $this->txtEmail->RenderWithError(); ?></span>
+		</div>
+	
+		<div class="row">
+			<span class="label">Backup Email:</span>
+			<span class="formfield"><?php $this->txtBackupEmail->RenderWithError(); ?></span>
+		</div>
+	
+		<div class="row">
+			<span class="label">Click to Change:</span>
+			<span class="formfield"><a href="http://www.gravatar.com/"><img src="http://www.gravatar.com/avatar?s=45&d=monsterid&gravatar_id=<?php echo $gravatarid3;?>"></a></span>
+		</div>
+		
+		<fieldset>
+			<legend>Change Password</legend>
+			<div class="span-4">New Password: </div>
+			<?php $this->txtNewPassword->RenderWithError(); ?><br />
+	
+			<div class="span-4">Retype Password:</div> 
+			<?php $this->txtRetypePassword->RenderWithError(); ?>
+		</fieldset>
+		
+		<div id="button"><?php $this->btnSave->Render(); ?></div>
+	</div>
 
-<div class="span-10" id="profile_edit">
-	<hr class="space" />
+<div id="profile_edit">
+
 	<label>Territory</label><br />
 	<?php $this->txtTerritory->RenderWithError(); ?>
-	<hr class="space" />
+
 	<label>Solution Pitch</label><br />
 	<?php $this->txtSolutions->RenderWithError(); ?>
-	<hr class="space" />
-	<span class="prepend-5"><?php $this->btnSave->Render(); ?></span>
 </div>	
 	
 <?php $this->RenderEnd(); ?>

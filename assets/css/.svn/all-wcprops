@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svn/allyforce_project/!svn/ver/797/staging/assets/css
+/svn/allyforce_project/!svn/ver/897/staging/assets/css
 END
 jquery.autocomplete.css
 K 25
@@ -14,10 +14,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 66
 /svn/allyforce_project/!svn/ver/797/staging/assets/css/_README.txt
-END
-styles.css
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svn/allyforce_project/!svn/ver/797/staging/assets/css/styles.css
 END

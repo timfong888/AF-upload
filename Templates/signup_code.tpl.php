@@ -28,7 +28,7 @@
 			
 			<div class='row'>
 				<span class='label'>First Name:</span>
-				<span class="formfield"><?php $this->txtFirstName->Render(); ?></span>
+				<span class="formfield"><?php $this->txtFirstName->RenderWithError(); ?></span>
 			</div>
 
 			<div class='row'>
@@ -53,7 +53,7 @@
 			
 			<div class='row'>
 				<span class='label'>CODE:</span>
-				<span class="formfield"><?php $this->txtSignupCode->Render(); ?></span>
+				<span class="formfield"><?php $this->txtSignupCode->RenderWithError(); ?></span>
 			</div>	
 
 			<div class='row'>

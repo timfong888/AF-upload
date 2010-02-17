@@ -1,53 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/svn/allyforce_project/!svn/ver/853/staging/css
-END
-newstyle.css
-K 25
-svn:wc:ra_dav:version-url
-V 60
-/svn/allyforce_project/!svn/ver/862/staging/css/newstyle.css
-END
-print.css
-K 25
-svn:wc:ra_dav:version-url
-V 57
-/svn/allyforce_project/!svn/ver/593/staging/css/print.css
-END
-ie.css
-K 25
-svn:wc:ra_dav:version-url
-V 54
-/svn/allyforce_project/!svn/ver/593/staging/css/ie.css
-END
-public_style.css
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svn/allyforce_project/!svn/ver/540/staging/css/public_style.css
-END
-screen.css
-K 25
-svn:wc:ra_dav:version-url
-V 58
-/svn/allyforce_project/!svn/ver/659/staging/css/screen.css
-END
-style.css
-K 25
-svn:wc:ra_dav:version-url
-V 57
-/svn/allyforce_project/!svn/ver/873/staging/css/style.css
+/svn/allyforce_project/!svn/ver/913/staging/css
 END
 scaffold.css
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/allyforce_project/!svn/ver/873/staging/css/scaffold.css
-END
-style2.css
-K 25
-svn:wc:ra_dav:version-url
-V 58
-/svn/allyforce_project/!svn/ver/870/staging/css/style2.css
+/svn/allyforce_project/!svn/ver/926/staging/css/scaffold.css
 END
