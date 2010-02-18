@@ -1,17 +1,17 @@
 10
 
 dir
-918
+927
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/assets/js
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2009-12-24T00:24:13.223966Z
-797
-vgrichina
+2010-02-17T01:38:08.492320Z
+927
+timfong
 has-props
-has-prop-mods
+
 
 
 
@@ -28,7 +28,7 @@ has-prop-mods
 
 dimensions.js
 file
-
+918
 
 
 
@@ -65,7 +65,7 @@ dir
 
 jquery.bgiframe.min.js
 file
-
+918
 
 
 
@@ -97,16 +97,9 @@ soper
 
 1373
 
-jquery-1.4.1.js
-file
-0
-
-
-add
-
 _README.txt
 file
-
+918
 
 
 
@@ -140,49 +133,15 @@ vgrichina
 
 jquery.autocomplete.js
 file
+928
 
 
 
-delete
-2010-01-19T20:24:56.437500Z
-a6d3d83bed7a207c1c00dd21cb0fd567
-2008-10-30T16:13:31.063510Z
-277
-soper
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6124
-
-jquery.js
-file
-
-
-
-delete
-2010-01-19T20:24:56.656250Z
-2d32e72ec93128c0b4572bda9aa354a0
-2008-10-30T16:13:31.063510Z
-277
-soper
+2010-02-17T16:39:35.062500Z
+03d2526cde77d7dfad1bada749031410
+2010-02-17T16:46:05.413259Z
+928
+timfong
 
 
 
@@ -204,12 +163,8 @@ soper
 
 
 
-30149
+20446
 
 jquery-autocomplete
 dir
-
-
-
-add
 

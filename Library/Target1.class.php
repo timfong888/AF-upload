@@ -64,9 +64,11 @@ class TargetForm extends QForm {
 		$this->dtgTargets->UseAjax = true;
 		$this->dtgTargets->AddColumn(new QDataGridColumn("Del", '<?= $_FORM->DeleteButton_Render($_ITEM) ?>', 'Width=10', 'HtmlEntities=false')); //add TF 11-27-08
 		$this->dtgTargets->AddColumn(new QDataGridColumn('Target Account','<a href="/account_detail.php?aid=<?= str_replace(" ","_",$_ITEM->Account->Id); ?>"><?= $_ITEM->Account->Name ?></a>','HtmlEntities=false',array('OrderByClause' => QQ::OrderBy(QQN::Target()->Account->Name), 'ReverseOrderByClause' => QQ::OrderBy(QQN::Target()->Account->Name,false))));
-		$this->dtgTargets->GetColumn(0)->Width = '200px';
+
 		$this->dtgTargets->SortColumnIndex = 0;
-			
+		
+		$objStyle = $this->dtgTargets->GetColumn(0);
+		$objStyle->CssClass = "col0";	
 		$objStyle = $this->dtgTargets->RowStyle;
 		//$objStyle->FontSize = 14;
 		//$objStyle->BackColor = 'a7e0fd';

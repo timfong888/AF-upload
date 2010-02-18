@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/allyforce_project/!svn/ver/797/staging/assets/js
+/svn/allyforce_project/!svn/ver/927/staging/assets/js
 END
 dimensions.js
 K 25
@@ -25,11 +25,5 @@ jquery.autocomplete.js
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/svn/allyforce_project/!svn/ver/277/staging/assets/js/jquery.autocomplete.js
-END
-jquery.js
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svn/allyforce_project/!svn/ver/277/staging/assets/js/jquery.js
+/svn/allyforce_project/!svn/ver/928/staging/assets/js/jquery.autocomplete.js
 END

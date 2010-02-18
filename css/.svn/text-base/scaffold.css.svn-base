@@ -425,23 +425,33 @@ div#target_list, div.offer_list, div#threads, div#code_grid, div.allies_list {
 				color: $grey;
 				width: 100px;
 			}
-}	
+	}	
 }
 
-div.offer_list {
-	width: 90%;
-	margin-left: 10%;
-	
-	span.Account_Offered {
-		font-size: 20px;
-		width: 45%
-	}
-	
-	span.numballieswhotarget, span.numballiesgiven_account {
-		width: 15%;
+div#offers {
+	div#offer_list {
+		width: 90%;
+		margin-left: 10%;
+		
+		img {
+			float: left;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		
+		span.Account_Offered {
+			display: inline-block;
+			font-size: 20px;
+			width: 45%;
+			color: $blue;
+		}
+		
+		span.numballieswhotarget, span.numballiesgiven_account {
+			display: inline-block;
+			width: 15%;
+		}
 	}
 }
-
 /* css for the headers */
 
 div#header_new {

@@ -1,15 +1,15 @@
 10
 
 dir
-0
+927
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/assets/js/jquery-autocomplete
 http://allyforce.unfuddle.com/svn/allyforce_project
-add
 
 
 
-
-
+2010-02-17T01:38:08.492320Z
+927
+timfong
 
 
 
@@ -31,47 +31,137 @@ file
 
 
 
-add
+
+2010-02-17T00:10:41.375000Z
+8ffe39936841994f5f7f9f1ff8e6b8d0
+2010-02-17T01:38:08.492320Z
+927
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1097
 
 todo
 file
 
 
 
-add
-
-jquery.autocomplete.css
-file
+
+2010-02-17T00:11:01.390000Z
+0cd27b0aeab4e4630ea73996a1150f5a
+2010-02-17T01:38:08.492320Z
+927
+timfong
 
 
 
-add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7513
 
 lib
 dir
-
-
-
-add
 
 jquery.autocomplete.pack.js
 file
 
 
 
-add
-
-jquery.autocomplete.js
-file
+
+2010-02-17T00:11:00.921000Z
+109ba9ac44430c7e5dfa2831e657ee6b
+2010-02-17T01:38:08.492320Z
+927
+timfong
 
 
 
-add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8001
 
 jquery.autocomplete.min.js
 file
 
 
 
-add
+
+2010-02-17T00:10:58.796000Z
+a30f20db67dc554b7604ff2212fff1d5
+2010-02-17T01:38:08.492320Z
+927
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14091
 

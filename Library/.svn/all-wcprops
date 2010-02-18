@@ -129,17 +129,17 @@ svn:wc:ra_dav:version-url
 V 68
 /svn/allyforce_project/!svn/ver/654/staging/Library/Target.class.php
 END
-MailMessage.class.php
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/allyforce_project/!svn/ver/44/staging/Library/MailMessage.class.php
-END
 Signup2.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svn/allyforce_project/!svn/ver/625/staging/Library/Signup2.class.php
+END
+MailMessage.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/44/staging/Library/MailMessage.class.php
 END
 Signup3.class.php
 K 25
@@ -153,29 +153,29 @@ svn:wc:ra_dav:version-url
 V 81
 /svn/allyforce_project/!svn/ver/918/staging/Library/AccountRequestPopup.class.php
 END
-protected.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/svn/allyforce_project/!svn/ver/442/staging/Library/protected.inc.php
-END
 MessageRequest.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svn/allyforce_project/!svn/ver/884/staging/Library/MessageRequest.class.php
 END
-reports.class.php
+protected.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/allyforce_project/!svn/ver/750/staging/Library/reports.class.php
+/svn/allyforce_project/!svn/ver/442/staging/Library/protected.inc.php
 END
 MessageSend.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /svn/allyforce_project/!svn/ver/911/staging/Library/MessageSend.class.php
+END
+reports.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/allyforce_project/!svn/ver/750/staging/Library/reports.class.php
 END
 UserProfile.class.php
 K 25
@@ -211,7 +211,7 @@ Target1.class.php
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/allyforce_project/!svn/ver/897/staging/Library/Target1.class.php
+/svn/allyforce_project/!svn/ver/930/staging/Library/Target1.class.php
 END
 CodeAttendees.class.php
 K 25
