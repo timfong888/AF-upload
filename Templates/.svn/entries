@@ -1,14 +1,14 @@
 10
 
 dir
-918
+944
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/Templates
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2010-02-15T12:57:34.146647Z
-917
+2010-02-23T22:11:34.334283Z
+944
 vgrichina
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2010-01-19T20:24:27.031250Z
-3bdc89c3e1f1bda723e1af4c700f524e
-2008-12-18T20:19:33.868219Z
-468
+2010-02-19T20:39:45.093750Z
+17336b086c7017b6047655162436b0b7
+2010-02-19T21:16:03.889425Z
+935
 timfong
 
 
@@ -58,7 +58,7 @@ timfong
 
 
 
-1155
+837
 
 target_popup3.tpl.php
 file
@@ -196,16 +196,16 @@ timfong
 
 1276
 
-salesforce_popup.tpl.php
+target_popup.tpl.php
 file
 
 
 
 
-2010-01-19T20:24:28.093750Z
-9e9820a2e1045a6afdf7394e946f691b
-2009-03-24T15:03:19.426648Z
-704
+2010-02-19T20:27:23.109375Z
+5d583cbf150608b798ad8ea08568f5b6
+2010-02-19T21:16:03.889425Z
+935
 timfong
 
 
@@ -228,75 +228,7 @@ timfong
 
 
 
-1979
-
-logout.tpl.php
-file
-
-
-
-
-2010-01-19T20:24:28.015625Z
-2635be56552bc665787d13372a580e75
-2010-01-13T02:12:51.924379Z
-819
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-60
-
-addnewtarget.tpl.php
-file
-
-
-
-
-2010-02-07T19:48:34.296875Z
-fd92026d646efd3e6cc2b0b6b6e22247
-2010-02-07T20:07:15.605116Z
-873
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-84
+1061
 
 span_home.tpl.php
 file
@@ -332,16 +264,16 @@ timfong
 
 259
 
-target_popup.tpl.php
+addnewtarget.tpl.php
 file
 
 
 
 
-2010-02-09T16:03:02.406250Z
-99d6dc24477f22b8b03132634604971b
-2010-02-09T17:12:34.592410Z
-886
+2010-02-07T19:48:34.296875Z
+fd92026d646efd3e6cc2b0b6b6e22247
+2010-02-07T20:07:15.605116Z
+873
 timfong
 
 
@@ -364,7 +296,75 @@ timfong
 
 
 
-1375
+84
+
+logout.tpl.php
+file
+
+
+
+
+2010-01-19T20:24:28.015625Z
+2635be56552bc665787d13372a580e75
+2010-01-13T02:12:51.924379Z
+819
+vgrichina
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+60
+
+salesforce_popup.tpl.php
+file
+
+
+
+
+2010-01-19T20:24:28.093750Z
+9e9820a2e1045a6afdf7394e946f691b
+2009-03-24T15:03:19.426648Z
+704
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1979
 
 signup_new.tpl.php
 file
@@ -712,11 +712,11 @@ file
 
 
 
-2010-01-19T20:24:28.734375Z
-333f6915f2de26618b4b7054e4de08c2
-2008-12-23T08:46:42.975558Z
-490
-soper
+2010-02-19T21:07:33.000000Z
+64fa7a037e8a93707cbd8d70370c6eac
+2010-02-19T21:16:03.889425Z
+935
+timfong
 
 
 
@@ -738,7 +738,7 @@ soper
 
 
 
-1547
+1667
 
 signup.tpl.php
 file
@@ -780,11 +780,11 @@ file
 
 
 
-2010-01-19T20:24:28.796875Z
-20287cac49ebee5fddb2a15885b9b5bc
-2008-12-23T08:46:42.975558Z
-490
-soper
+2010-02-19T20:42:29.531250Z
+d75efae6ed4e50737707a28b32092ec9
+2010-02-19T21:16:03.889425Z
+935
+timfong
 
 
 
@@ -806,7 +806,7 @@ soper
 
 
 
-470
+455
 
 code_attendees.tpl.php
 file
@@ -814,10 +814,10 @@ file
 
 
 
-2010-02-11T22:20:41.984375Z
-3bb12801fcf7be2e6f7d41fd1b2a3186
-2010-02-11T23:06:56.506349Z
-895
+2010-02-21T05:17:30.218750Z
+de62ebf9a88b6db61fbf51ece75210ed
+2010-02-21T04:51:31.115375Z
+936
 timfong
 
 
@@ -840,7 +840,7 @@ timfong
 
 
 
-1863
+2029
 
 target1.tpl.php
 file
@@ -848,10 +848,10 @@ file
 
 
 
-2010-02-14T18:52:42.250000Z
-f52827bcaff0a0fad6534249cfd32602
-2010-02-09T20:03:49.893160Z
-887
+2010-02-19T20:11:46.765625Z
+7cd1511e0f15836f6e1ed3a501ff22d7
+2010-02-19T21:16:03.889425Z
+935
 timfong
 
 
@@ -874,7 +874,7 @@ timfong
 
 
 
-1760
+1545
 
 signup3-addtargets.tpl.php
 file
@@ -980,19 +980,15 @@ timfong
 
 profile_activity.tpl.php
 file
-923
-
-
-
-2010-02-15T19:35:08.953125Z
-07e4ecccc117702784f8561d97bf8b3b
-2010-02-15T19:37:15.446708Z
-923
-timfong
 
 
 
 
+2010-02-24T20:28:29.453125Z
+a776b7a1e3fa1e50c8f8b2dfb0eb7d77
+2010-02-23T22:11:34.334283Z
+944
+vgrichina
 
 
 
@@ -1010,7 +1006,11 @@ timfong
 
 
 
-8388
+
+
+
+
+8981
 
 message_send2.tpl.php
 file
@@ -1120,47 +1120,10 @@ file
 
 
 
-2010-02-15T16:49:56.562500Z
-9d052101ce0c5685ce32ad0348fae09f
-2010-02-15T12:57:34.146647Z
-917
-vgrichina
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-639
-
-insiderforce
-dir
-
-message_send.tpl.php
-file
-
-
-
-
-2010-01-19T20:24:30.234375Z
-7d55620c5f0d229e1173ee970df27363
-2008-07-10T04:43:34.717147Z
-171
+2010-02-23T00:43:56.984375Z
+c54f5ae318692bbf4ce17ef199090826
+2010-02-23T00:46:18.626089Z
+938
 timfong
 
 
@@ -1183,7 +1146,10 @@ timfong
 
 
 
-4926
+825
+
+insiderforce
+dir
 
 OfferCPHeader.tpl.php
 file
@@ -1219,6 +1185,9 @@ enzo
 
 169
 
+Mail
+dir
+
 reports.tpl.php
 file
 
@@ -1252,9 +1221,6 @@ timfong
 
 
 2444
-
-Mail
-dir
 
 signup_code.tpl.php
 file
@@ -1290,40 +1256,6 @@ vgrichina
 
 5514
 
-header_new.tpl.php
-file
-
-
-
-
-2010-02-14T18:48:47.328125Z
-15685fb5d19c4b7255693660b4f64e77
-2010-02-14T18:50:11.657925Z
-902
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1279
-
 successful_invite_ally_popup.tpl.php
 file
 
@@ -1357,6 +1289,40 @@ timfong
 
 
 1666
+
+header_new.tpl.php
+file
+
+
+
+
+2010-02-14T18:48:47.328125Z
+15685fb5d19c4b7255693660b4f64e77
+2010-02-14T18:50:11.657925Z
+902
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1279
 
 thread_list.tpl.php
 file
@@ -1462,7 +1428,7 @@ timfong
 
 home1.tpl.php
 file
-926
+
 
 
 
@@ -1664,40 +1630,6 @@ enzo
 
 102
 
-account_give_popup.tpl.php
-file
-
-
-
-
-2010-02-07T02:25:31.953125Z
-dfdc4b5b361363581e698c7b0569c8c6
-2010-02-07T04:55:06.626664Z
-869
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1319
-
 billing_new.tpl.php
 file
 
@@ -1731,6 +1663,40 @@ timfong
 
 
 5320
+
+account_give_popup.tpl.php
+file
+
+
+
+
+2010-02-07T02:25:31.953125Z
+dfdc4b5b361363581e698c7b0569c8c6
+2010-02-07T04:55:06.626664Z
+869
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1319
 
 allyProfilenew.tpl.php
 file
@@ -1970,40 +1936,6 @@ timfong
 
 3593
 
-must_invite_ally_popup.tpl.php
-file
-
-
-
-
-2010-01-19T20:24:34.671875Z
-f6d593c8a2cfcf070bb0cbc863e73f69
-2009-12-12T21:57:02.456562Z
-779
-timfong
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1633
-
 profilenew.tpl.php
 file
 
@@ -2038,16 +1970,16 @@ timfong
 
 2431
 
-signup_manager_invite.tpl.php
+must_invite_ally_popup.tpl.php
 file
 
 
 
 
-2010-01-19T20:24:34.906250Z
-1f5c1076e6dc0132572a54535149d80d
-2009-03-05T22:53:37.862229Z
-621
+2010-01-19T20:24:34.671875Z
+f6d593c8a2cfcf070bb0cbc863e73f69
+2009-12-12T21:57:02.456562Z
+779
 timfong
 
 
@@ -2070,7 +2002,7 @@ timfong
 
 
 
-1478
+1633
 
 AccountProfile.tpl.php
 file
@@ -2106,16 +2038,16 @@ timfong
 
 3136
 
-message_request2.tpl.php
+signup_manager_invite.tpl.php
 file
 
 
 
 
-2010-02-15T05:23:11.140625Z
-2663cab20296dd04b64df677d85071a9
-2010-02-15T05:39:39.060731Z
-913
+2010-01-19T20:24:34.906250Z
+1f5c1076e6dc0132572a54535149d80d
+2009-03-05T22:53:37.862229Z
+621
 timfong
 
 
@@ -2138,7 +2070,41 @@ timfong
 
 
 
-3380
+1478
+
+message_request2.tpl.php
+file
+
+
+
+
+2010-02-23T01:41:17.453125Z
+cd1775f65aaffb613cb840d2c1696386
+2010-02-23T02:06:35.767398Z
+939
+timfong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3354
 
 account_detail.tpl.php
 file
@@ -2248,11 +2214,11 @@ file
 
 
 
-2010-01-19T20:24:35.453125Z
-4b3172e9953c506bd1b76e217b22bddd
-2008-12-23T08:46:42.975558Z
-490
-soper
+2010-02-19T20:51:25.640625Z
+9683862c6feab33c457a72acc84b2721
+2010-02-19T21:16:03.889425Z
+935
+timfong
 
 
 
@@ -2274,7 +2240,7 @@ soper
 
 
 
-444
+453
 
 signup3-addoffers.tpl.php
 file

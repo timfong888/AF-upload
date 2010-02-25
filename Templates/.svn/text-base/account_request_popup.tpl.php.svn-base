@@ -18,7 +18,9 @@
 
 		    <? $_CONTROL->btnAddToTargets->Render()?>
 
-		    <? $_CONTROL->btnRequestContact->Render()?>
+		    <!--<? $_CONTROL->btnRequestContact->Render()?>-->
+			
+			<a class='button' href="message_request.php?aid=<?= $_CONTROL->allyId; ?>&acid=<?= $_CONTROL->accountId; ?>&type=<?= MessageType::Request; ?>"><h3>Request Contact</h3></a>
 
 	</div> <!--buttons-->
         <? 

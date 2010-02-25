@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/allyforce_project/!svn/ver/909/staging/Templates/Mail
+/svn/allyforce_project/!svn/ver/940/staging/Templates/Mail
 END
 invite.html
 K 25
@@ -13,7 +13,7 @@ request.html
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/svn/allyforce_project/!svn/ver/329/staging/Templates/Mail/request.html
+/svn/allyforce_project/!svn/ver/940/staging/Templates/Mail/request.html
 END
 send.html
 K 25

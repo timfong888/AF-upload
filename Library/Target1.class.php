@@ -112,7 +112,7 @@ class TargetForm extends QForm {
 	protected function btnAddTarget_Click($strFormId, $strControlId, $strParameter) {
 
 		if($this->txtNewTarget->Text == ''){
-			$this->txtNewTarget->Warning = "You must be enter a targer company name!";
+			$this->txtNewTarget->Warning = "You must be enter a target company name!";
 			return false;
 		}
 

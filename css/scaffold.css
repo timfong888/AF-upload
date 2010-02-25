@@ -69,16 +69,16 @@ input.submit_btn {
 	}
 }
 
-div.container input.close_popup {
-		background-color: white;
-		border-style: none;
-		position: absolute;
-		bottom: 10px;
-		right: 30px;
-		font-size: 16px;
-		font-weight: bold;
-		color: $dark_grey;
-	}
+input.close_popup {
+	background-color: white;
+	border-style: none;
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	color: $dark_grey;
+}
 
 div.row {
 	
@@ -118,6 +118,24 @@ div.row {
 
 div#code_attendees {
 	
+	div#add_code {
+		position: relative;
+		div#message {
+			margin-top: -15px;
+			height: 15px;
+			
+		}
+		
+		div.row {
+			height: 5em;
+		}
+		
+		div.button {
+			clear: both;
+			margin-left: 150px;
+		}
+		
+	}
 	div#code_grid {
 		clear: both;
 		width: 90%;
@@ -158,10 +176,19 @@ div#profile_activity {
 			+box-shadow(5px, 5px, 5px, $grey);
 		}
 		
-		div.invite_link {
+		div.invite_link, div.message_link {
 			position:absolute;
 			top: 0;
 			left: 110px;
+			
+			a {
+				color: $blue;
+				text-decoration: none;
+			}
+			a:hover {
+				color: $orange;
+				
+			}
 		}
 	}
 	
@@ -247,19 +274,64 @@ div#profile_activity {
 	}
 	
 	div#profile_contacts {
-		+columns(3);
+		+columns(5);
 		+last;
 		float: right;
 		
+		div.contact-list {
+			padding-left: 25px;
+			
+			div {
+				padding: 5px;
+			}
+		}
+		
+		a {
+			text-decoration: none;
+			color: $blue;
+			
+			&:hover {
+				text-decoration: underline;
+				color: $orange;
+			}
+		}
+		
+		h5 {
+			color: $blue;
+			size: .9em;
+			margin-top: -15px;
+			padding-left: 20px;
+		}
+		
 		div#want-contacts {
-			+box($green,$light_green);
 			margin-bottom: 15px;
-			padding-top: 5px;
-
+			padding-top: 0px;
+			padding-bottom: 15px;
+			
+			h4 {
+				background-color: $green;
+				padding: 5px;
+				color: $white;
+				border-style: solid;
+				border-color: $bright_green;
+				border-width: 2px;
+				+border-radius(3px);
+				+box-shadow(2px, 2px, 5px, $grey);
+			}
 		}
 	
 		div#has-contacts {
-			+box($red,$light_red);
+		
+			h4 {
+				background-color: $red;
+				padding: 5px;
+				color: $white;
+				border-style: solid;
+				border-color: $bright_red;
+				border-width: 3px;
+				+border-radius(5px);
+				
+			}
 		}
 		
 	}
@@ -300,6 +372,68 @@ div#target_explain, div#allies_explain, div#offer_explain, div#code_explain {
 	}
 }
 
+/* popups */
+	
+div#target_popup_c {
+		div#title {
+			background-color: $red;
+			color: white;
+			font-size: 1.2em;
+			font-weight: bold;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			width: 350px;
+			margin-bottom: 20px;
+		}
+}
+	
+div#target_list_popup {
+	
+	width: 400px;
+		
+	table.target-table {
+		width: 400px;
+		
+		span {
+			color: $grey;
+			padding-left: 10px;
+			
+		}
+					
+		td.before-selectors {
+			width: 300px;
+			
+			.over {
+				background: $light_blue;
+				
+			}
+		}
+		td.selectors {
+			
+			.over {
+				background: $light_blue;
+			}
+			a {
+				font-size: 0.8em;
+				color: $blue;
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+					color: $orange;
+				}
+			}
+		}
+	}
+}		
+		textarea.textbox {
+			border-style: solid;
+			border-width: 1px;
+			border-color: $blue;
+		}
+
+
 /* add form for targets, offers, allies */
 
 div#add_target, div#invite_allies, div#add_code, div#add_offers {
@@ -311,6 +445,22 @@ div#add_target, div#invite_allies, div#add_code, div#add_offers {
 	background-color: $orange; 
 	color: white;
 	
+	div.popup {
+		margin-top: -15px;
+		margin-bottom: 25px;
+		
+		a {
+			color: white;
+			text-decoration: none;
+			
+			&:hover {
+				text-decoration: underline;
+				background-color: $yellow;
+				color: $red;
+			}
+		}
+		
+	}
 	h2 {
 		color: white;
 		margin-top: -5px;
@@ -330,6 +480,7 @@ div#add_target, div#invite_allies, div#add_code, div#add_offers {
 		margin-left: 100px;
 		font-size: 14px;
 		color: $yellow;
+		margin-top: -25px;
 		
 		&:hover {
 			background-color: $blue;
@@ -612,6 +763,15 @@ div#profile {
 		position: relative;
 		height: 530px;
 		
+		div#message {
+			float: right;
+			background-color: $light_green;
+			color: $green;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		
 		fieldset {
 			background-color: $light_blue;
 		}
@@ -689,6 +849,14 @@ div#threads {
 		}
 	}
 	
+	div.message_display {
+		text-align: center;
+	}
+	span.AllyMessageRequest {
+		background-color: $light_green;
+		color: $green;	
+	}
+	
 	div#give_contact {
 		+box($orange,white);
 		width: 450px;
@@ -696,6 +864,8 @@ div#threads {
 		border-width: 10px;
 		+border-radius(20px);
 		padding-top: 0px;
+		margin-left: 60px;
+		margin-top: 15px;
 		
 		div.row {
 			
@@ -826,7 +996,7 @@ div#threads {
 	div.button {
 		width: 180px;
 		float: right;
-		margin-top: 30px;
+		margin-top: 10px;
 		
 		a {
 			font-size: 10px;
@@ -960,6 +1130,10 @@ div#dashboard {
 					&:hover {
 						text-decoration: underline;
 						color: $blue;
+						
+						span {
+							text-decoration: none;
+						}
 					}
 				}				
 
@@ -1307,7 +1481,7 @@ div#signup_invite, div#signup_code {
 			}
 		}
 		
-		input.add_target, input.request, input.remove_target {
+		input.add_target, input.request, input.remove_target, a.button {
 			+button;
 			border-width: 5px;	
 			border-style: solid;
@@ -1321,6 +1495,17 @@ div#signup_invite, div#signup_code {
 			}		
 		}
 		
+		a.button {
+			height: 44px;
+			background-color: $green;
+			border-color: $light_green;
+			color: white;
+			
+			h3 {
+				text-align: center;
+				margin-top: 12px;
+			}
+		}
 		input.request {
 			background-color: $green;
 			color: white;

@@ -1,9 +1,5 @@
 <?php
 // Class to manage invite information in My Offers Webpage
-// Template: allies.tpl.php
-
-//require_once("OfferCP.class.php");
-//require_once('MailMessage.class.php');
 
 class CodeAttendeesForm extends QForm {
 
@@ -11,10 +7,27 @@ class CodeAttendeesForm extends QForm {
 	protected $objAllies;
 	protected $dtgAllies;
 	protected $strCode;    
-	protected $objCodes;     
+	protected $objCodes; 
+	protected $txtNewCode;
+	protected $btnAddCode;
+	protected $lblMessage;  
+	protected $strCodeCount;
 	
 	protected function Form_Create() {
-		// Add Target Data Grid
+		
+		// Add a new Code
+		$this->txtNewCode = new QTextbox($this); //textfield
+		$this->btnAddCode = new QButton($this); //button
+		$this->btnAddCode->Text = QApplication::Translate('Add Code'); 
+		$this->btnAddCode->CssClass = 'button';
+		$this->btnAddCode->AddAction(new QClickEvent(), new QAjaxAction('btnAddCode_Click'));
+		
+		// Notification Label
+		$this->lblMessage = new QLabel($this);
+		$this->lblMessage->Display = false;
+		$this->lblMessage->CssClass = "message";
+		
+		// Add Allies Data Grid
 		$this->dtgAllies = new QDataGrid($this);
 		$this->dtgAllies->CellPadding = 3;
 		$this->dtgAllies->CellSpacing = 3;
@@ -75,10 +88,31 @@ class CodeAttendeesForm extends QForm {
 		// End Load Target DataGrid	
 	}	
 	
+	protected function btnAddCode_Click($strFormId, $strControlId, $strParameter) {
+		
+		$objUser = unserialize($_SESSION['User']);	// grab user from session
+		
+		$groupCode = GroupCode::LoadBySignupCode($this->txtNewCode->Text);
+		if (!$groupCode) {
+		    // If not found, create new group code and save it in DB
+		    $groupCode = new GroupCode();
+	        $groupCode->SignupCode = $this->txtNewCode->Text;
+		    $groupCode->Save();			
+	    }
+		
+		$objUser->AssociateGroupCode($groupCode); //associate User with the entered code
+		
+		$this->objUser->Save();
+		$this->lblMessage->Text ="Successfully entered code:" . $this->txtNewCode->Text;
+		$this->lblMessage->Display = True;
+	}
+	
 	protected function Form_PreRender() {	 
 		$this->objUser = unserialize($_SESSION['User']);
 	    $this->objCodes = $this->objUser->GetGroupCodeArray();
 	    if(isset($this->objCodes[0]->SignupCode))$this->strCode = $this->objCodes[0]->SignupCode;
+		$this->strCodeCount = count($this->objCodes);
+		$codes = $this->objUser->GetGroupCodeArray();
 
 	}
 

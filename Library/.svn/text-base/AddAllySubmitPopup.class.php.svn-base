@@ -16,6 +16,7 @@ class AddAllySubmitPopup extends QDialogBox {
 	public $objMessage;
 	protected $strCloseCallback;
 	public $strTemplate = 'Templates/add_ally_submit_popup.tpl.php';
+	public $userId;
 
 
 	
@@ -23,7 +24,7 @@ class AddAllySubmitPopup extends QDialogBox {
         parent::__construct($objParentObject, $strControlId);
 		$this->strCloseCallback = $strCloseCallback;
 		
-        $this->objUser = unserialize($_SESSION['User']);
+        //$this->objUser = unserialize($_SESSION['User']);
         
         $this->txtEmail = new EmailTextBox($this);
 		$this->txtEmail->Required = true;
@@ -46,9 +47,9 @@ class AddAllySubmitPopup extends QDialogBox {
 
 	}
 
-	public function btnInvite_Click($strFormId, $strControlId, $strParameter) {
-        
-      /* // initialize adding to iContact 
+	public function btnInvite_Click() {
+        $this->objUser = User::LoadById($this->userId);
+       // initialize adding to iContact 
         $api = new IcApi("http://api.icontact.com/icp");
         $api->setVersion("1.0");
         $api->setKey("xKmv8x9A72RvAFI1tEcFkbDqMEBjQSne");
@@ -147,7 +148,7 @@ class AddAllySubmitPopup extends QDialogBox {
 			$this->objMessage->Subject = $this->objUser->FullName . ' wants to share leads with you!';
 		}
 
-		QEmailServer::Send($this->objMessage);*/
+		QEmailServer::Send($this->objMessage);
 	}
 		
 	public function btnClose_Click() {

@@ -3,7 +3,7 @@
 		<?php $this->lblTitle->Render();?>
 	</div>	
 </div>
-<div align="center">
+<div>
 			The following accounts were successfully added to your Target list:
 			<p>
 			<p>

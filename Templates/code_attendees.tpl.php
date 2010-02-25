@@ -24,13 +24,20 @@
 		<?php $select_targets = "0" ;?>
 	    <?php $select_threads = "0" ;?>
 		<?php require_once('header_new.tpl.php'); ?>
-		
+
 		<div id="add_code">
 			<h2>Add Another Code</h2>
-				<div class="row">
-					<span class="label">Code</span>
-					<span class="formfield"><input class="textbox" type="text"></span>
-				</div>
+			<div id="message">
+				<?php $this->lblMessage->Render()?>
+			</div>
+			
+			<div class="row">
+				<span class="label">Code</span>
+				<span class="formfield"><?php $this->txtNewCode->RenderWithError(); ?></span>
+			</div>
+			<div class='button'>
+				<?php $this->btnAddCode->Render(); ?>
+			</div>
 					
 		</div>
 		<div id="code_explain">

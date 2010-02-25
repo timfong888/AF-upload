@@ -97,6 +97,9 @@ class ProfileActivityForm extends QForm {
 	    $this->accountRequestPopup->allyId = $this->objAllyUser->Id;
 	    $this->accountRequestPopup->userId = $this->objUserUser->Id;
 	    $this->addAllyPopup->allyId = $this->objAllyUser->Id;
+	    $this->addAllyPopup->userId = $this->objUserUser->Id;
+	    $this->addAllySubmitPopup->userId = $this->objUserUser->Id;
+	    //$this->completeProfilePopup->userId = $this->objUserUser->Id;
 	    
 	    //Create arry of Offers Linkbutton
 	    $this->arrAllyOffersButtons = array(); 
@@ -268,7 +271,9 @@ class ProfileActivityForm extends QForm {
 	}
 	 
 	public function addAllySubmitPopup_btnInvite_Click($strFormId, $strControlId, $strParameter) {
-	    $this->addAllyPopupSubmit->btnInvite_Click($strFormId, $strControlId, $strParameter);   
+	    $this->addAllySubmitPopup->btnInvite_Click();
+	    $this->addAllySubmitPopup->btnClose_Click();
+	       
 	}
 	 
 	/*
@@ -352,19 +357,28 @@ class ProfileActivityForm extends QForm {
         return false;
     }*/
     
-    public function IsMyAlly() {
+    public function IsNoMessageToAllyExist() {
+    $message = Message::LoadArrayByOfferIdFromUserIdToUserId(NULL, $this->objUserUser->Id, $this->objAllyUser->Id);
+        if(!$message){
+            return true;
+        } 
+     return false;   
+    
+    }
+    
+    public function IsNotMyAlly() {
         $count = User::CountByUserAsAllies($this->objUserUser->Id);
         if($count) {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
     
     private function DefineInviteAsAllyPopup() {
         if(!$this->IsProfileComplete()) {
 		    return $this->completeProfilePopup;
 		} else {
-            if(!$this->IsMyAlly()) {
+            if($this->IsNotMyAlly()) {
                 return $this->addAllyPopup;
             }  
         }
@@ -375,7 +389,7 @@ class ProfileActivityForm extends QForm {
         if(!$this->IsProfileComplete()) {
 		    return $this->completeProfilePopup;
 		} else {
-            if(!$this->IsMyAlly()) {
+            if($this->IsNotMyAlly() && $this->IsNoMessageToAllyExist()) {
                 return $this->addAllyPopup;
             }  
         }

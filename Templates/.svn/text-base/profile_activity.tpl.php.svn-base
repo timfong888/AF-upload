@@ -9,6 +9,7 @@
 <?$this->accountRequestPopup->Render();?>
 <?$this->completeProfilePopup->Render();?>
 <?$this->addAllyPopup->Render();?>
+<?$this->addAllySubmitPopup->Render();?>
 
 <div class="container" id="profile_activity">
 	<?php require_once('header_new.tpl.php'); ?>
@@ -37,8 +38,17 @@
 				<img src="http://www.gravatar.com/avatar?d=monsterid&gravatar_id=<?php echo md5( strtolower($this->objAllyUser->Username));?>">
 			<div class="invite_link">
 			    <? 
-			        if(!$this->IsMyAlly()) {
+			        if($this->IsNotMyAlly()/* && $this->IsNoMessageToAllyExist()*/) {
                         $this->btnInviteAsAlly->Render();
+                    }  
+                ?>
+			</div>
+			
+			<div class="message_link">
+				<? 
+			        if($this->IsNotMyAlly()) {
+						$ally_id = $this->objAllyUser->Id;
+                        echo "<a href='threads.php?aid=$ally_id '>Messages</a>";
                     }  
                 ?>
 			</div>
@@ -172,16 +182,21 @@
 	</div> <!--feed-->
 	
 	<div id="profile_contacts">
+		
 		<div id="want-contacts">
 			<h4><?= $this->objAllyUser->FullName ?> Wants Contacts</h4>
-	            <div>
+			<h5>Click account below to give now!</h5>
+	            <div class="contact-list">
 	                <? $limit=(count($this->Targets_Array($this->objUserOffers))<5?count($this->Targets_Array($this->objUserOffers)):5); ?>
 	                <? for($i = 0; $i < $limit; $i++) {?>
 				        <div>	            
                             <? $targets = $this->Targets_Array($this->objUserOffers); ?>
-                            <a href="/account_detail.php?accountId=<?= $targets[$i]->Id ?>&allyId=<?= 15 ?>"> 
+                            <!--<a href="/account_detail.php?aid=<?= $targets[$i]->Id ?>"> 
                                 <?= $targets[$i]->Name ?>
                             </a>
+							-->
+							
+							<?php echo '<a href="' . __SUBDIRECTORY__ .'/message_send.php?aid=' . $this->objAllyUser->Id .'&acid=' . $targets[$i]->Id . '&type=' . MessageType::Send . '">' . $targets[$i]->Name . '</a>'; ?>
 				        </div>
 				    <? } ?>
 	            </div>
@@ -189,10 +204,8 @@
 		
 		<div id="has-contacts">
 			<h4><?= $this->objAllyUser->FullName ?> Has Contacts </h4>
-				<div class='quiet small'>
-				    <strong>Click</strong> Account to request a contact!
-				</div>
-				<div>
+			<h5>Click account below to request contacts!</h5>
+				<div class="contact-list">
 				 <?foreach($this->arrAllyOffersButtons as $allyOffersButton){
 				    $allyOffersButton->Render();
 				    ?>

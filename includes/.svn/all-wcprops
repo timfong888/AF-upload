@@ -5,13 +5,7 @@ V 32
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/allyforce_project/!svn/ver/902/staging/includes
-END
-billing_notice.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/svn/allyforce_project/!svn/ver/652/staging/includes/billing_notice.inc.php
+/svn/allyforce_project/!svn/ver/927/staging/includes
 END
 configuration.inc.template.php
 K 25
@@ -19,17 +13,23 @@ svn:wc:ra_dav:version-url
 V 83
 /svn/allyforce_project/!svn/ver/837/staging/includes/configuration.inc.template.php
 END
-configuration_pro.inc.php
+billing_notice.inc.php
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svn/allyforce_project/!svn/ver/277/staging/includes/configuration_pro.inc.php
+V 75
+/svn/allyforce_project/!svn/ver/652/staging/includes/billing_notice.inc.php
 END
 signup2.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 68
 /svn/allyforce_project/!svn/ver/871/staging/includes/signup2.inc.php
+END
+configuration_pro.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/277/staging/includes/configuration_pro.inc.php
 END
 header.inc.php
 K 25
@@ -61,17 +61,11 @@ svn:wc:ra_dav:version-url
 V 63
 /svn/allyforce_project/!svn/ver/2/staging/includes/_LICENSE.txt
 END
-stylesheets-no-tablecloth.inc.php
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/svn/allyforce_project/!svn/ver/753/staging/includes/stylesheets-no-tablecloth.inc.php
-END
-banner.inc.php
+signup.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/845/staging/includes/banner.inc.php
+/svn/allyforce_project/!svn/ver/696/staging/includes/signup.inc.php
 END
 billing_link_wrap_0.inc.php
 K 25
@@ -79,11 +73,17 @@ svn:wc:ra_dav:version-url
 V 80
 /svn/allyforce_project/!svn/ver/505/staging/includes/billing_link_wrap_0.inc.php
 END
-signup.inc.php
+banner.inc.php
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/allyforce_project/!svn/ver/696/staging/includes/signup.inc.php
+/svn/allyforce_project/!svn/ver/845/staging/includes/banner.inc.php
+END
+stylesheets-no-tablecloth.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/allyforce_project/!svn/ver/753/staging/includes/stylesheets-no-tablecloth.inc.php
 END
 billing_link_wrap_1.inc.php
 K 25

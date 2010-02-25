@@ -54,11 +54,10 @@
 					 
 			?>	
 			<?php $this->txtMessage->Render(); ?>
-				 		
-			<div id="give_contact">
-				<h2>Give Contacts 
+				 	
 			<?php if($this->msgType == MessageType::Reply) {?>
-						
+			
+			<div id="give_contact">						
 				<strong>Company</strong>
 						<?php
 						if(isset($this->objAccount))
@@ -72,7 +71,6 @@
 					else
 						echo "No contacts available";
 					?>  
-				</h2>
 					
 					<div class="row">
 						<span class='label'>Name</span>
@@ -95,13 +93,14 @@
 					</div>
 									
 			</div>	<!--give_contacts-->
-			
+			<?php	} ?>	
+						
 			<div class="button">
 				<?php $this->btnGive->Render(); ?>
 				<a href="#">Cancel</a>
 			</div>
 	</div> <!--reply-->
-	<?php	} ?>			
+		
 						
 			<?php
 			if(!$this->objMessageArray) {

@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<title>Targets > Cut and Paste</title>
+	<?php require_once('includes/stylesheets.inc.php'); ?>
 	<script language="javascript">
 		function checkAll_1($action){
 			for (var i=0;i<document.forms[0].elements.length;i++)
@@ -27,28 +28,6 @@
 	</script>
 	<?php require_once(__TEMPLATES__ . "/header.global.tpl.php") ?>
 </head>
-
-<style type="text/css">
-	#target_popup_c {
-		background-color: #aa0000;
-		color: white;
-		font-family: Arial, Helvetica, sans-serif;
-	}
-
-	#target_popup_c #title {
-		padding-left: 20px;
-		font-size: 20px;
-		font-weight: bold;
-	}
-	
-	#target_popup_c #bottom a {
-		font-weight: normal;
-		font-size: 12px;
-		color: white;
-		padding: 30px;
-	}
-	
-</style>
 
 <body>
 <?php $this->RenderBegin(); ?>

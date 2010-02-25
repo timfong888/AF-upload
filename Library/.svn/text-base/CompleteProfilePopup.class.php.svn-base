@@ -62,7 +62,7 @@ class CompleteProfilePopup extends QDialogBox {
 		$this->txtTarget->Required = true;
 		$this->txtTarget->UseAjax= true;
 		$this->txtTarget->Text = $strTarget;
-		//$this->txtTarget->AddAction(new QAutoCompleteTextBoxEvent(), new QAjaxAction('txtAccount_Change'));
+		$this->txtTarget->AddAction(new QAutoCompleteTextBoxEvent(), new QAjaxAction('txtAccount_Change'));
 
 
 		$this->txtOffer = new QAutoCompleteTextBox($this);
@@ -70,7 +70,7 @@ class CompleteProfilePopup extends QDialogBox {
 		$this->txtOffer->Required = true;
 		$this->txtOffer->UseAjax = true;
 		$this->txtOffer->Text = $strOffer;
-		//$this->txtOffer->AddAction(new QAutoCompleteTextBoxEvent(), new QAjaxAction('txtAccount_Change'));		
+		$this->txtOffer->AddAction(new QAutoCompleteTextBoxEvent(), new QAjaxAction('txtAccount_Change'));		
 
 		$this->btnCreate = new QButton($this);
 		$this->btnCreate->Text = QApplication::Translate('Update Profile');
@@ -133,8 +133,10 @@ class CompleteProfilePopup extends QDialogBox {
 		$this->objUserDetails->Save();
 		
         //check to have such Account in UsetTarget and in DB
+        $isTargetAccountExist = false;
 		$isTargetExist = true;
 		if($this->objAccountTarget){
+		    $isTargetAccountExist = true;
 		    foreach($this->objTarget as $targetsExist){
 		        if($targetsExist->AccountId == $this->objAccountTarget->Id){
 		            $isTargetExist = true;
@@ -144,8 +146,10 @@ class CompleteProfilePopup extends QDialogBox {
 		}
 				
         //check to have such Account in UsetOffer and in DB
+        $isOfferAccountExist = false;
 		$isOfferExist = true;
 		if($this->objAccountOffer){
+		    $isOfferAccountExist = true;
 		    foreach($this->objOffer as $offersExist){
 		        if($offersExist->AccountId == $this->objAccountTarget->Id){
 		            $isOfferExist = true;
@@ -154,20 +158,27 @@ class CompleteProfilePopup extends QDialogBox {
 		    }
 		}
 		
+		if(!$isTargetAccountExist){
+		    $newAcoount = new Account();
+		    $newAcoount->Name = $this->txtTarget->Text;
+		    $accountId = $newAcoount->Save();
+            $this->SaveTargetToDB($accountId);
+		}
+		
+		if(!$isOfferAccountExist){
+		    $newAcoount = new Account();
+		    $newAcoount->Name = $this->txtOffer->Text;
+		    $accountId = $newAcoount->Save();
+            $this->SaveOfferToDB($accountId);
+		}
 		
 		//Save Offer to DB
 		if(!$isOfferExist){
-		    $newOffer = new Offer;
-		    $newOffer->UserOwnerId = $this->objUser->Id;
-		    $newOffer->AccountId = $this->objAccountOffer->Id;
-		    $newOffer->Save();
+	        $this->SaveOfferToDB($this->objAccountOffer->Id);
 		}
 		//Save Target to DB
 		if(!$isTargetExist){
-		    $newTarget = new Target;	
-		    $newTarget->UserId = $this->objUser->Id; 
-		    $newTarget->AccountId = $this->objAccountTarget->Id;
-		    $newTarget->Save();
+		    $this->SaveTargetToDB($this->objAccountTarget->Id);
 		}
 
 		QApplication::DisplayAlert("Your Profile was completed sucessfully");
@@ -177,6 +188,20 @@ class CompleteProfilePopup extends QDialogBox {
 	
 	public function btnClose_Click() {
 	    $this->HideDialogBox();
+	}
+	
+	private function SaveOfferToDB($accountId) {
+        $newOffer = new Offer;
+        $newOffer->UserOwnerId = $this->objUser->Id;
+        $newOffer->AccountId = $accountId;
+        $newOffer->Save();
+	}
+	
+	private function SaveTargetToDB($accountId) {
+        $newTarget = new Target;	
+        $newTarget->UserId = $this->objUser->Id; 
+        $newTarget->AccountId = $accountId;
+        $newTarget->Save();
 	}
 }
 

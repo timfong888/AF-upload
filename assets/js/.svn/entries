@@ -1,15 +1,15 @@
 10
 
 dir
-927
+944
 http://allyforce.unfuddle.com/svn/allyforce_project/staging/assets/js
 http://allyforce.unfuddle.com/svn/allyforce_project
 
 
 
-2010-02-17T01:38:08.492320Z
-927
-timfong
+2010-02-23T22:10:04.661700Z
+941
+vgrichina
 has-props
 
 
@@ -28,7 +28,7 @@ has-props
 
 dimensions.js
 file
-918
+
 
 
 
@@ -65,7 +65,7 @@ dir
 
 jquery.bgiframe.min.js
 file
-918
+
 
 
 
@@ -99,7 +99,7 @@ soper
 
 _README.txt
 file
-918
+
 
 
 
@@ -133,7 +133,7 @@ vgrichina
 
 jquery.autocomplete.js
 file
-928
+
 
 
 
@@ -164,6 +164,18 @@ timfong
 
 
 20446
+
+jquery.js
+file
+
+
+
+
+
+b89bc081e965c30dbc7ff2cedaed86e1
+2010-02-23T22:10:04.661700Z
+941
+vgrichina
 
 jquery-autocomplete
 dir

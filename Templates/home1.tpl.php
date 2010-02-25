@@ -78,8 +78,8 @@ if($this->totalRequests<$this->reqMidl){
 				</div>
 				
 				<div class="dash_head" id = "recommendallies">
-					<h2><a href="code_attendees.php">Find Allies with the Same Signup Code <span>(click link now!)</span></a></h2>
-					<h2><a href="allies.php">Invite Reps To Share Leads Now <span>(click this link to invite)</span></a></h2>
+					<h2><a href="code_attendees.php">Find Allies with the Same Signup Code</a> <span>(click link now!)</span></h2>
+					<h2><a href="allies.php">Invite Reps To Share Leads Now</a> <span>(click this link to invite)</span></h2>
 					<!--
 					<h2>Recommended Allies <span>(click name below to add Ally)</span></h2>
 					<div class="accountcolumn1"><?php require ($billing_wrap)?>John S.</a></div>
@@ -97,7 +97,7 @@ if($this->totalRequests<$this->reqMidl){
 				</div>
 				
 				<div class="dash_head" id = "addtargets"> 
-					<h2><a href="targets.php">Add To Your Target List <span>(click link now!)</span></a></h2>
+					<h2><a href="targets.php">Add To Your Target List</a> <span>(click link now!)</span></h2>
 					<h2>Add Suggested Targets <span>(click Account Below to Add Target)</span></h2>
 					<?php $this->dtrTarget->Render(); ?>
 				</div>

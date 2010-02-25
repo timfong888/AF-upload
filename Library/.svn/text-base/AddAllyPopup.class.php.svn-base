@@ -15,6 +15,7 @@ class AddAllyPopup extends QDialogBox {
 	protected $objUser;
 	public $objAlly;
 	protected $objOffer;
+	protected $objMessageDB;
 	protected $btnDelButton;
 	protected $objMessageArray;
 	protected $txtAlly;
@@ -27,6 +28,7 @@ class AddAllyPopup extends QDialogBox {
     protected $blnMatteClickable = false;
     public $txtTextBox;
     public $allyId;
+    public $userId;
     public $allyName;
 
 
@@ -34,8 +36,7 @@ class AddAllyPopup extends QDialogBox {
 		parent::__construct($objParentObject, $strControlId);
 		
 		$this->strCloseCallback = $strCloseCallback;
-		$this->objUser = unserialize($_SESSION['User']);
-		$this->objAlly = User::LoadById($this->allyId);
+		
 		//$this->objAlly = User::LoadById($_GET['allyId']);
 		
 		$this->btnInvite = new QButton($this);
@@ -53,8 +54,11 @@ class AddAllyPopup extends QDialogBox {
 	}
 
 	public function btnInvite_Click($strFormId, $strControlId, $strParameter) {
+          
+        $this->objUser = User::LoadById($this->userId); 
+		$this->objAlly = User::LoadById($this->allyId); 
            
-        /*//initialize adding to iContact
+        //initialize adding to iContact
         $api = new IcApi("http://api.icontact.com/icp");
         $api->setVersion("1.0");
         $api->setKey("xKmv8x9A72RvAFI1tEcFkbDqMEBjQSne");
@@ -154,8 +158,21 @@ class AddAllyPopup extends QDialogBox {
 		}
 
 		QEmailServer::Send($this->objMessage);
-		*/
-	}
+		
+		
+		/*$message = Message::LoadArrayByOfferIdFromUserIdToUserId(NULL, $this->userId, $this->allyId);
+        if(!$message) {
+		    $this->objMessageDB = new Message();
+		    $this->objMessageDB->FromUserId = $this->userId;
+		    $this->objMessageDB->ToUserId = $this->allyId;
+		    $this->objMessageDB->MessageTypeId = 4;
+		    $this->objMessageDB->OfferId = NULL;
+		    $this->objMessageDB->Body = "Hey I'd like you to be my ally.";
+		    $this->objMessageDB->Subject = "Invitation";
+		    $this->objMessageDB->DateTime = QDateTime::Now(); 
+	        $this->objMessageDB->Save();
+        } */
+  	}
 
 	public function btnClose_Click() {
 	    $this->HideDialogBox();
