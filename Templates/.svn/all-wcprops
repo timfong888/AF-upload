@@ -33,23 +33,11 @@ svn:wc:ra_dav:version-url
 V 67
 /svn/allyforce_project/!svn/ver/882/staging/Templates/login.tpl.php
 END
-salesforce_popup.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/svn/allyforce_project/!svn/ver/704/staging/Templates/salesforce_popup.tpl.php
-END
-logout.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svn/allyforce_project/!svn/ver/819/staging/Templates/logout.tpl.php
-END
-addnewtarget.tpl.php
+target_popup.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/allyforce_project/!svn/ver/873/staging/Templates/addnewtarget.tpl.php
+/svn/allyforce_project/!svn/ver/935/staging/Templates/target_popup.tpl.php
 END
 span_home.tpl.php
 K 25
@@ -57,11 +45,23 @@ svn:wc:ra_dav:version-url
 V 71
 /svn/allyforce_project/!svn/ver/902/staging/Templates/span_home.tpl.php
 END
-target_popup.tpl.php
+addnewtarget.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/svn/allyforce_project/!svn/ver/935/staging/Templates/target_popup.tpl.php
+/svn/allyforce_project/!svn/ver/873/staging/Templates/addnewtarget.tpl.php
+END
+logout.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/allyforce_project/!svn/ver/819/staging/Templates/logout.tpl.php
+END
+salesforce_popup.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/704/staging/Templates/salesforce_popup.tpl.php
 END
 signup_new.tpl.php
 K 25
@@ -169,7 +169,7 @@ profile_activity.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/svn/allyforce_project/!svn/ver/944/staging/Templates/profile_activity.tpl.php
+/svn/allyforce_project/!svn/ver/945/staging/Templates/profile_activity.tpl.php
 END
 addally_popup.html
 K 25
@@ -219,17 +219,17 @@ svn:wc:ra_dav:version-url
 V 73
 /svn/allyforce_project/!svn/ver/914/staging/Templates/signup_code.tpl.php
 END
-header_new.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/svn/allyforce_project/!svn/ver/902/staging/Templates/header_new.tpl.php
-END
 successful_invite_ally_popup.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /svn/allyforce_project/!svn/ver/780/staging/Templates/successful_invite_ally_popup.tpl.php
+END
+header_new.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/allyforce_project/!svn/ver/902/staging/Templates/header_new.tpl.php
 END
 thread_list.tpl.php
 K 25
@@ -285,17 +285,17 @@ svn:wc:ra_dav:version-url
 V 72
 /svn/allyforce_project/!svn/ver/19/staging/Templates/addnewOffer.tpl.php
 END
-billing_new.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/svn/allyforce_project/!svn/ver/790/staging/Templates/billing_new.tpl.php
-END
 account_give_popup.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 80
 /svn/allyforce_project/!svn/ver/869/staging/Templates/account_give_popup.tpl.php
+END
+billing_new.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/allyforce_project/!svn/ver/790/staging/Templates/billing_new.tpl.php
 END
 allyProfilenew.tpl.php
 K 25
@@ -339,23 +339,17 @@ svn:wc:ra_dav:version-url
 V 76
 /svn/allyforce_project/!svn/ver/676/staging/Templates/signup_invite3.tpl.php
 END
-must_invite_ally_popup.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/svn/allyforce_project/!svn/ver/779/staging/Templates/must_invite_ally_popup.tpl.php
-END
 profilenew.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /svn/allyforce_project/!svn/ver/889/staging/Templates/profilenew.tpl.php
 END
-AccountProfile.tpl.php
+must_invite_ally_popup.tpl.php
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/allyforce_project/!svn/ver/538/staging/Templates/AccountProfile.tpl.php
+V 84
+/svn/allyforce_project/!svn/ver/779/staging/Templates/must_invite_ally_popup.tpl.php
 END
 signup_manager_invite.tpl.php
 K 25
@@ -363,17 +357,23 @@ svn:wc:ra_dav:version-url
 V 83
 /svn/allyforce_project/!svn/ver/621/staging/Templates/signup_manager_invite.tpl.php
 END
-message_request2.tpl.php
+AccountProfile.tpl.php
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/svn/allyforce_project/!svn/ver/939/staging/Templates/message_request2.tpl.php
+V 76
+/svn/allyforce_project/!svn/ver/538/staging/Templates/AccountProfile.tpl.php
 END
 account_detail.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /svn/allyforce_project/!svn/ver/895/staging/Templates/account_detail.tpl.php
+END
+message_request2.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/allyforce_project/!svn/ver/939/staging/Templates/message_request2.tpl.php
 END
 billing.tpl.php
 K 25

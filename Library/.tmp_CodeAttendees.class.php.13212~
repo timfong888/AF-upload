@@ -108,7 +108,7 @@ class CodeAttendeesForm extends QForm {
 		
 		$this->lblMessage->Display = True;
 		$this->lblMessage->HtmlEntities = false;
-		$this->lblMessage->Text = 'Successfully added new code.';
+		$this->lblMessage->Text = 'Successfully added new code.  Codes are:<ul>';
 
 	}
 	

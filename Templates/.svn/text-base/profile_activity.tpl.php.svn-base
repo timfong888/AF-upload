@@ -46,7 +46,7 @@
 			
 			<div class="message_link">
 				<? 
-			        if($this->IsNotMyAlly()) {
+			        if(!$this->IsNotMyAlly()) {
 						$ally_id = $this->objAllyUser->Id;
                         echo "<a href='threads.php?aid=$ally_id '>Messages</a>";
                     }  
